@@ -1,0 +1,105 @@
+[33mcommit 0f24d584fdeb1a6ef6e907094832251477101201[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Timothy Kim <timothyakim21@gmail.com>
+Date:   Fri Sep 20 11:27:54 2024 -0700
+
+    updated readme.md
+
+[33mcommit 23a50759abe7af0da2b70f3f8e1e4df924269ce2[m
+Merge: 6c62fda d06c9de
+Author: Timothy Kim <timothyakim21@gmail.com>
+Date:   Fri Sep 20 11:26:28 2024 -0700
+
+    updated readme.md
+
+[33mcommit 6c62fdac220a00a3a7c16e7834b31cc25cc2256f[m
+Author: Timothy Kim <timothyakim21@gmail.com>
+Date:   Fri Sep 20 11:24:28 2024 -0700
+
+    updated readme.md
+
+[33mcommit d06c9de2a067a724933705156ab527f2462ee99c[m
+Author: Nick Sutton <sbnutton@gmail.com>
+Date:   Fri Sep 20 11:18:57 2024 -0700
+
+    Nick's edit
+
+[33mcommit 9bf45aece438d6df64fc428d2dfc3cb670a19708[m
+Merge: d40ffc8 853ae38
+Author: Nick Sutton <sbnutton@gmail.com>
+Date:   Fri Sep 20 11:18:39 2024 -0700
+
+    Merge remote-tracking branch 'origin/main'
+    
+    # Conflicts:
+    #       .idea/misc.xml
+
+[33mcommit 62f2b1ffc2908e5d6565c3a738c88a5e8edd02d6[m
+Author: Timothy Kim <timothyakim21@gmail.com>
+Date:   Fri Sep 20 11:17:26 2024 -0700
+
+    updated readme.md
+
+[33mcommit d40ffc8637d97529a381c3b245bfe65fe246fd14[m
+Merge: 63cc154 ae227ce
+Author: Nick Sutton <sbnutton@gmail.com>
+Date:   Fri Sep 20 11:17:02 2024 -0700
+
+    Nick's edit
+
+[33mcommit 853ae38c137510e196d2afc6c21c942cc5d9a510[m
+Author: Caley R <crombout@my.bcit.ca>
+Date:   Fri Sep 20 11:16:39 2024 -0700
+
+    Pushed again
+
+[33mcommit 63cc154bcf4e7d2d8276e7a09db87f0591f3567c[m
+Author: Nick Sutton <sbnutton@gmail.com>
+Date:   Fri Sep 20 11:14:04 2024 -0700
+
+    Nick's edit
+
+[33mcommit ae227ce585b5027a4cc4241ba320efbf575121fc[m
+Author: Caley R <crombout@my.bcit.ca>
+Date:   Fri Sep 20 11:13:49 2024 -0700
+
+    Pushed per request
+
+[33mcommit ccc018bea2d6987db4322ae34e7640cdf8688b83[m
+Author: Caley R <crombout@my.bcit.ca>
+Date:   Fri Sep 20 11:13:07 2024 -0700
+
+    Push
+
+[33mcommit 34f6ebf16787c7e4fdc2fb0681ea55eb54259c8a[m
+Author: Nick Sutton <sbnutton@gmail.com>
+Date:   Fri Sep 20 11:11:37 2024 -0700
+
+    Nick's edit
+
+[33mcommit f49ac7fb4c6d9b235da1d9b08e6ac090a0e51e6c[m
+Merge: 9dd9511 4e5014c
+Author: Nick Sutton <sbnutton@gmail.com>
+Date:   Fri Sep 20 11:11:12 2024 -0700
+
+    Merge remote-tracking branch 'origin/main'
+    
+    # Conflicts:
+    #       README.md
+
+[33mcommit 9dd9511761883fb2a662947290148074429abb2a[m
+Author: Nick Sutton <sbnutton@gmail.com>
+Date:   Fri Sep 20 11:09:04 2024 -0700
+
+    Nick's edit
+
+[33mcommit 4e5014cc24cd10ee228287f4c10348cbddeeee16[m
+Author: Caley R <crombout@my.bcit.ca>
+Date:   Fri Sep 20 11:08:52 2024 -0700
+
+    Push
+
+[33mcommit b50eeb6f79e8892632c0b84aaeb1ddcb9be3dae3[m
+Author: Nicholas Sutton <nsutton7@my.bcit.ca>
+Date:   Fri Sep 20 10:46:10 2024 -0700
+
+    Initial commit
