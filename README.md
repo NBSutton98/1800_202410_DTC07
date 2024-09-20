@@ -9,9 +9,9 @@ This browser based web application to ...
 
 List team members and/or short bio's here...
 
-* Caley Rombout - Blonde Moment Specialist & Design Head. Web developer & graphic designer.
-* ...
-* Timothy Kim - A computer nerd. 
+* Caley Rombout - Blonde Moment Specialist
+* Nicholas Sutton, looking forward to being a flexible member of my team.
+* Timothy Kim - A computer nerdw
 
 ## 3. Technologies and Resources Used
 
