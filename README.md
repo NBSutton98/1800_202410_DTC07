@@ -11,7 +11,7 @@ List team members and/or short bio's here...
 
 * Caley Rombout - Blonde Moment Specialist & Web Development Expert
 * Nicholas Sutton, looking forward to being a flexible member of my team.
-* Timothy Kim - A computer nerd
+* Timothy Kim - A computer nerd.
 
 ## 3. Technologies and Resources Used
 
