@@ -26,13 +26,19 @@
 
 <body>
   <!-- Nav Bar -->
-   <header id="navigation" style="display: flex; flex-wrap: nowrap; justify-content: space-between; align-items: center; width: 100vw; padding: 10px;">
-    <object data="images/icons/home-icon.svg" class="nav-icon" type="image/svg+xml" style="width: 48px; height: auto;"></object>
-    <object data="images/icons/tasks.svg" class="nav-icon" type="image/svg+xml" style="width: 48px; height: auto;"></object>
-    <object data="images/icons/groups.svg" class="nav-icon" type="image/svg+xml" style="width: 48px; height: auto;"></object>
-    <object data="images/icons/backpack.svg" class="nav-icon" type="image/svg+xml" style="width: 48px; height: auto;"></object>
-    <object data="images/icons/settings.svg" class="nav-icon" type="image/svg+xml" style="width: 48px; height: auto;"></object>
-   </header>
+  <header id="navigation"
+    style="display: flex; flex-wrap: nowrap; justify-content: space-between; align-items: center; width: 100vw; padding: 10px;">
+    <object data="images/icons/home-icon.svg" class="nav-icon" type="image/svg+xml"
+      style="width: 48px; height: auto;"></object>
+    <object data="images/icons/tasks.svg" class="nav-icon" type="image/svg+xml"
+      style="width: 48px; height: auto;"></object>
+    <object data="images/icons/groups.svg" class="nav-icon" type="image/svg+xml"
+      style="width: 48px; height: auto;"></object>
+    <object data="images/icons/backpack.svg" class="nav-icon" type="image/svg+xml"
+      style="width: 48px; height: auto;"></object>
+    <object data="images/icons/settings.svg" class="nav-icon" type="image/svg+xml"
+      style="width: 48px; height: auto;"></object>
+  </header>
   <!------------------------------>
   <div class="jumbotron">
     <h1 class="display-4">Welcome to BCIT Buddy!</h1>
@@ -49,6 +55,47 @@
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </p>
   </div>
+
+  <footer class="bg-body-tertiary text-center">
+    <div class="container p-4">
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Add a friend!</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="code" id="" class="form-control" />
+                <label class="form-label" for="">Friend code</label>
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button data-mdb-ripple-init type="submit" class="btn btn-outline mb-4">
+                ADD!
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+    </div>
+  </footer>
+
+
 
   <!------------------------------>
   <!-- Stuff for body goes here -->
