@@ -10,6 +10,26 @@
     }
 }
 
+/* Font Stylings */
+* {
+    font-family: 'museo-sans';
+    font-weight: 500;
+}
+
+h1, h2 {
+    font-family: 'giulia';
+}
+
+h3, h4, h5 {
+    font-family: 'giulia-plain';
+}
+
+h6 {
+    font-family: 'museo-sans-condensed';
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 /* Navbar Styling */
 #navbar {  /* Main header container */
     display: flex;
@@ -48,7 +68,7 @@
 
 /* Demo Main Page Container Styling */
 #main-page {
-    /* display: flex; */
+    display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -74,6 +94,9 @@
     top: auto;
 }
 
+
+
+/* Popup Stylings */
 .popup {
     display: none; /* Hidden by default */
     position: fixed;
@@ -83,23 +106,41 @@
     background-color: white;
     border: 0px;
     z-index: 1000; /* Make sure it appears above other content */
+    padding: 10px;
 }
 
 .popup.show {
     display: block; /* Show the popup when the class is added */
 }
 
-
 .lrg-board-popup {
     background-image: url("/assets/elements/lrg-board.svg");
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center center;
     background-color: transparent !important;
     width: 80%;
-    min-height: 250px;
+    max-width: 450px;
+    min-height: 40vh;
     display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+/* Button Stylings */
+.med-btn {
+    border: 0px;
+    background-image: url("/assets/elements/board-button.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    width: 100%;
+    padding: 4px 24px 12px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'giulia';
+    line-height: 1;
 }
