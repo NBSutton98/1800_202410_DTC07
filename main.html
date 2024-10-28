@@ -52,15 +52,18 @@
     <style>
       /* You can set a custom background image in your CSS */
       .bg-custom {
-        background-image: url("image.png");
-        background-size: cover; /* Adjusts the background image to cover the entire element */
-        background-position: center; /* Centers the background image */
+        background-image: url("assets/bg/main-forest.png");
+        background-size: cover; 
+        background-position: center; 
       }
+
     </style>
   </head>
 
   <body>
-    <nav class="flex justify-center">BCIT Buddy</nav>
+    <nav class="flex justify-center p-1">  <a href="#">
+        <img src="assets/elements/header-board.svg" alt="Home" style="width: 100px; height: 100px;" />
+    </a></nav>
 
     <!-- the body of your page goes here -->
     <div
@@ -127,12 +130,21 @@
     </div>
 
     <!-- our own footer goes here-->
-    <footer class="flex justify-between p-1 mx-4">
-        <div>home</div>
-        <div>my todo's</div>
-        <div>backpack</div>
-        <div>settings</div>
-    </footer>
+<footer class="flex justify-between p-1 mx-4">
+    <a href="#">
+        <img src="assets/elements/home.svg" alt="Home" style="width: 50px; height: 50px;" />
+    </a>
+    <a href="#">
+        <img src="assets/elements/groups.svg" alt="Home" style="width: 50px; height: 50px;" />
+    </a>
+     <a href="#">
+        <img src="assets/elements/to-do-list.svg" alt="Home" style="width: 50px; height: 50px;" />
+    </a>
+     <a href="#">
+        <img src="assets/elements/settings.svg" alt="Home" style="width: 50px; height: 50px;" />
+    </a>
+</footer>
+
 
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
