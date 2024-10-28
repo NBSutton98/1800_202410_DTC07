@@ -48,19 +48,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/rkb7vro.css">
   </head>
 
   <body>
-    <!------------------------------>
-    <!-- Your HTML Layout go here -->
-    <!------------------------------>
-
-    <!-- our own navbar goes here -->
-    <nav id="navbarPlaceholder"></nav>
+    <nav class="flex justify-center">BCIT Buddy</nav>
 
     <!-- the body of your page goes here -->
-    <div class="container-fluid bg-light text-dark p-5">
+    <div
+      class="flex flex-col items-center justify-center container-fluid bg-light text-dark p-10 bg-custom"
+    >
       <div class="container bg-light p-5">
         <h1 class="display-4">
           Good morning, <span id="name-goes-here"></span>
@@ -68,11 +64,66 @@
         <hr />
         <p>Quote of the day: The best view comes after the hardest climb.</p>
       </div>
+
+      <!-- Input Section for Tasks -->
+      <div class="bg-white rounded-lg shadow-md p-6 mt-5 w-full max-w-md">
+        <h2 class="text-lg font-semibold mb-4">Add a New Task</h2>
+        <form>
+          <div class="mb-4">
+            <label for="task" class="block text-sm font-medium text-gray-700"
+              >Task</label
+            >
+            <input
+              type="text"
+              id="task"
+              class="mt-1 block w-full border border-gray-300 rounded-lg p-2 focus:ring focus:ring-blue-400"
+              placeholder="Enter your task"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="due-date"
+              class="block text-sm font-medium text-gray-700"
+              >Due Date</label
+            >
+            <input
+              type="date"
+              id="due-date"
+              class="mt-1 block w-full border border-gray-300 rounded-lg p-2 focus:ring focus:ring-blue-400"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="description"
+              class="block text-sm font-medium text-gray-700"
+              >Description</label
+            >
+            <textarea
+              id="description"
+              rows="3"
+              class="mt-1 block w-full border border-gray-300 rounded-lg p-2 focus:ring focus:ring-blue-400"
+              placeholder="Enter a description"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white rounded-lg py-2 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+          >
+            Add Task
+          </button>
+        </form>
+      </div>
     </div>
 
-
     <!-- our own footer goes here-->
-    <nav id="footerPlaceholder"></nav>
+    <footer class="flex justify-between p-1 mx-4">
+        <div>home</div>
+        <div>my todo's</div>
+        <div>backpack</div>
+        <div>settings</div>
+    </footer>
 
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
