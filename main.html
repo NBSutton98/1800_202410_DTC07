@@ -10,9 +10,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!------------------------------------------>
-    <!-- Bootstrap Library CSS JS CDN go here -->
-    <!------------------------------------------>
+    <!---------------------------------------------->
+    <!-- Bootstrap Library CSS and JS CDN imports -->
+    <!---------------------------------------------->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,9 +25,9 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-------------------------------------------------------->
-    <!-- Firebase 8 Library related CSS, JS, JQuery go here -->
-    <!-------------------------------------------------------->
+    <!------------------------------------------->
+    <!-- Firebase 8 Library and other libraries -->
+    <!------------------------------------------->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
@@ -41,7 +41,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
 
     <!-------------------------------------------->
-    <!-- Other libraries and styles of your own -->
+    <!-- Additional libraries and custom styles -->
     <!-------------------------------------------->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -50,27 +50,35 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      /* You can set a custom background image in your CSS */
+      /* Custom background styling */
       .bg-custom {
         background-image: url("assets/bg/main-forest.png");
-        background-size: cover; 
-        background-position: center; 
+        background-size: cover;
+        background-position: center;
       }
-
     </style>
   </head>
 
   <body>
-    <nav class="flex justify-center p-1">  <a href="#">
+    <!-- Navigation Bar with centered text on SVG -->
+    <nav class="flex justify-center p-1">
+      <a href="#">
         <div style="position: relative; width: 100px; height: 100px;">
-    <img src="assets/elements/header-board.svg" alt="Header Board" style="width: 100%; height: 100%;" />
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 10px; text-align: center;">
-        BCIT Buddy
-    </div>
-</div>
-</nav>
+          <img
+            src="assets/elements/header-board.svg"
+            alt="Header Board"
+            style="width: 100%; height: 100%;"
+          />
+          <div
+            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 10px; text-align: center;"
+          >
+            BCIT Buddy
+          </div>
+        </div>
+      </a>
+    </nav>
 
-    <!-- the body of your page goes here -->
+    <!-- Main content section with custom background -->
     <div
       class="flex flex-col items-center justify-center container-fluid bg-light text-dark p-10 bg-custom"
     >
@@ -87,9 +95,7 @@
         <h2 class="text-lg font-semibold mb-4">Add a New Task</h2>
         <form>
           <div class="mb-4">
-            <label for="task" class="block text-sm font-medium text-gray-700"
-              >Task</label
-            >
+            <label for="task" class="block text-sm font-medium text-gray-700">Task</label>
             <input
               type="text"
               id="task"
@@ -99,11 +105,7 @@
             />
           </div>
           <div class="mb-4">
-            <label
-              for="due-date"
-              class="block text-sm font-medium text-gray-700"
-              >Due Date</label
-            >
+            <label for="due-date" class="block text-sm font-medium text-gray-700">Due Date</label>
             <input
               type="date"
               id="due-date"
@@ -112,11 +114,7 @@
             />
           </div>
           <div class="mb-4">
-            <label
-              for="description"
-              class="block text-sm font-medium text-gray-700"
-              >Description</label
-            >
+            <label for="description" class="block text-sm font-medium text-gray-700">Description</label>
             <textarea
               id="description"
               rows="3"
@@ -134,25 +132,21 @@
       </div>
     </div>
 
-    <!-- our own footer goes here-->
-<footer class="flex justify-between p-1 mx-4">
-    <a href="#">
-        <img src="assets/elements/home.svg" alt="Home" style="width: 50px; height: 50px;" />
-    </a>
-    <a href="#">
-        <img src="assets/elements/groups.svg" alt="Home" style="width: 50px; height: 50px;" />
-    </a>
-     <a href="#">
-        <img src="assets/elements/to-do-list.svg" alt="Home" style="width: 50px; height: 50px;" />
-    </a>
-     <a href="#">
-        <img src="assets/elements/settings.svg" alt="Home" style="width: 50px; height: 50px;" />
-    </a>
-</footer>
-
+    <!-- Footer with navigation icons -->
+    <footer class="flex justify-between p-1 mx-4">
+      <header id="navbar">
+        <nav id="nav-links">
+          <a href="index.html" id="home" class="nav-button"><img src="./assets/elements/home.svg" /></a>
+          <a href="index.html" id="my-list" class="nav-button"><img src="./assets/elements/to-do-list.svg" /></a>
+          <a href="index.html" id="groups" class="nav-button"><img src="./assets/elements/groups.svg" /></a>
+          <a href="index.html" id="bag" class="nav-button"><img src="./assets/elements/bag.svg" /></a>
+          <a href="index.html" id="settings" class="nav-button"><img src="./assets/elements/settings.svg" /></a>
+        </nav>
+      </header>
+    </footer>
 
     <!---------------------------------------------->
-    <!-- Your own JavaScript functions go here    -->
+    <!-- Custom JavaScript functions -->
     <!---------------------------------------------->
     <script src="./scripts/firebase_API.js"></script>
     <script src="./scripts/skeleton.js"></script>
