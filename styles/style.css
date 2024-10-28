@@ -45,3 +45,23 @@
 #nav-links a:hover {
     transform: scale(1.15); /* Scales the button 1.15x on hover using above parameters */
 }
+
+/* Demo Main Page Container Styling */
+#main-content {
+    width: 100%;
+    min-height: 100vh;
+    max-width: 600px;
+    background-image: url('/assets/bg/start-screen-mobile.png');
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#main-content #bear-buddy {
+    width: 50%;
+    min-width: 150px;
+    position: absolute;
+    bottom: 15%;
+    top: auto;
+}
