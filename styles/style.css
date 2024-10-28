@@ -1,1 +1,33 @@
+/* Navbar Styling */
+#navbar {  /* Main header container */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Sets header to be the highest layer; will always overlay content */
+    position: fixed; /* Fixes the header position to bottom even when scrolling */
+    bottom: 0px;
+}
 
+#nav-links {
+    width: 100%;
+    max-width: 600px; /* Displays in a mobile fashion even on desktop */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 4px;
+}
+
+#nav-links img {
+    width: 44px;
+}
+
+#nav-links a {
+    transition: transform 200ms linear; /* Sets parameters for hover animations */
+}
+
+#nav-links a:hover {
+    transform: scale(1.15); /* Scales the button 1.15x on hover using above parameters */
+}
