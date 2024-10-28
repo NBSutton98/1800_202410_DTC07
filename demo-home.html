@@ -25,32 +25,37 @@
 
 </head>
 
-  <body>
-    <!------------------------------>
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to BCIT Buddy!</h1>
-      <p class="lead">
-        This is DTC07 1800 group project revolving around community related task
-        managment
-      </p>
-      <hr class="my-4" />
-      <p>
-        Our goal is to create a tool that students can use to ogranize thier
-        daily lives and develop helathy habbits
-      </p>
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </p>
-    </div>
-    <!------------------------------>
-    <!-- Stuff for body goes here -->
+<body>
+    <!-- Navbar -->
+    <header id="navbar">
+        <nav id="nav-links">
+            <a href="index.html" id="home" class="nav-button"><img src="./assets/elements/home.svg"></a>
+            <a href="index.html" id="my-list" class="nav-button"><img src="./assets/elements/to-do-list.svg"></a>
+            <a href="index.html" id="groups" class="nav-button"><img src="./assets/elements/groups.svg"></a>
+            <a href="index.html" id="bag" class="nav-button"><img src="./assets/elements/bag.svg"></a>
+            <a href="index.html" id="settings" class="nav-button"><img src="./assets/elements/settings.svg"></a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-page">
+        <div id="main-content">
+            <img id="bear-buddy" src="./assets/animals/bear-stand.svg">
+            <!-- Overlay and Popup -->
+            <div class="popup lrg-board-popup" id="popup">
+              <h5>Important Message</h5>
+              <p>This is your custom popup message!</p>
+              <button class="btn btn-primary" id="closePopup">Close</button>
+            </div> 
+        </div>
+    </main>
 
   <!---------------------------------------------->
   <!-- Your own JavaScript functions go here    -->
   <!---------------------------------------------->
 
   <!-- Link to scripts of your own -->
-  <!-- <script src="./scripts/script.js"></script> -->
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>

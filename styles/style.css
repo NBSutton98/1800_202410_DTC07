@@ -1,1 +1,105 @@
+/* Keyframe Animations */
+@keyframes fadeInFromBottom {
+    0% {
+        opacity: 0; /* Start fully transparent */
+        transform: translateY(30px); /* Start 30px below */
+    }
+    100% {
+        opacity: 1; /* End fully opaque */
+        transform: translateY(0); /* End at original position */
+    }
+}
 
+/* Navbar Styling */
+#navbar {  /* Main header container */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Sets header to be the highest layer; will always overlay content */
+    position: fixed; /* Fixes the header position to bottom even when scrolling */
+    bottom: 0px;
+    animation: fadeInFromBottom 700ms ease forwards; /* Apply the animation */
+    animation-delay: 0ms; /* Delay before the animation starts */
+}
+
+#nav-links { /* Navigation container */
+    width: 100%;
+    max-width: 600px; /* Displays in a mobile fashion even on desktop */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 8px 4px;
+}
+
+#nav-links img {
+    width: 44px;
+}
+
+#nav-links a {
+    transition: transform 200ms linear; /* Sets parameters for hover animations */
+}
+
+#nav-links a:hover {
+    transform: scale(1.15); /* Scales the button 1.15x on hover using above parameters */
+}
+
+/* Demo Main Page Container Styling */
+#main-page {
+    /* display: flex; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-content {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('/assets/bg/start-screen-mobile.png');
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+}
+
+#main-content #bear-buddy {
+    width: 50%;
+    min-width: 150px;
+    max-width: 300px;
+    position: absolute;
+    bottom: 15%;
+    top: auto;
+}
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 0px;
+    z-index: 1000; /* Make sure it appears above other content */
+}
+
+.popup.show {
+    display: block; /* Show the popup when the class is added */
+}
+
+
+.lrg-board-popup {
+    background-image: url("/assets/elements/lrg-board.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent !important;
+    width: 80%;
+    min-height: 250px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
