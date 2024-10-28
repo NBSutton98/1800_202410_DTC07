@@ -68,7 +68,7 @@ h6 {
 
 /* Demo Main Page Container Styling */
 #main-page {
-    /* display: flex; */
+    display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -77,23 +77,24 @@ h6 {
 #main-content {
     width: 100%;
     min-height: 100vh;
-    background-image: url('/assets/bg/start-screen-mobile.png');
+    background-image: url('/assets/bg/daytime-forest.svg');
     background-position: top center;
     background-size: cover;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     max-width: 600px;
 }
 
 #main-content #bear-buddy {
-    width: 50%;
+    width: 40%;
     min-width: 150px;
     max-width: 300px;
     position: absolute;
-    bottom: 15%;
+    bottom: 25%;
     top: auto;
 }
-
 
 
 /* Popup Stylings */
@@ -130,17 +131,26 @@ h6 {
 }
 
 /* Button Stylings */
-.med-btn {
-    border: 0px;
-    background-image: url("/assets/elements/board-button.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
+.md-btn {
+    position: relative;
+    margin-bottom: 90px;
+    border: none;
+    width: 50vw !important;
+    min-width: 250px;
+    height: 12.5vh;
     background-color: transparent;
-    width: 100%;
-    padding: 4px 24px 12px !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'giulia';
-    line-height: 1;
+    background-image: url("/assets/elements/board-button.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'giulia-plain';
+    font-weight: 600;
+    font-size: clamp(32px, 5vw, 44px);
+    color: #4C2400 !important;
+    padding: 0 10px 10px;
+    transition: transform 200ms linear; /* Sets parameters for hover animations */
+}
+
+.md-btn:hover {
+    transform: scale(1.15); /* Scales the button 1.15x on hover using above parameters */
 }
