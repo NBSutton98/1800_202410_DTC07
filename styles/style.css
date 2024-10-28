@@ -21,7 +21,7 @@
     z-index: 999; /* Sets header to be the highest layer; will always overlay content */
     position: fixed; /* Fixes the header position to bottom even when scrolling */
     bottom: 0px;
-    animation: fadeInFromBottom 1s ease forwards; /* Apply the animation */
+    animation: fadeInFromBottom 700ms ease forwards; /* Apply the animation */
     animation-delay: 0ms; /* Delay before the animation starts */
 }
 
