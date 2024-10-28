@@ -68,7 +68,7 @@ h6 {
 
 /* Demo Main Page Container Styling */
 #main-page {
-    display: flex;
+    /* display: flex; */
     width: 100%;
     justify-content: center;
     align-items: center;
