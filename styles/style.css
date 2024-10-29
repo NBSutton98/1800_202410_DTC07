@@ -18,6 +18,7 @@
 
 h1, h2 {
     font-family: 'giulia';
+    font-weight: 500;
 }
 
 h3, h4, h5 {
@@ -45,8 +46,8 @@ h6 {
     animation-delay: 0ms; /* Delay before the animation starts */
 }
 
-#about-us {
-    position: absolute;
+#about-us-btn {
+    position: fixed;
     z-index: 999;
     top: 5px;
     right: 5px;
@@ -137,6 +138,84 @@ h6 {
     margin-bottom: 35%;
 }
 
+
+/* About Us Page Styling */
+#about-us {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("/assets/bg/forest-pattern.png");
+    background-size: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+#about-us-content {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+#about-us-header {
+    width: 50%;
+}
+
+#about-us-header h1 {
+    font-size: clamp(48px, 8vw, 60px);
+    font-weight: 700;
+    margin-bottom: -10px;
+    margin-top: -8px;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.team-card p {
+    font-weight: 600;
+}
+
+.team-img {
+    aspect-ratio: 1;
+    width: 22.5vw;
+    max-width: 340px;
+    border-radius: 100%;
+    background-position: center center;
+    background-size: cover;
+    border: 6px solid #FAF9DA;
+    box-shadow: 8px 8px 10px #00000050;
+}
+
+.team-info {
+    aspect-ratio: 2.24;
+    width: 77.5%;
+    max-width: 550px;
+    background-image: url("/assets/elements/team-info-bg.svg");
+    background-position: center center;
+    background-size: cover;
+    padding: 3%;
+    text-align: center;
+    color: #663000;
+}
+
+/* Asset Stylings */
+
+.header-board {
+    aspect-ratio: 2.74;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/elements/header-board.svg");
+    color: #663000;
+}
+
 /* Button Stylings */
 .md-btn {
     border: none;
@@ -171,6 +250,18 @@ h6 {
 
 #welcome h1 {
     -webkit-text-stroke: 4px #663000;
+}
+
+#about-us {
+    background-size: 85%;
+}
+
+#about-us-header {
+    width: 85%;
+}
+
+.team-card {
+    flex-direction: column;
 }
     
 }
