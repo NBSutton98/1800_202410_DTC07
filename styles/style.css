@@ -45,9 +45,31 @@ h6 {
     animation-delay: 0ms; /* Delay before the animation starts */
 }
 
+#about-us {
+    position: absolute;
+    z-index: 999;
+    top: 5px;
+    right: 5px;
+}
+
+#info {
+    aspect-ratio: 1;
+    border: none;
+    background-color: transparent;
+    background-image: url("/assets/elements/about-us.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: clamp(44px, 10vw, 64px);
+    transition: transform 200ms linear; /* Sets parameters for hover animations */
+}
+
+#info:hover {
+    transform: scale(0.85); /* Scales the button 1.15x on hover using above parameters */
+}
+
 #nav-links { /* Navigation container */
     width: 100%;
-    max-width: 600px; /* Displays in a mobile fashion even on desktop */
+    max-width: 900px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -55,7 +77,7 @@ h6 {
 }
 
 #nav-links img {
-    width: 44px;
+    width: clamp(40px, 8vw, 60px);
 }
 
 #nav-links a {
@@ -72,28 +94,47 @@ h6 {
     width: 100%;
     justify-content: center;
     align-items: center;
+    background-image: url('/assets/bg/daytime-forest.svg');
+    background-position: bottom center;
+    background-size: cover;
 }
 
 #main-content {
     width: 100%;
     min-height: 100vh;
-    background-image: url('/assets/bg/daytime-forest.svg');
-    background-position: top center;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    max-width: 600px;
+}
+
+#welcome {
+    text-align: center;
+    position: absolute;
+    top: 3.5%;
+    color: #FAF9DA;
+    max-width: 800px;
+}
+
+#welcome h1 {
+    font-size: clamp(72px, 15vw, 160px) !important;
+    font-weight: 900;
+    letter-spacing: -0.25vw;    
+    -webkit-text-stroke: 6px #663000;
 }
 
 #main-content #bear-buddy {
-    width: 40%;
-    min-width: 150px;
-    max-width: 300px;
+    width: 35%;
+    min-width: 120px;
+    max-width: 200px;
     position: absolute;
-    bottom: 25%;
+    bottom: 29%;
     top: auto;
+}
+
+#home-login {
+    position: relative;
+    margin-bottom: 27.5%;
 }
 
 
@@ -132,12 +173,9 @@ h6 {
 
 /* Button Stylings */
 .md-btn {
-    position: relative;
-    margin-bottom: 90px;
     border: none;
-    width: 50vw !important;
-    min-width: 250px;
-    height: 12.5vh;
+    aspect-ratio: 3.02;
+    width: clamp(180px, 35vw, 320px) !important;
     background-color: transparent;
     background-image: url("/assets/elements/board-button.svg");
     background-position: center center;
@@ -146,11 +184,27 @@ h6 {
     font-family: 'giulia-plain';
     font-weight: 600;
     font-size: clamp(32px, 5vw, 44px);
-    color: #4C2400 !important;
+    color: #663000 !important;
     padding: 0 10px 10px;
     transition: transform 200ms linear; /* Sets parameters for hover animations */
 }
 
 .md-btn:hover {
-    transform: scale(1.15); /* Scales the button 1.15x on hover using above parameters */
+    transform: scale(0.85); /* Scales the button 1.15x on hover using above parameters */
+}
+
+
+
+
+/* Small Screen Stylings */
+@media screen and (max-width: 767px) {
+
+#welcome {
+    margin-top: 12.5%;
+}
+
+#welcome h1 {
+    -webkit-text-stroke: 4px #663000;
+}
+    
 }
