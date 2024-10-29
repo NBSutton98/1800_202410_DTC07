@@ -264,6 +264,15 @@ h6 {
 }
 
 /* Button Stylings */
+.sq-btn {
+    border: none;
+    aspect-ratio: 1;
+    width: clamp(40px, 8vw, 56px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .md-btn {
     border: none;
     aspect-ratio: 3.02;
