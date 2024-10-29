@@ -124,9 +124,9 @@ h6 {
 }
 
 #main-content #bear-buddy {
-    width: 35%;
-    min-width: 120px;
-    max-width: 200px;
+    width: 40%;
+    min-width: 150px;
+    max-width: 220px;
     position: absolute;
     bottom: 29%;
     top: auto;
@@ -134,48 +134,14 @@ h6 {
 
 #home-login {
     position: relative;
-    margin-bottom: 27.5%;
-}
-
-
-/* Popup Stylings */
-.popup {
-    display: none; /* Hidden by default */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    border: 0px;
-    z-index: 1000; /* Make sure it appears above other content */
-    padding: 10px;
-}
-
-.popup.show {
-    display: block; /* Show the popup when the class is added */
-}
-
-.lrg-board-popup {
-    background-image: url("/assets/elements/lrg-board.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: transparent !important;
-    width: 80%;
-    max-width: 450px;
-    min-height: 40vh;
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    margin-bottom: 35%;
 }
 
 /* Button Stylings */
 .md-btn {
     border: none;
     aspect-ratio: 3.02;
-    width: clamp(180px, 35vw, 320px) !important;
+    width: clamp(220px, 40vw, 320px) !important;
     background-color: transparent;
     background-image: url("/assets/elements/board-button.svg");
     background-position: center center;
