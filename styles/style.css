@@ -175,6 +175,14 @@ h6 {
     -webkit-text-stroke: 6px #663000;
 }
 
+.group-option{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 18%;
+}
+
 
 
 
