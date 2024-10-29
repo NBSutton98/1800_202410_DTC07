@@ -13,16 +13,18 @@
 /* Font Stylings */
 * {
     font-family: 'museo-sans';
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h1, h2 {
     font-family: 'giulia';
     font-weight: 500;
+    margin: 0;
 }
 
 h3, h4, h5 {
     font-family: 'giulia-plain';
+    margin: 0;
 }
 
 h6 {
@@ -177,10 +179,12 @@ h6 {
     align-items: center;
     padding-top: 20px;
     gap: 20px;
+    padding-bottom: 85px;
 }
 
 #about-us-header {
     width: 50%;
+    max-width: 480px;
 }
 
 #about-us-header h1 {
@@ -190,6 +194,28 @@ h6 {
     margin-top: -8px;
 }
 
+#dev-team {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+#dev-team h3 {
+    font-weight: 700;
+    font-size: clamp(32px, 4vw, 44px);
+    margin-bottom: 0px;
+}
+
+#dev-team h4 {
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+#timmy {
+    flex-direction: row-reverse;
+}
+
 .team-card {
     display: flex;
     flex-direction: row;
@@ -197,29 +223,30 @@ h6 {
     gap: 24px;
 }
 
-.team-card p {
-    font-weight: 600;
+.team-img-frame {
+    padding: 5px;
+    background-image: url("/assets/elements/team-img-frame.svg");
+    background-size: contain;
+    aspect-ratio: 1;
 }
 
 .team-img {
     aspect-ratio: 1;
     width: 22.5vw;
-    max-width: 340px;
+    max-width: 300px;
     border-radius: 100%;
     background-position: center center;
     background-size: cover;
-    border: 6px solid #FAF9DA;
-    box-shadow: 8px 8px 10px #00000050;
 }
 
 .team-info {
     aspect-ratio: 2.24;
     width: 77.5%;
-    max-width: 550px;
+    max-width: 600px;
     background-image: url("/assets/elements/team-info-bg.svg");
     background-position: center center;
     background-size: cover;
-    padding: 3%;
+    padding: 16px;
     text-align: center;
     color: #663000;
 }
@@ -262,7 +289,7 @@ h6 {
 
 
 /* Small Screen Stylings */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
 
 #welcome {
     margin-top: 12.5%;
@@ -281,6 +308,23 @@ h6 {
 }
 
 .team-card {
+    flex-direction: column;
+}
+
+.team-info {
+    background-image: url("/assets/elements/lrg-board.svg");
+    aspect-ratio: 1.29;
+    width: 95%;
+    padding: 12px;
+    justify-content: center;
+    align-content: center;
+}
+
+.team-img {
+    width: 80vw;
+}
+
+#timmy {
     flex-direction: column;
 }
     
