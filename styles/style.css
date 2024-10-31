@@ -176,11 +176,16 @@ h6 {
 }
 
 .group-option{
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     width: 18%;
+}
+
+.group-option button{
+    font-size: clamp(15px, 15vw, 25px) !important;
 }
 
 
