@@ -282,23 +282,35 @@ h6 {
 }
 
 /* To-Do List */
-#to-do {
-    background-image: url("/assets/bg/hallway-01.png");
+
+#to-do-buddy {
+    top: 15%;
 }
 
-
 /* Asset Stylings */
+
+.buddy-avatar {
+    width: 45%;
+    min-width: 150px;
+    max-width: 250px;
+    position: absolute;
+    top: auto;
+}
 
 .bg-container {
     width: 100%;
     display: flex;
     justify-content: center;
+    background-size: cover;
 }
 
 .main-content {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 900px;
     min-height: 100vh;
+    align-items: center;
 }
 
 .header-board {
