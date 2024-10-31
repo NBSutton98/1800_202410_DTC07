@@ -276,7 +276,25 @@ h6 {
     color: #663000;
 }
 
+/* To-Do List */
+#to-do {
+    background-image: url("/assets/bg/hallway-01.png");
+}
+
+
 /* Asset Stylings */
+
+.bg-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 900px;
+    min-height: 100vh;
+}
 
 .header-board {
     aspect-ratio: 2.74;
@@ -360,6 +378,10 @@ h6 {
 
 #timmy {
     flex-direction: column;
+}
+
+#to-do {
+    background-image: url("/assets/bg/to-do-bg.webp");
 }
     
 }
