@@ -336,7 +336,7 @@ h6 {
 .md-btn {
     border: none;
     aspect-ratio: 3.02;
-    width: clamp(220px, 40vw, 320px) !important;
+    width: clamp(220px, 40vw, 300px) !important;
     background-color: transparent;
     background-image: url("/assets/elements/board-button.svg");
     background-position: center center;
