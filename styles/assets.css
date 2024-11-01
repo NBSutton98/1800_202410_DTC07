@@ -1,0 +1,66 @@
+.sq-btn {
+    border: none;
+    aspect-ratio: 1;
+    width: clamp(40px, 8vw, 56px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.md-btn {
+    border: none;
+    aspect-ratio: 3.02;
+    width: clamp(180px, 30vw, 260px) !important;
+    background-color: transparent;
+    background-image: url("/assets/elements/board-button.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'giulia-plain';
+    font-weight: 600;
+    font-size: clamp(25px, 3.8vw, 32px);
+    color: #663000 !important;
+    padding: 0 10px 10px;
+    transition: transform 200ms linear; /* Sets parameters for hover animations */
+}
+
+.md-btn:hover {
+    transform: scale(0.85); /* Scales the button 1.15x on hover using above parameters */
+}
+
+
+/* Asset Stylings */
+
+.buddy-avatar {
+    width: 45%;
+    min-width: 150px;
+    max-width: 250px;
+    position: absolute;
+    top: auto;
+}
+
+.bg-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.header-board {
+    aspect-ratio: 2.74;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/elements/header-board.svg");
+    color: #663000;
+}
