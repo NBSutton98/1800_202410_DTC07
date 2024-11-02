@@ -8,6 +8,12 @@ function getNameFromAuth() {
       userName = user.displayName;
 
       document.getElementById("name-goes-here").innerText = userName;
+
+      //method #2:  insert using jquery
+      //$("#name-goes-here").text(userName); //using jquery
+
+      //method #3:  insert using querySelector
+      //document.querySelector("#name-goes-here").innerText = userName
     } else {
       // No user is signed in.
       console.log("No user is logged in");
@@ -17,9 +23,9 @@ function getNameFromAuth() {
 getNameFromAuth(); //run the function
 
 document.querySelector("form").addEventListener("submit", async (event) => {
+  event.preventDefault(); // Prevent the form from submitting the traditional way
 
-
-  // Get infromation from the input cards
+  // Get form data
   const task = document.getElementById("task").value;
   const dueDate = document.getElementById("due-date").value;
   const description = document.getElementById("description").value;
@@ -47,8 +53,8 @@ db.collection("tasks")
   .onSnapshot((snapshot) => {
     taskList.innerHTML = ""; // Clear existing tasks
     snapshot.forEach((doc) => {
-       taskData = doc.data();
-       taskElement = document.createElement("div");
+      const taskData = doc.data();
+      const taskElement = document.createElement("div");
       taskElement.classList.add(
         "bg-white",
         "rounded-lg",
@@ -87,4 +93,3 @@ db.collection("tasks")
       }
     });
   });
-
