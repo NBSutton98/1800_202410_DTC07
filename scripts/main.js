@@ -22,6 +22,10 @@ function getNameFromAuth() {
 }
 getNameFromAuth(); //run the function
 
+//enter input using html input fields
+//recive input and process to  fires store db 
+//retreuve data and display on html page 
+
 document.querySelector("form").addEventListener("submit", async (event) => {
   event.preventDefault(); // Prevent the form from submitting the traditional way
 
@@ -48,11 +52,9 @@ document.querySelector("form").addEventListener("submit", async (event) => {
 const taskList = document.getElementById("task-list");
 
 // Listen for real-time updates in Firestore
-db.collection("tasks")
-  .orderBy("createdAt", "desc")
-  .onSnapshot((snapshot) => {
+db.collection("tasks").orderBy("createdAt", "desc").onSnapshot((snapshot) => {
     taskList.innerHTML = ""; // Clear existing tasks
-    snapshot.forEach((doc) => {
+    snapshot.docs.forEach((doc) => {
       const taskData = doc.data();
       const taskElement = document.createElement("div");
       taskElement.classList.add(
@@ -71,6 +73,7 @@ db.collection("tasks")
 
       taskList.appendChild(taskElement);
     });
+
 
     // Add an event listener to the task list to listen for clicks on any task element
     taskList.addEventListener("click", async (event) => {
