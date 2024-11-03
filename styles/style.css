@@ -73,7 +73,7 @@ h6 {
     background-image: url("/assets/SVG/info.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    width: clamp(44px, 10vw, 64px);
+    width: clamp(50px, 10vw, 70px);
     transition: transform 200ms linear; /* Sets parameters for hover animations */
 }
 
@@ -91,7 +91,7 @@ h6 {
 }
 
 #nav-links img {
-    width: clamp(40px, 8vw, 60px);
+    width: clamp(50px, 10vw, 70px);
 }
 
 #nav-links a {

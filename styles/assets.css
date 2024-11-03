@@ -1,36 +1,118 @@
-.sq-btn {
-    border: none;
-    aspect-ratio: 1;
-    width: clamp(40px, 8vw, 56px);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url('/assets/elements/blank-sq-button.svg');
-}
-
-.sq-btn img {
-    width: clamp(25px, 3vw, 32px)
-}
-
 .confirm-btn {
     border: none;
     aspect-ratio: 1;
-    width: clamp(40px, 8vw, 56px);
+    width: clamp(50px, 10vw, 64px);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url('/assets/elements/confirm.svg');
+    background-color: transparent;
+    background-image: url('/assets/SVG/confirm.svg');
 }
 
 .cancel-btn {
     border: none;
     aspect-ratio: 1;
-    width: clamp(40px, 8vw, 56px);
+    width: clamp(50px, 10vw, 64px);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url('/assets/elements/cancel.svg');
+    background: transparent;
+    background-image: url('/assets/SVG/cancel.svg');
 }
+
+.logout-btn {
+    border: none;
+    aspect-ratio: 1;
+    width: clamp(50px, 10vw, 64px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background: transparent;
+    background-image: url('/assets/SVG/logout.svg');
+}
+
+.back-btn {
+    border: none;
+    aspect-ratio: 1;
+    width: clamp(50px, 10vw, 64px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background: transparent;
+    background-image: url('/assets/SVG/backward.svg');
+}
+
+.continue-btn {
+    border: none;
+    aspect-ratio: 1;
+    width: clamp(50px, 10vw, 64px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background: transparent;
+    background-image: url('/assets/SVG/forward.svg');
+}
+
+.green-btn {
+    aspect-ratio: 2.27;
+    border: none;
+    background-color: transparent;
+    background-image: url("/assets/SVG/green-btn.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: clamp(200px, 45vw, 280px);
+    color: #fff;
+    font-family: 'giulia-plain';
+    font-weight: 500;
+    font-size: clamp(28px, 5vw, 40px);
+    text-shadow: 2.5px 2.5px rgba(0, 0, 0, .20);
+}
+
+.grey-btn {
+    aspect-ratio: 2.27;
+    border: none;
+    background-color: transparent;
+    background-image: url("/assets/SVG/grey-btn.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: clamp(200px, 45vw, 280px);
+    color: #fff;
+    font-family: 'giulia-plain';
+    font-weight: 500;
+    font-size: clamp(28px, 5vw, 40px);
+    text-shadow: 2.5px 2.5px rgba(0, 0, 0, .20);
+}
+
+.red-btn {
+    aspect-ratio: 2.27;
+    border: none;
+    background-color: transparent;
+    background-image: url("/assets/SVG/red-btn.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: clamp(200px, 45vw, 280px);
+    color: #fff;
+    font-family: 'giulia-plain';
+    font-weight: 500;
+    font-size: clamp(28px, 5vw, 40px);
+    text-shadow: 2.5px 2.5px rgba(0, 0, 0, .20);
+}
+
+.reg-btn {
+    aspect-ratio: 2.27;
+    border: none;
+    background-color: transparent;
+    background-image: url("/assets/SVG/yellow-btn.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: clamp(200px, 45vw, 280px);
+    color: #fff;
+    font-family: 'giulia-plain';
+    font-weight: 500;
+    font-size: clamp(28px, 5vw, 40px);
+    text-shadow: 2.5px 2.5px rgba(0, 0, 0, .20);
+}
+
 
 .sm-btn {
     border: none;
