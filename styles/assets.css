@@ -256,7 +256,7 @@
 
 .option-menu {
     aspect-ratio: .583;
-    width: clamp(320px, 80vw, 420px);
+    width: clamp(300px, 75vw, 460px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -265,8 +265,8 @@
 }
 
 .option-menu-head {
-    font-size: clamp(40px, 5.8vw, 50px);
-    letter-spacing: -1px;
+    font-size: clamp(36px, 5.8vw, 50px);
+    letter-spacing: -3.5px;
     position: relative;
     top: .5%;
     color: #fff;
@@ -288,13 +288,13 @@
     border: none;
     background-color: transparent;
     background-image: url("/assets/SVG/option-btn.svg");
-    width: clamp(160px, 55vw, 260px);
+    width: clamp(140px, 52vw, 300px);
     text-transform: uppercase;
     font-family: 'giulia-plain';
     font-weight: 600;
-    font-size: clamp(36px, 4.5vw, 44px);
+    font-size: clamp(28px, 4.5vw, 40px);
     color: #fff;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
     -webkit-text-stroke: 1px #82C822;
     text-shadow: 3px 3px rgba(0, 0, 0, .20);
     padding-bottom: 8px;
@@ -305,7 +305,7 @@
     border: none;
     background-color: transparent;
     background-image: url("/assets/SVG/option-btn-active.svg");
-    width: clamp(160px, 55vw, 260px);
+    width: clamp(140px, 52vw, 300px);
     text-transform: uppercase;
     font-family: 'giulia-plain';
     font-weight: 600;

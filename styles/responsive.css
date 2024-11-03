@@ -1,5 +1,9 @@
 @media screen and (max-width: 600px) {
 
+    #groups-menu {
+        margin-top: 15%;
+    }
+
     .msg-close {
         margin-top: 36px;
     }

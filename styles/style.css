@@ -167,54 +167,13 @@ h6 {
 }
 
 /*Group page */
-.group-page{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background-image: url('/assets/bg/hallway-01.png');
-    background-position: bottom center;
-    background-size: cover;
+#groups-menu-home {
+    background-image: url("/assets/bg/BCIT-exterior.webp");
 }
 
-.group-content{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+#groups-menu {
+    margin-top: 3.5%;
 }
-
-.group-title{
-    text-align: center;
-    position: absolute;
-    top: 3.5%;
-    color: #FAF9DA;
-    max-width: 800px;
-}
-
-.group-title h1{
-    font-size: clamp(52px, 15vw, 90px) !important;
-    font-weight: 900;
-    letter-spacing: -0.25vw;    
-    -webkit-text-stroke: 6px #663000;
-}
-
-.group-option{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 18%;
-}
-
-.group-option button{
-    font-size: clamp(15px, 15vw, 25px) !important;
-}
-
-
 
 
 /* About Us Page Styling */
