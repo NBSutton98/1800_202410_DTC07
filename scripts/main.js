@@ -9,11 +9,6 @@ function getNameFromAuth() {
 
       document.getElementById("name-goes-here").innerText = userName;
 
-      //method #2:  insert using jquery
-      //$("#name-goes-here").text(userName); //using jquery
-
-      //method #3:  insert using querySelector
-      //document.querySelector("#name-goes-here").innerText = userName
     } else {
       // No user is signed in.
       console.log("No user is logged in");
@@ -50,14 +45,20 @@ document
 // Reference to the chat display
 const chatDisplay = document.getElementById("chat-display");
 
-// Listen for new messages in real-time
+// get the messages sent in the chat
 db.collection("messages")
-  .orderBy("createdAt") // Ensure messages are ordered by timestamp
+//keep them in order of time sent
+  .orderBy("createdAt") 
+//waits for any changes to message 
   .onSnapshot((snapshot) => {
+//make each message a div
     chatDisplay.innerHTML = "";
+//loops through each message 
     snapshot.forEach((doc) => {
       const messageData = doc.data();
+//creates a div
       const messageElement = document.createElement("div");
+//takes firestron message text and adds it to the div
       messageElement.textContent = messageData.text;
 
       // Append each message to the chat display
