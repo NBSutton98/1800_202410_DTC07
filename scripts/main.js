@@ -44,9 +44,26 @@ document
     } catch (error) {
       console.error("Error adding document: ", error);
     }
+    //retreuve data and display on html page
   });
 
-//retreuve data and display on html page
+// Reference to the chat display
+const chatDisplay = document.getElementById("chat-display");
+
+// Listen for new messages in real-time
+db.collection("messages")
+  .orderBy("createdAt") // Ensure messages are ordered by timestamp
+  .onSnapshot((snapshot) => {
+    chatDisplay.innerHTML = "";
+    snapshot.forEach((doc) => {
+      const messageData = doc.data();
+      const messageElement = document.createElement("div");
+      messageElement.textContent = messageData.text;
+
+      // Append each message to the chat display
+      chatDisplay.appendChild(messageElement);
+    });
+  });
 
 document.querySelector("form").addEventListener("submit", async (event) => {
   event.preventDefault(); // Prevent the form from submitting the traditional way
@@ -65,8 +82,6 @@ document.querySelector("form").addEventListener("submit", async (event) => {
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
     });
   } catch (error) {}
-
-  // Clear form fields);
 
   const taskList = document.getElementById("task-list");
 
