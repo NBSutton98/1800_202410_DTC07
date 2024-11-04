@@ -25,6 +25,18 @@
   <link rel="stylesheet" href="./styles/assets.css">
   <link rel="stylesheet" href="./styles/responsive.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css"
+  />
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
 </head>
 
 <body>
@@ -40,7 +52,7 @@
       </header>
   
       <!-- Main Content -->
-      <main id="groups-menu-home" class="bg-container"> <!-- PAGE BACKGROUND GOES IN THIS CONTAINER -->
+      <main id=""> <!-- PAGE BACKGROUND GOES IN THIS CONTAINER -->
   
         <!-- Top Buttons -->
         <a href="about-us.html" id="about-us-btn">
@@ -49,47 +61,20 @@
         <a id="logout-btn">
           <button class="logout-btn" onclick="logout()"></button>
         </a>
-
-        <div class="main-content">
-
-          <div id="groups-menu" class="option-menu">
-            <h2 class="option-menu-head">Group Options</h2>
-            <div class="option-menu-btns">
-              <a href="">
-                <button class="option-btn">View Groups</button>
-              </a>
-      
-              <a href="">
-                <button class="option-btn">Join Group</button>
-              </a>
-      
-              <a href="">
-                <button class="option-btn">Create Group</button>
-              </a>
-      
-              <a href="">
-                <button class="option-btn-active">Exit</button>
-              </a>
-            </div>
-          </div>
-
+        
+        <div id="welcome">
+          <h1>BCITBuddy</h1>
         </div>
+        <img id="bear-buddy" src="./assets/animals/bear-stand.svg">
       </div>
-
-
-
-      <!---------------------------->
-      <!-- ADD PAGE CONTENT BELOW -->
-      <!---------------------------->
-      
-    </main>
+  </main>
 
   <!---------------------------------------------->
   <!-- Your own JavaScript functions go here    -->
   <!---------------------------------------------->
 
   <!-- Link to scripts of your own -->
-  <script src="./scripts/script.js"></script>
+  <script src="./scripts/script.js"> </script>
 </body>
 
 </html>

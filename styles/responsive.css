@@ -1,0 +1,31 @@
+@media screen and (max-width: 600px) {
+
+    #groups-menu {
+        margin-top: 15%;
+    }
+
+    .msg-close {
+        margin-top: 36px;
+    }
+
+    .msg-popup {
+        gap: 20px;
+    }
+
+    .msg-popup-buttons {
+        padding-top: 10px;
+    }
+
+    .msg-popup-text {
+        padding: 24px;
+    }
+
+    .msg-popup-head {
+        padding-top: 24px;
+    }
+    
+    .option-menu-btns {
+        gap: 12px;
+        margin-top: -8px;
+    }
+}
