@@ -118,7 +118,7 @@ document.querySelector("form").addEventListener("submit", async (event) => {
         <p class="text-sm text-gray-700">Due: ${taskData.dueDate}</p>
         <p class="text-sm">${taskData.description}</p>
         <button class="delete-btn text-red-500 mt-2" data-id="${doc.id}">Delete</button>
-        <a class="viewbtn" href="group-single-task.html?docID=${doc.id}">view</a>      `;
+        <a class="view-btn" href="group-single-task.html?docID=${doc.id}">view</a>      `;
         //adds the div after taskList
       taskList.appendChild(taskElement);
     });
