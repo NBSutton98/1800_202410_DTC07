@@ -66,6 +66,13 @@ h6 {
     left: 5px;
 }
 
+#back-btn{
+    position: fixed;
+    z-index: 999;
+    top: 5px;
+    left: 5px;
+}
+
 #logout {
     aspect-ratio: 1;
     border: none;
@@ -252,6 +259,27 @@ h6 {
     padding: 16px;
     text-align: center;
     color: #663000;
+}
+
+/*group-single-task*/
+#task-frame{
+    background-image: url("/assets/bg/classroom-01.png");
+    align-items: center;
+    justify-content: center;
+}
+
+.task-info{
+    background-image: url("/assets/bg/classroom-01.png");
+    position: fixed;
+    z-index: 999;
+    justify-content: center;
+    top: 25%;
+}
+
+.view-btn{
+    margin-left: 80%;
+    bottom: 5px;
+    left: 5px
 }
 
 /* To-Do List */
