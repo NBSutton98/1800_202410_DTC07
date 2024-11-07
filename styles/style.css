@@ -269,11 +269,11 @@ h6 {
 }
 
 .task-info{
-    background-image: url("/assets/bg/classroom-01.png");
     position: fixed;
     z-index: 999;
     justify-content: center;
     top: 25%;
+    width: 50%;
 }
 
 .view-btn{
