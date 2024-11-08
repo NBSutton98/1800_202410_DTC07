@@ -191,6 +191,7 @@ h6 {
     -webkit-text-stroke: 2px #663000;
     color:#FAF9DA;
     border-bottom: none;
+    min-width: 200px;
     
 }
 
