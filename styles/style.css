@@ -159,6 +159,14 @@ h6 {
     -webkit-text-stroke: 6px #663000;
 }
 
+#user-greeting {
+    font-size: clamp(72px, 15vw, 160px) !important;
+    font-weight: 900;
+    letter-spacing: -0.25vw;    
+    font-family: 'giulia-plain' !important;
+    -webkit-text-stroke: 6px #663000;
+}
+
 #main-content #bear-buddy {
     width: 40%;
     min-width: 150px;
