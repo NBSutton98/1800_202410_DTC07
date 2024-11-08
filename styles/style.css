@@ -21,7 +21,7 @@ a {
 }
 
 h1, h2 {
-    font-family: 'giulia';
+    font-family: 'giulia' !important;
     font-weight: 500;
     margin: 0;
 }
@@ -341,12 +341,23 @@ h6 {
 
 .task-info h1 {
     font-size: clamp(20px, 4vw, 36px);
-    letter-spacing: -1px;
+    letter-spacing: -2px;
     color: #fff;
-    /* padding-top: 10%; */
+    padding-top: 1%;
+    margin-bottom: 24px;
     -webkit-text-stroke: 1px #82C822;
     text-shadow: 3px 3px rgba(0, 0, 0, .20);
 }
+
+#taskInfoFields {
+    width: 100% !important;
+    min-width: 330px;
+    margin-bottom: 0 !important;
+}
+
+/* .task-info .mb-5 {
+    margin-top: ;
+} */
 
 .view-btn{
     margin-left: 80%;
@@ -359,5 +370,4 @@ h6 {
 #to-do-buddy {
     top: 15%;
 }
-
 
