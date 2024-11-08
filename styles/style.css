@@ -66,6 +66,7 @@ h6 {
     left: 5px;
 }
 
+
 #back-btn{
     position: fixed;
     z-index: 999;
@@ -159,12 +160,16 @@ h6 {
     -webkit-text-stroke: 6px #663000;
 }
 
-#user-greeting {
+
+
+#user-greeting, #name-goes-here {
     font-size: clamp(72px, 15vw, 160px) !important;
     font-weight: 900;
     letter-spacing: -0.25vw;    
     font-family: 'giulia-plain' !important;
     -webkit-text-stroke: 6px #663000;
+    color:#FAF9DA
+    
 }
 
 #main-content #bear-buddy {
