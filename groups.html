@@ -59,6 +59,12 @@
         background-size: cover;
         background-position: center;
       }
+
+            .button-custom {
+        background-image: url("assets/bg/main-forest.png");
+        background-size: cover;
+        background-position: center;
+      }
     </style>
   </head>
 
@@ -68,7 +74,7 @@
       <nav id="nav-links">
         <a href="user-profile.html" id="home" class="nav-button"><img src="./assets/SVG/user-home.svg"></a>
         <a href="to-do-list.html" id="my-list" class="nav-button"><img src="./assets/SVG/to-do-list.svg"></a>
-        <a href="groups-home.html" id="groups" class="nav-button"><img src="./assets/SVG/groups.svg"></a>
+        <a href="groups.html" id="groups" class="nav-button"><img src="./assets/SVG/groups.svg"></a>
         <a href="my-awards.html" id="bag" class="nav-button"><img src="./assets/SVG/awards.svg"></a>
         <a href="settings.html" id="settings" class="nav-button"><img src="./assets/SVG/settings.svg"></a>
       </nav>
@@ -79,12 +85,12 @@
       class="flex flex-col items-center justify-center container-fluid bg-light text-dark p-10 bg-custom"
     >
       <div class="container">
-        <h1 class="display-4" id="user-greeting">
+        <h1 id="user-greeting">
           Good morning, <span id="name-goes-here"></span>
         </h1>
-        <hr />
+        
 
-        <div id="task-list" class="mt-5 w-full max-w-md flex flex-col">
+        <div id="task-list" class="mt-5 w-full max-w-md flex flex-row gap-5">
           <h2 class="text-lg font-semibold mb-4">Tasks</h2>
           <!-- Tasks will be dynamically inserted here -->
         </div>
@@ -93,11 +99,11 @@
       </div>
 <!-- Input Section for Tasks and Chat Container -->
 <div class="flex space-x-5 p-5">
-  <div class="bg-white rounded-lg shadow-md p-6 w-full max-w-md">
-    <h2 class="text-lg font-semibold mb-4">Add a New Task</h2>
+  <div class="option-menu">
+    <h2 class="option-menu-head">Add a Task</h2>
     <form>
       <div class="mb-4">
-        <label for="task" class="block text-sm font-medium text-gray-700">Task</label>
+        <label for="task" id="user-greeting2">Task</label>
         <input
           type="text"
           id="task"
@@ -107,7 +113,7 @@
         />
       </div>
       <div class="mb-4">
-        <label for="due-date" class="block text-sm font-medium text-gray-700">Due Date</label>
+        <label for="due-date"  id="user-greeting2">Due Date</label>
         <input
           type="date"
           id="due-date"
@@ -116,7 +122,7 @@
         />
       </div>
       <div class="mb-4">
-        <label for="description" class="block text-sm font-medium text-gray-700">Description</label>
+        <label for="description" id="user-greeting2">Description</label>
         <textarea
           id="description"
           rows="3"
@@ -127,7 +133,7 @@
       <button
         type="submit"
         id="submit-btn"
-        class="w-full bg-blue-600 text-white rounded-lg py-2 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+        class="option-btn-active"
       >
         Submit
       </button>
@@ -135,9 +141,9 @@
   </div>
 
   <!-- Chat Container -->
-  <div id="chat-container" class="bg-white shadow-md rounded-lg w-full max-w-md flex flex-col h-[70vh]">
+  <div id="chat-container" class="bg-[#f5E3a9] shadow-md rounded-lg w-full max-w-md flex flex-col h-[70vh] border-white">
     <!-- Chat Display Area -->
-    <div id="chat-display" class="flex-grow p-4 overflow-y-auto">
+    <div id="chat-display" class="flex-grow p-4 overflow-y-auto border">
       <!-- Messages will be appended here -->
     </div>
 
@@ -148,13 +154,13 @@
           type="text"
           id="chat-input"
           placeholder="Type your message..."
-          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+          class="w-full border border-white rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-blue-300"
           required
         />
         <button
           type="send"
           id="send-btn"
-          class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:ring focus:ring-blue-300"
+          class="option-btn-active"
         >
           Send
         </button>
