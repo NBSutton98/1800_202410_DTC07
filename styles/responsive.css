@@ -1,4 +1,46 @@
-@media screen and (max-width: 600px) {
+/* Small Screen Stylings */
+@media screen and (max-width: 767px) {
+
+    #welcome {
+        margin-top: 12.5%;
+    }
+    
+    #welcome h1 {
+        -webkit-text-stroke: 4px #663000;
+    }
+    
+    #about-us {
+        background-size: 85%;
+    }
+    
+    #about-us-header {
+        width: 85%;
+    }
+    
+    .team-card {
+        flex-direction: column;
+    }
+    
+    .team-info {
+        background-image: url("/assets/elements/lrg-board.svg");
+        aspect-ratio: 1.29;
+        width: 91%;
+        padding: 12px;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .team-img {
+        width: 80vw;
+    }
+    
+    #timmy {
+        flex-direction: column;
+    }
+    
+    #to-do {
+        background-image: url("/assets/bg/to-do-bg.webp");
+    }
 
     #groups-menu {
         margin-top: 15%;
@@ -28,4 +70,6 @@
         gap: 12px;
         margin-top: -8px;
     }
+        
 }
+    

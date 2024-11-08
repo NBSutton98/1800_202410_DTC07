@@ -80,7 +80,7 @@ h6 {
     background-image: url("/assets/SVG/logout.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    width: clamp(50px, 10vw, 70px);
+    width: clamp(55px, 10vw, 70px);
     transition: transform 200ms linear; /* Sets parameters for hover animations */
 }
 
@@ -95,7 +95,7 @@ h6 {
     background-image: url("/assets/SVG/info.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    width: clamp(50px, 10vw, 70px);
+    width: clamp(55px, 10vw, 70px);
     transition: transform 200ms linear; /* Sets parameters for hover animations */
 }
 
@@ -113,7 +113,7 @@ h6 {
 }
 
 #nav-links img {
-    width: clamp(50px, 10vw, 70px);
+    width: clamp(56px, 10vw, 70px);
 }
 
 #nav-links a {
@@ -173,7 +173,59 @@ h6 {
     margin-bottom: 35%;
 }
 
-/*Group page */
+/* Login Page */
+
+#login-page {
+    background-image: url('/assets/bg/bcit-lab-03.svg');
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+#login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 5px solid #005188;
+    color: #005188;
+    box-shadow: 2px 2px 4px #00000080;
+    border-radius: 12px !important;
+    padding: 12px;
+    margin-top: 15%;
+}
+
+#login-box .firebaseui-container {
+    background: transparent;
+    box-shadow: none;
+}
+
+#login-box .firebaseui-title {
+    color: #005188 !important;
+}
+
+#login-box .firebaseui-textfield, #login-box .firebaseui-label {
+    color: #00518880 !important;
+}
+
+#login-box .firebaseui-button {
+    aspect-ratio: 2.27 !important;
+    border: none;
+    background-color: transparent;
+    background-image: url("/assets/SVG/yellow-btn.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: 'giulia-plain';
+    font-weight: 500;
+    font-size: 20px;
+    text-shadow: 2.5px 2.5px rgba(0, 0, 0, .20);
+    box-shadow: none;
+    height: 50px !important;
+}
+
+/* Group page */
 #groups-menu-home {
     background-image: url("/assets/bg/BCIT-exterior.webp");
 }
@@ -262,18 +314,38 @@ h6 {
 }
 
 /*group-single-task*/
+
 #task-frame{
     background-image: url("/assets/bg/classroom-01.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: nonee;
     align-items: center;
     justify-content: center;
 }
 
 .task-info{
+    aspect-ratio: 1.24;
+    background-image: url("/assets/SVG/input\ board\ lrg.svg");
     position: fixed;
     z-index: 999;
     justify-content: center;
     top: 25%;
     width: 50%;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.task-info h1 {
+    font-size: clamp(20px, 4vw, 36px);
+    letter-spacing: -1px;
+    color: #fff;
+    /* padding-top: 10%; */
+    -webkit-text-stroke: 1px #82C822;
+    text-shadow: 3px 3px rgba(0, 0, 0, .20);
 }
 
 .view-btn{
@@ -288,49 +360,4 @@ h6 {
     top: 15%;
 }
 
-/* Small Screen Stylings */
-@media screen and (max-width: 900px) {
-
-#welcome {
-    margin-top: 12.5%;
-}
-
-#welcome h1 {
-    -webkit-text-stroke: 4px #663000;
-}
-
-#about-us {
-    background-size: 85%;
-}
-
-#about-us-header {
-    width: 85%;
-}
-
-.team-card {
-    flex-direction: column;
-}
-
-.team-info {
-    background-image: url("/assets/elements/lrg-board.svg");
-    aspect-ratio: 1.29;
-    width: 91%;
-    padding: 12px;
-    justify-content: center;
-    align-content: center;
-}
-
-.team-img {
-    width: 80vw;
-}
-
-#timmy {
-    flex-direction: column;
-}
-
-#to-do {
-    background-image: url("/assets/bg/to-do-bg.webp");
-}
-    
-}
 
