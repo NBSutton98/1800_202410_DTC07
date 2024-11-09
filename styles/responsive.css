@@ -42,6 +42,10 @@
         background-image: url("/assets/bg/to-do-bg.webp");
     }
 
+    .group-task-card {
+        min-width: 330px !important;
+    }
+
     #groups-task-content {
         flex-wrap: wrap;
     }
@@ -77,6 +81,23 @@
     .option-menu-btns {
         gap: 12px;
         margin-top: -8px;
+    }
+
+    #task-list {
+        padding: 0;
+    }
+
+    .task-list-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    #user-greeting {
+        margin-top: 60px !important;
+    }
+
+    #user-greeting, #name-goes-here {
+        -webkit-text-stroke: 4px #663000;
     }
         
 }

@@ -278,23 +278,23 @@
 
 .group-task-card {
     background-color: #f5e3a9;
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 16px;
     margin-bottom: 16px;
     min-width: 250px !important;
-  }
+}
   
 .text-sm {
-font-size: 0.875rem;
+    font-size: 0.875rem;
 }
 
 .text-red-500 {
-color: #f56565;
+    color: #f56565;
 }
 
 .mt-2 {
-margin-top: 8px;
+    margin-top: 8px;
 }
 
 .main-content {
