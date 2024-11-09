@@ -64,7 +64,11 @@ document.querySelector("form").addEventListener("submit", async (event) => {
       snapshot.docs.forEach((doc) => {
         const taskData = doc.data();
         const taskElement = document.createElement("div");
-        taskElement.classList.add("bg-[#f5E3a9]","rounded-lg","shadow-md","p-4","mb-4");
+        
+        // Create a new div for group-task-card
+        const groupTaskCard = document.createElement("div");
+        groupTaskCard.classList.add("group-task-card");
+
         taskElement.innerHTML = `
         <h3 id="user-greeting1">${taskData.task}</h3>
         <p class="text-sm text-gray-700">Due: ${taskData.dueDate}</p>
