@@ -373,7 +373,7 @@
 }
 
 .option-menu-head {
-    font-size: clamp(36px, 5.8vw, 50px);
+    font-size: clamp(36px, 5.8vw, 44px);
     letter-spacing: -3.5px;
     position: relative;
     top: .5%;
@@ -413,6 +413,8 @@
     border: none;
     background-color: transparent;
     background-image: url("/assets/SVG/option-btn-active.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
     text-transform: uppercase;
     font-family: 'giulia-plain';
     font-weight: 600;
