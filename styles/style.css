@@ -161,7 +161,7 @@ h6 {
     font-weight: 900;
     /* letter-spacing: -0.15vw;     */
     font-family: 'giulia-plain' !important;
-    -webkit-text-stroke: 3px #663000;
+    -webkit-text-stroke: 1px #663000;
     color:#FAF9DA;
     border-bottom: none;
     
