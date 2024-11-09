@@ -42,8 +42,16 @@
         background-image: url("/assets/bg/to-do-bg.webp");
     }
 
-    #groups-menu {
-        margin-top: 15%;
+    #groups-task-content {
+        flex-wrap: wrap;
+    }
+
+    #group-task-creation {
+        width: 80vw !important;
+    }
+
+    #chat-container {
+        width: 100%;
     }
 
     .msg-close {

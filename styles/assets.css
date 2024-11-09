@@ -362,14 +362,12 @@
 
 .option-menu {
     aspect-ratio: .583;
-    width: clamp(300px, 75vw, 460px);
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url(/assets/SVG/option-menu.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    gap: 7.5%;
 }
 
 .option-menu-head {
