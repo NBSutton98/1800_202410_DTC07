@@ -37,34 +37,6 @@ h6 {
     text-transform: uppercase;
 }
 
-/* Navbar Styling */
-#navbar {  /* Main header container */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: none;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    z-index: 999; /* Sets header to be the highest layer; will always overlay content */
-    position: fixed; /* Fixes the header position to bottom even when scrolling */
-    bottom: 0px;
-    animation: fadeInFromBottom 700ms ease forwards; /* Apply the animation */
-    animation-delay: 0ms; /* Delay before the animation starts */
-}
-
-#about-us-btn {
-    position: fixed;
-    z-index: 999;
-    top: 2px;
-    right: 4px;
-}
-
-#logout-btn {
-    position: fixed;
-    z-index: 999;
-    top: 5px;
-    left: 5px;
-}
 
 
 #back-btn{
@@ -74,56 +46,6 @@ h6 {
     left: 5px;
 }
 
-#logout {
-    aspect-ratio: 1;
-    border: none;
-    background-color: transparent;
-    background-image: url("/assets/SVG/logout.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: clamp(55px, 10vw, 70px);
-    transition: transform 200ms linear; /* Sets parameters for hover animations */
-}
-
-#logout:hover {
-    transform: scale(0.85); /* Scales the button 1.15x on hover using above parameters */
-}
-
-#info {
-    aspect-ratio: 1;
-    border: none;
-    background-color: transparent;
-    background-image: url("/assets/SVG/info.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: clamp(55px, 10vw, 70px);
-    transition: transform 200ms linear; /* Sets parameters for hover animations */
-}
-
-#info:hover {
-    transform: scale(0.85); /* Scales the button 1.15x on hover using above parameters */
-}
-
-#nav-links { /* Navigation container */
-    width: 100%;
-    max-width: 900px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 8px 4px;
-}
-
-#nav-links img {
-    width: clamp(56px, 10vw, 70px);
-}
-
-#nav-links a {
-    transition: transform 200ms linear; /* Sets parameters for hover animations */
-}
-
-#nav-links a:hover {
-    transform: scale(1.15); /* Scales the button 1.15x on hover using above parameters */
-}
 
 /* Demo Main Page Container Styling */
 #main-page {

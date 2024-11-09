@@ -1,3 +1,109 @@
+/* Navbar Styling */
+#navbar {  /* Main header container */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Sets header to be the highest layer; will always overlay content */
+    position: fixed; /* Fixes the header position to bottom even when scrolling */
+    bottom: 0px;
+    animation: fadeInFromBottom 700ms ease forwards; /* Apply the animation */
+    animation-delay: 0ms; /* Delay before the animation starts */
+}
+
+#nav-links { /* Navigation container */
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 8px 4px;
+}
+
+.nav-btn {
+    width: clamp(56px, 10vw, 70px);
+    aspect-ratio: 1;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: none;
+    transition: transform 200ms linear; /* Sets parameters for hover animations */
+}
+
+.nav-btn:hover {
+    transform: scale(1.15); /* Scales the button 1.15x on hover using above parameters */
+}
+
+#user-profile-btn {
+    background-image: url('/assets/SVG/user-home.svg');
+}
+
+#user-profile-btn:hover {
+    background-image: url('/assets/SVG/user-home-hover.svg');
+}
+
+#to-do-list-btn {
+    background-image: url('/assets/SVG/to-do-list.svg');
+}
+
+#to-do-list-btn:hover {
+    background-image: url('/assets/SVG/to-do-list-hover.svg');
+}
+
+#groups-btn {
+    background-image: url('/assets/SVG/groups.svg');
+}
+
+#groups-btn:hover {
+    background-image: url('/assets/SVG/groups-hover.svg');
+}
+
+#my-awards-btn {
+    background-image: url('/assets/SVG/awards.svg');
+}
+
+#my-awards-btn:hover {
+    background-image: url('/assets/SVG/awards-hover.svg');
+}
+
+#settings-btn {
+    background-image: url('/assets/SVG/settings.svg');
+}
+
+#settings-btn:hover {
+    background-image: url('/assets/SVG/settings-hover.svg');
+}
+
+#about-us-btn {
+    background-image: url('/assets/SVG/info.svg');
+    position: fixed;
+    z-index: 999;
+    top: 2px;
+    right: 4px;
+}
+
+#about-us-btn:hover {
+    background-image: url('/assets/SVG/info-hover.svg');
+}
+
+#logout-btn {
+    background-image: url('/assets/SVG/logout.svg');
+    position: fixed;
+    z-index: 999;
+    top: 5px;
+    left: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+#logout-btn:hover {
+    background-image: url('/assets/SVG/logout-hover.svg');
+}
+
+
+/* Buttons */
+
 .confirm-btn {
     border: none;
     aspect-ratio: 1;

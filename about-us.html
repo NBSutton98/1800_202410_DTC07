@@ -30,18 +30,29 @@
 <body>
     <!-- Navbar -->
     <header id="navbar">
-        <nav id="nav-links">
-          <a href="user-profile.html" id="home" class="nav-button"><img src="./assets/elements/home.svg"></a>
-          <a href="to-do-list.html" id="my-list" class="nav-button"><img src="./assets/elements/to-do-list.svg"></a>
-          <a href="groups-home.html" id="groups" class="nav-button"><img src="./assets/elements/groups.svg"></a>
-          <a href="my-bag.html" id="bag" class="nav-button"><img src="./assets/elements/bag.svg"></a>
-          <a href="settings.html" id="settings" class="nav-button"><img src="./assets/elements/settings.svg"></a>
-        </nav>
+      <nav id="nav-links">
+        <a href="user-profile.html">
+          <div id="user-profile-btn" class="nav-btn" alt=""></div>
+        </a>
+        <a href="to-do-list.html">
+          <div id="to-do-list-btn" class="nav-btn" alt=""></div>
+        </a>
+        <a href="groups.html">
+          <div id="groups-btn" class="nav-btn" alt=""></div>
+        </a>
+        <a href="my-awards.html">
+          <div id="my-awards-btn" class="nav-btn" alt=""></div>
+        </a>
+        <a href="settings.html">
+          <div id="settings-btn" class="nav-btn" alt=""></div>
+        </a>
+      </nav>
     </header>
 
     <!-- Main Content -->
     <main id="about-us">
         <div id="about-us-content">
+            <button id="logout-btn" class="nav-btn" onclick="logout()"></button>
             <div id="about-us-header" class="head-board">
                 <h1>About Us</h1>
             </div>
