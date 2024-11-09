@@ -413,7 +413,6 @@
     border: none;
     background-color: transparent;
     background-image: url("/assets/SVG/option-btn-active.svg");
-    width: clamp(140px, 52vw, 300px);
     text-transform: uppercase;
     font-family: 'giulia-plain';
     font-weight: 600;

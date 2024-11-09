@@ -82,7 +82,22 @@ h6 {
     -webkit-text-stroke: 6px #663000;
 }
 
+#group-task-content {
 
+}
+
+#group-task-creation {
+    max-width: 400px;
+}
+
+#group-task-submit-btn {
+    width: 180px;
+    font-size: clamp(36px, 4.5vw, 36px);
+}
+
+#chat-container {
+
+}
 
 #user-greeting, #name-goes-here {
     font-size: clamp(72px, 15vw, 110px) !important;

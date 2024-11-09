@@ -99,7 +99,7 @@
 
     <div
       class="flex flex-col items-center justify-center container-fluid bg-light text-dark p-10 bg-custom">
-      <div class="container">
+      <div id="groups-page">
         <h1 id="user-greeting">
           Good morning, <span id="name-goes-here"></span>
         </h1>
@@ -113,8 +113,8 @@
         
       </div>
 <!-- Input Section for Tasks and Chat Container -->
-<div class="flex space-x-5 p-5">
-  <div class="option-menu">
+<div id="group-task-content" class="flex space-x-5 p-5">
+  <div id="group-task-creation" class="option-menu">
     <h2 class="option-menu-head">Add a Task</h2>
     <form>
       <div class="mb-4">
@@ -145,13 +145,7 @@
           placeholder="Enter a description"
         ></textarea>
       </div>
-      <button
-        type="submit"
-        id="submit-btn"
-        class="option-btn-active"
-      >
-        Submit
-      </button>
+      <button type="submit" id="group-task-submit-btn" class="option-btn-active">Submit</button>
     </form>
   </div>
 
