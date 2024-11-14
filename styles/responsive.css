@@ -10,11 +10,15 @@
     }
     
     #about-us {
-        background-size: 85%;
+        background-size: 150%;
     }
     
     #about-us-header {
         width: 85%;
+    }
+
+    #about-us-header h1 {
+        -webkit-text-stroke: 0.5px inherit !important;
     }
     
     .team-card {
@@ -22,8 +26,8 @@
     }
     
     .team-info {
-        background-image: url("/assets/elements/lrg-board.svg");
-        aspect-ratio: 1.29;
+        background-image: url("/assets/SVG/input\ board\ no\ ribbon.svg");
+        aspect-ratio: 1.31;
         width: 91%;
         padding: 12px;
         justify-content: center;

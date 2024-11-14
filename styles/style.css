@@ -37,8 +37,6 @@ h6 {
     text-transform: uppercase;
 }
 
-
-
 #back-btn{
     position: fixed;
     z-index: 999;
@@ -153,7 +151,6 @@ h6 {
     -webkit-text-stroke: 6px #663000;
     color:#FAF9DA;
     border-bottom: none;
-    
 }
 
 #user-greeting1 {
@@ -258,8 +255,12 @@ h6 {
 #about-us {
     width: 100%;
     min-height: 100vh;
-    background-image: url("/assets/bg/forest-pattern.png");
-    background-size: 45%;
+    background-color: #005188;
+    background-image: linear-gradient(
+        rgba(0, 81, 136, 0.4), /* Start with semi-transparent overlay color */
+        rgba(0, 81, 136, 0.4) /* End with the same semi-transparent overlay color */
+    ), url("/assets/SVG/tech-pattern-white.svg");
+    background-size: 80%;
     display: flex;
     justify-content: center;
 }
@@ -273,6 +274,15 @@ h6 {
     padding-top: 20px;
     gap: 20px;
     padding-bottom: 85px;
+}
+
+#about-us-header h1 {
+    color: #fff;
+    -webkit-text-stroke: 4px #005188;
+    font-size: clamp(60px, 10vw, 100px);
+    text-align: center;
+    line-height: .8;
+    letter-spacing: -.35vw;
 }
 
 #dev-team {
@@ -304,32 +314,29 @@ h6 {
     gap: 24px;
 }
 
-.team-img-frame {
-    padding: 5px;
-    background-image: url("/assets/elements/team-img-frame.svg");
-    background-size: contain;
-    aspect-ratio: 1;
-}
-
 .team-img {
     aspect-ratio: 1;
-    width: 22.5vw;
-    max-width: 300px;
+    width: 40vw;
+    max-width: 350px;
     border-radius: 100%;
     background-position: center center;
     background-size: cover;
+    border: 8px solid #fff;
 }
 
 .team-info {
-    aspect-ratio: 2.24;
-    width: 77.5%;
-    max-width: 600px;
-    background-image: url("/assets/elements/team-info-bg.svg");
+    aspect-ratio: 1.77;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 520px;
+    background-image: url("/assets/SVG/rectangle\ input.svg");
     background-position: center center;
     background-size: cover;
-    padding: 16px;
+    padding: 3%;
     text-align: center;
-    color: #663000;
+    color: #003654;
 }
 
 /*group-single-task*/
