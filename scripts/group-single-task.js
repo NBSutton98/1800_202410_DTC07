@@ -22,17 +22,17 @@ function displayTaskInfo() {
 
 displayTaskInfo();
 
-function edituserInfo() {
-    document.getElementById('userInfoFields').disabled = false;
+function editTaskInfo() {
+    document.getElementById('taskInfoFields').disabled = false;
     document.getElementById('edit-btn').style.display = 'none';
     document.getElementById('cancel-btn').style.display = 'block';
 }
 
 function cancelEdit(){
-    document.getElementById('userInfoFields').disabled = true;
+    document.getElementById('taskInfoFields').disabled = true;
     document.getElementById('edit-btn').style.display = 'block';
     document.getElementById('cancel-btn').style.display = 'none';
-    populateUserInfo();
+    displayTaskInfo();
 }
 
 
