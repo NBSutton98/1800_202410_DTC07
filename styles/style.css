@@ -338,7 +338,7 @@ h6 {
     background-image: url("/assets/bg/classroom-01.png");
     background-position: center center;
     background-size: cover;
-    background-repeat: nonee;
+    background-repeat: none;
     align-items: center;
     justify-content: center;
 }
@@ -346,11 +346,12 @@ h6 {
 .task-info{
     aspect-ratio: 1.24;
     background-image: url("/assets/SVG/input\ board\ lrg.svg");
+    background-repeat: none;
     position: fixed;
     z-index: 999;
     justify-content: center;
     top: 25%;
-    width: 50%;
+    width: 60%;
     padding: 0 32px;
     display: flex;
     flex-direction: column;
@@ -370,7 +371,7 @@ h6 {
 
 #taskInfoFields {
     width: 100% !important;
-    min-width: 330px;
+    min-width: 350px;
     margin-bottom: 0 !important;
 }
 
