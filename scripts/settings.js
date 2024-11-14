@@ -1,4 +1,6 @@
 var currentUser;               //points to the document of the user who is logged in
+document.getElementById('cancel-btn').style.display = 'none';
+
 function populateUserInfo() {
     firebase.auth().onAuthStateChanged(user => {
         // Check if user is signed in:
@@ -47,6 +49,7 @@ function saveUserInfo() {
         .then(() => {
             console.log("Document successfully updated!");
         })
+    document.getElementById('userInfoFields').disabled = true;
 }
 
 function updateSFXValue(value) {
@@ -55,4 +58,18 @@ function updateSFXValue(value) {
 
 function updateMusicValue(value) {
     document.getElementById("MusicValue").value = value;
+}
+
+
+function edituserInfo() {
+    document.getElementById('userInfoFields').disabled = false;
+    document.getElementById('edit-btn').style.display = 'none';
+    document.getElementById('cancel-btn').style.display = 'block';
+}
+
+function cancelEdit(){
+    document.getElementById('userInfoFields').disabled = true;
+    document.getElementById('edit-btn').style.display = 'block';
+    document.getElementById('cancel-btn').style.display = 'none';
+    populateUserInfo();
 }
