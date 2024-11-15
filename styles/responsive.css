@@ -9,7 +9,7 @@
         -webkit-text-stroke: 4px #663000;
     }
 
-    #about-us {
+    #about-us, #prepopulated-tasks {
         background-size: 150%;
     }
 
@@ -108,6 +108,10 @@
     .task-info {
         background-repeat: no-repeat;
         width: 100%;
+    }
+
+    .task-card {
+        width: 95%;
     }
 
 }

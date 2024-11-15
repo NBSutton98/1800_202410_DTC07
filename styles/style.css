@@ -264,7 +264,7 @@ h6 {
 
 
 /* About Us Page Styling */
-#about-us {
+#about-us, #prepopulated-tasks {
     width: 100%;
     min-height: 100vh;
     background-color: #005188;
@@ -399,6 +399,13 @@ h6 {
     margin-top: ;
 } */
 
+/* Task List */
+#task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
 
 
 /* To-Do List */

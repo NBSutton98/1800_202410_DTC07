@@ -21,8 +21,10 @@ function createTaskCard(taskTitle, courseName) {
     taskCard.className = `task-card ${courseName}`; // Add course name as a class
     taskCard.innerHTML = `
         <h4 class="course-name">${courseName}</h4> <!-- Display course name -->
-        <h3 class="task-title">${taskTitle}</h3>
-        <button class="add-button" onclick="addToTodoList('${taskTitle}')">Add to My To-Do List</button>
+        <h5 class="task-title">${taskTitle}</h5>
+        <div class="add-btn-box">    
+            <button class="add-btn" onclick="addToTodoList('${taskTitle}')"></button>
+        </div>
     `;
     return taskCard;
 }

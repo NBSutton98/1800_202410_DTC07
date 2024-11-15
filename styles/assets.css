@@ -104,6 +104,17 @@
 
 /* Buttons */
 
+.add-btn {
+    border: none;
+    background-color: transparent;
+    aspect-ratio: 1;
+    width: clamp(60px, 10vw, 72px);
+    background-image: url('/assets/SVG/add-button.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
 .confirm-btn {
     border: none;
     aspect-ratio: 1;
@@ -443,4 +454,41 @@
     -webkit-text-stroke: 1px #D49800;
     text-shadow: 3px 3px rgba(0, 0, 0, .20);
     padding-bottom: 8px;
+}
+
+.task-card {
+    aspect-ratio: 2.53;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 380px;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/assets/SVG/task-content.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.task-card h4 {
+    height: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+.task-card h5 {
+    width: 70%;
+    text-align: center;
+    padding: 0 2% 8% 7%;
+}
+
+.task-card .add-btn-box {
+    width: 30%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 12.5%;
+    margin-left: -1.5%;
 }
