@@ -27,7 +27,7 @@ function setupChat() {
           createdAt: firebase.firestore.FieldValue.serverTimestamp(),
         });
         chatInputElement.value = "";
-      } catch (error) {}
+      } catch (error) { }
     });
 
   const chatDisplay = document.getElementById("chat-display");
@@ -59,60 +59,19 @@ function setupTasks() {
 
       });
 
-    } catch (error) {}
+    } catch (error) { }
     displayTask();
   });
-  }
+}
 
-  function displayTask() {    
-    const taskList = document.getElementById("task-list");
-    db.collection("tasks")
-      .orderBy("createdAt", "desc")
-      .onSnapshot((snapshot) => {
-        taskList.innerHTML = "";
-        snapshot.docs.forEach((doc) => {
-          const taskData = doc.data();
-          const taskElement = document.createElement("div");
-          taskElement.classList.add(
-            "bg-[#f5E3a9]",
-            "rounded-lg",
-            "shadow-md",
-            "p-4",
-            "mb-4"
-          );
-          taskElement.innerHTML = `
-          <h3 id="user-greeting1">${taskData.task}</h3>
-          <p class="text-sm text-gray-700">Due: ${taskData.dueDate}</p>
-          <p class="text-sm">${taskData.description}</p>
-          <button class="delete-btn text-red-500 mt-2" data-id="${doc.id}">Delete</button>
-          <a class="view-btn mt-2 ml-6" href="view-task.html?docID=${doc.id}">view</a>
-            `;
-          taskList.appendChild(taskElement);
-        });
-      });
-    }
-  
-  taskList.addEventListener("click", async (event) => {
-    if (event.target.classList.contains("delete-btn")) {
-    const taskId = event.target.getAttribute("data-id");
-    try {
-      await db.collection("tasks").doc(taskId).delete();
-      displayTask();
-    } catch (error) {}
-  }
-});
-
-setupChat();
-setupTasks();
-
-function tasks() {
+function displayTask() {
+  const taskList = document.getElementById("task-list");
   db.collection("tasks")
-    .get()
-    .then((tasks) => {
-      tasks.forEach((task) => {
-        console.log(task.data());
-        const taskList = document.getElementById("task-list");
-        const taskData = task.data();
+    .orderBy("createdAt", "desc")
+    .onSnapshot((snapshot) => {
+      taskList.innerHTML = "";
+      snapshot.docs.forEach((doc) => {
+        const taskData = doc.data();
         const taskElement = document.createElement("div");
         taskElement.classList.add(
           "bg-[#f5E3a9]",
@@ -122,15 +81,31 @@ function tasks() {
           "mb-4"
         );
         taskElement.innerHTML = `
-        <h3 id="user-greeting1">${taskData.task}</h3>
-        <p class="text-sm text-gray-700">Due: ${taskData.dueDate}</p>
-        <p class="text-sm">${taskData.description}</p>
-        <button class="delete-btn text-red-500 mt-2" data-id="${task.id}">Delete</button>
-        <a class="view-btn mt-2 ml-6" href="view-task.html?docID=${task.id}">view</a>
+          <h3 id="user-greeting1">${taskData.task}</h3>
+          <p class="text-sm text-gray-700">Due: ${taskData.dueDate}</p>
+          <p class="text-sm">${taskData.description}</p>
+          <button class="delete-btn text-red-500 mt-2" data-id="${doc.id}">Delete</button>
+          <a class="view-btn mt-2 ml-6" href="view-task.html?docID=${doc.id}">view</a>
             `;
         taskList.appendChild(taskElement);
       });
     });
 }
 
-tasks();
+taskList.addEventListener("click", async (event) => {
+  if (event.target.classList.contains("delete-btn")) {
+    const taskId = event.target.getAttribute("data-id");
+    try {
+      await db.collection("tasks").doc(taskId).delete();
+      displayTask();
+    } catch (error) { }
+  }
+});
+
+setupChat();
+setupTasks();
+displayTask();
+
+
+
+
