@@ -11,7 +11,7 @@ function getNameFromAuth() {
   });
 }
 getNameFromAuth();
-
+  
 
 function setupChat() {
   document.getElementById("chat-form").addEventListener("submit", async (event) => {
