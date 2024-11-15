@@ -25,6 +25,18 @@
   <link rel="stylesheet" href="./styles/assets.css">
   <link rel="stylesheet" href="./styles/responsive.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css"
+    />
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
 </head>
 
 <body>
@@ -61,7 +73,8 @@
       <!---------------------------->
       <!-- ADD PAGE CONTENT BELOW -->
       <!---------------------------->
-      
+      <nav id="footerPlaceholder"></nav>
+
     </main>
 
   <!---------------------------------------------->
@@ -70,6 +83,8 @@
 
   <!-- Link to scripts of your own -->
   <script src="./scripts/script.js"></script>
+  <script src="./scripts/firebase_API.js"></script>
+  <script src="./scripts/skeleton.js"></script>
 </body>
 
 </html>

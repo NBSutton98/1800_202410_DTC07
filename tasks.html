@@ -19,13 +19,17 @@
   <!-- Other libraries go here -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/rkb7vro.css">
+
+  <!--Firebase libraries-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
   <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
   <!-- Link to styles of your own -->
   <link rel="stylesheet" href="./styles/style.css">
@@ -35,41 +39,41 @@
 </head>
 
 <body>
-  <!-- Navbar -->
-  <header id="navbar">
-    <nav id="nav-links">
-      <a href="user-profile.html">
-        <div id="user-profile-btn" class="nav-btn" alt=""></div>
-      </a>
-      <a href="to-do-list.html">
-        <div id="to-do-list-btn" class="nav-btn" alt=""></div>
-      </a>
-      <a href="groups.html">
-        <div id="groups-btn" class="nav-btn" alt=""></div>
-      </a>
-      <a href="my-awards.html">
-        <div id="my-awards-btn" class="nav-btn" alt=""></div>
-      </a>
-      <a href="settings.html">
-        <div id="settings-btn" class="nav-btn" alt=""></div>
-      </a>
-    </nav>
-  </header>
+    <!-- Navbar -->
+    <header id="navbar">
+      <nav id="nav-links">
+        <a href="user-profile.html">
+          <div id="user-profile-btn" class="nav-btn" alt=""></div>
+        </a>
+        <a href="to-do-list.html">
+          <div id="to-do-list-btn" class="nav-btn" alt=""></div>
+        </a>
+        <a href="groups.html">
+          <div id="groups-btn" class="nav-btn" alt=""></div>
+        </a>
+        <a href="my-awards.html">
+          <div id="my-awards-btn" class="nav-btn" alt=""></div>
+        </a>
+        <a href="settings.html">
+          <div id="settings-btn" class="nav-btn" alt=""></div>
+        </a>
+      </nav>
+    </header>
 
-    <!-- Main Content -->
-    <main id=""> <!-- PAGE BACKGROUND GOES IN THIS CONTAINER -->
-
-      <!-- Top Buttons -->
-      <a href="about-us.html">
-        <div id="about-us-btn" class="nav-btn" alt=""></div>
-      </a>
-      <button id="logout-btn" class="nav-btn" onclick="logout()"></button>
+      <!-- Main Content -->
+      <main id=""> <!-- PAGE BACKGROUND GOES IN THIS CONTAINER -->
+  
+        <!-- Top Buttons -->
+        <a href="about-us.html">
+          <div id="about-us-btn" class="nav-btn" alt=""></div>
+        </a>
+        <button id="logout-btn" class="nav-btn" onclick="logout()"></button>
+        <div id="task-container"></div>
 
       <!---------------------------->
       <!-- ADD PAGE CONTENT BELOW -->
       <!---------------------------->
-      <nav id="footerPlaceholder"></nav>
-
+      
     </main>
 
   <!---------------------------------------------->
@@ -79,7 +83,7 @@
   <!-- Link to scripts of your own -->
   <script src="./scripts/script.js"></script>
   <script src="./scripts/firebase_API.js"></script>
-  <script src="./scripts/skeleton.js"></script>
+  <script src="./scripts/tasks.js"></script>
 </body>
 
 </html>

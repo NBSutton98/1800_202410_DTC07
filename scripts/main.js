@@ -78,6 +78,7 @@ function setupTasks() {
           <p class="text-sm text-gray-700">Due: ${taskData.dueDate}</p>
           <p class="text-sm">${taskData.description}</p>
           <button class="delete-btn text-red-500 mt-2" data-id="${doc.id}">Delete</button>
+          <a class="view-btn mt-2 ml-6" href="view-task.html?docID=${doc.id}">view</a>
             `;
           taskList.appendChild(taskElement);
         });
@@ -111,6 +112,7 @@ function tasks() {
         <p class="text-sm text-gray-700">Due: ${taskData.dueDate}</p>
         <p class="text-sm">${taskData.description}</p>
         <button class="delete-btn text-red-500 mt-2" data-id="${task.id}">Delete</button>
+        <a class="view-btn mt-2 ml-6" href="view-task.html?docID=${task.id}">view</a>
             `;
         taskList.appendChild(taskElement);
       });

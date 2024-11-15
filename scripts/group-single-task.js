@@ -1,3 +1,5 @@
+document.getElementById('cancel-btn').style.display = 'none';
+
 function displayTaskInfo() {
     let params = new URL(window.location.href); //get URL of search bar
     let ID = params.searchParams.get("docID"); //get value for key "id"
@@ -21,9 +23,19 @@ function displayTaskInfo() {
 displayTaskInfo();
 
 function editTaskInfo() {
-    //Enable the form fields
     document.getElementById('taskInfoFields').disabled = false;
+    document.getElementById('edit-btn').style.display = 'none';
+    document.getElementById('cancel-btn').style.display = 'block';
 }
+
+function cancelEdit(){
+    document.getElementById('taskInfoFields').disabled = true;
+    document.getElementById('edit-btn').style.display = 'block';
+    document.getElementById('cancel-btn').style.display = 'none';
+    displayTaskInfo();
+}
+
+
 
 function saveTaskInfo() {
     //enter code here

@@ -1,12 +1,17 @@
 /* Keyframe Animations */
 @keyframes fadeInFromBottom {
     0% {
-        opacity: 0; /* Start fully transparent */
-        transform: translateY(30px); /* Start 30px below */
+        opacity: 0;
+        /* Start fully transparent */
+        transform: translateY(30px);
+        /* Start 30px below */
     }
+
     100% {
-        opacity: 1; /* End fully opaque */
-        transform: translateY(0); /* End at original position */
+        opacity: 1;
+        /* End fully opaque */
+        transform: translateY(0);
+        /* End at original position */
     }
 }
 
@@ -20,13 +25,16 @@ a {
     text-decoration: none;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'giulia' !important;
     font-weight: 500;
     margin: 0;
 }
 
-h3, h4, h5 {
+h3,
+h4,
+h5 {
     font-family: 'giulia-plain';
     margin: 0;
 }
@@ -39,7 +47,7 @@ h6 {
 
 
 
-#back-btn{
+#back-btn {
     position: fixed;
     z-index: 999;
     top: 5px;
@@ -78,7 +86,7 @@ h6 {
 #welcome h1 {
     font-size: clamp(72px, 15vw, 160px) !important;
     font-weight: 900;
-    letter-spacing: -0.25vw;    
+    letter-spacing: -0.25vw;
     -webkit-text-stroke: 6px #663000;
 }
 
@@ -148,15 +156,15 @@ h6 {
     width: 160px;
 }
 
-#user-greeting, #name-goes-here {
+#user-greeting,
+#name-goes-here {
     font-size: clamp(60px, 15vw, 110px) !important;
     font-weight: 900;
-    letter-spacing: -0.25vw;    
+    letter-spacing: -0.25vw;
     font-family: 'giulia-plain' !important;
     -webkit-text-stroke: 6px #663000;
-    color:#FAF9DA;
+    color: #FAF9DA;
     border-bottom: none;
-    
 }
 
 #user-greeting1 {
@@ -165,20 +173,20 @@ h6 {
     /* letter-spacing: -0.15vw;     */
     font-family: 'giulia-plain' !important;
     -webkit-text-stroke: 1px #663000;
-    color:#FAF9DA;
+    color: #FAF9DA;
     border-bottom: none;
-    
+
 }
 
 #user-greeting2 {
     font-size: clamp(18px, 5vw, 32px) !important;
-    font-weight: 900;    
+    font-weight: 900;
     font-family: 'giulia-plain' !important;
     -webkit-text-stroke: 2px #663000;
-    color:#FAF9DA;
+    color: #FAF9DA;
     border-bottom: none;
     min-width: 200px;
-    
+
 }
 
 #main-content #bear-buddy {
@@ -227,7 +235,8 @@ h6 {
     color: #005188 !important;
 }
 
-#login-box .firebaseui-textfield, #login-box .firebaseui-label {
+#login-box .firebaseui-textfield,
+#login-box .firebaseui-label {
     color: #00518880 !important;
 }
 
@@ -261,8 +270,13 @@ h6 {
 #about-us {
     width: 100%;
     min-height: 100vh;
-    background-image: url("/assets/bg/forest-pattern.png");
-    background-size: 45%;
+    background-color: #005188;
+    background-image: linear-gradient(rgba(0, 81, 136, 0.4),
+            /* Start with semi-transparent overlay color */
+            rgba(0, 81, 136, 0.4)
+            /* End with the same semi-transparent overlay color */
+        ), url("/assets/SVG/tech-pattern-white.svg");
+    background-size: 80%;
     display: flex;
     justify-content: center;
 }
@@ -276,6 +290,15 @@ h6 {
     padding-top: 20px;
     gap: 20px;
     padding-bottom: 85px;
+}
+
+#about-us-header h1 {
+    color: #fff;
+    -webkit-text-stroke: 4px #005188;
+    font-size: clamp(60px, 10vw, 100px);
+    text-align: center;
+    line-height: .8;
+    letter-spacing: -.35vw;
 }
 
 #dev-team {
@@ -307,53 +330,51 @@ h6 {
     gap: 24px;
 }
 
-.team-img-frame {
-    padding: 5px;
-    background-image: url("/assets/elements/team-img-frame.svg");
-    background-size: contain;
-    aspect-ratio: 1;
-}
-
 .team-img {
     aspect-ratio: 1;
-    width: 22.5vw;
-    max-width: 300px;
+    width: 40vw;
+    max-width: 350px;
     border-radius: 100%;
     background-position: center center;
     background-size: cover;
+    border: 8px solid #fff;
 }
 
 .team-info {
-    aspect-ratio: 2.24;
-    width: 77.5%;
-    max-width: 600px;
-    background-image: url("/assets/elements/team-info-bg.svg");
+    aspect-ratio: 1.77;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 520px;
+    background-image: url("/assets/SVG/rectangle\ input.svg");
     background-position: center center;
     background-size: cover;
-    padding: 16px;
+    padding: 3%;
     text-align: center;
-    color: #663000;
+    color: #003654;
 }
 
 /*group-single-task*/
 
-#task-frame{
+#task-frame {
     background-image: url("/assets/bg/classroom-01.png");
     background-position: center center;
     background-size: cover;
-    background-repeat: nonee;
+    background-repeat: none;
     align-items: center;
     justify-content: center;
 }
 
-.task-info{
+.task-info {
     aspect-ratio: 1.24;
     background-image: url("/assets/SVG/input\ board\ lrg.svg");
+    background-repeat: none;
     position: fixed;
     z-index: 999;
     justify-content: center;
     top: 25%;
-    width: 50%;
+    width: 60%;
     padding: 0 32px;
     display: flex;
     flex-direction: column;
@@ -373,7 +394,7 @@ h6 {
 
 #taskInfoFields {
     width: 100% !important;
-    min-width: 330px;
+    min-width: 350px;
     margin-bottom: 0 !important;
 }
 
@@ -381,11 +402,7 @@ h6 {
     margin-top: ;
 } */
 
-.view-btn{
-    margin-left: 80%;
-    bottom: 5px;
-    left: 5px
-}
+
 
 /* To-Do List */
 
@@ -393,3 +410,5 @@ h6 {
     top: 15%;
 }
 
+/* Footer * /
+footer 
