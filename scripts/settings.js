@@ -37,9 +37,9 @@ populateUserInfo();
 
 function saveUserInfo() {
 
-    userName = document.getElementById('username').value;       
-    userEmail = document.getElementById('email').value;     
-    userBuddy = document.getElementById('BCITbuddy').value;      
+    userName = document.getElementById('username').value;
+    userEmail = document.getElementById('email').value;
+    userBuddy = document.getElementById('BCITbuddy').value;
 
     currentUser.update({
         name: userName,
@@ -67,7 +67,7 @@ function edituserInfo() {
     document.getElementById('cancel-btn').style.display = 'block';
 }
 
-function cancelEdit(){
+function cancelEdit() {
     document.getElementById('userInfoFields').disabled = true;
     document.getElementById('edit-btn').style.display = 'block';
     document.getElementById('cancel-btn').style.display = 'none';

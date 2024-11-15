@@ -1,12 +1,17 @@
 /* Keyframe Animations */
 @keyframes fadeInFromBottom {
     0% {
-        opacity: 0; /* Start fully transparent */
-        transform: translateY(30px); /* Start 30px below */
+        opacity: 0;
+        /* Start fully transparent */
+        transform: translateY(30px);
+        /* Start 30px below */
     }
+
     100% {
-        opacity: 1; /* End fully opaque */
-        transform: translateY(0); /* End at original position */
+        opacity: 1;
+        /* End fully opaque */
+        transform: translateY(0);
+        /* End at original position */
     }
 }
 
@@ -20,13 +25,16 @@ a {
     text-decoration: none;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'giulia' !important;
     font-weight: 500;
     margin: 0;
 }
 
-h3, h4, h5 {
+h3,
+h4,
+h5 {
     font-family: 'giulia-plain';
     margin: 0;
 }
@@ -39,7 +47,7 @@ h6 {
 
 
 
-#back-btn{
+#back-btn {
     position: fixed;
     z-index: 999;
     top: 5px;
@@ -78,7 +86,7 @@ h6 {
 #welcome h1 {
     font-size: clamp(72px, 15vw, 160px) !important;
     font-weight: 900;
-    letter-spacing: -0.25vw;    
+    letter-spacing: -0.25vw;
     -webkit-text-stroke: 6px #663000;
 }
 
@@ -145,15 +153,16 @@ h6 {
     width: 160px;
 }
 
-#user-greeting, #name-goes-here {
+#user-greeting,
+#name-goes-here {
     font-size: clamp(60px, 15vw, 110px) !important;
     font-weight: 900;
-    letter-spacing: -0.25vw;    
+    letter-spacing: -0.25vw;
     font-family: 'giulia-plain' !important;
     -webkit-text-stroke: 6px #663000;
-    color:#FAF9DA;
+    color: #FAF9DA;
     border-bottom: none;
-    
+
 }
 
 #user-greeting1 {
@@ -162,20 +171,20 @@ h6 {
     /* letter-spacing: -0.15vw;     */
     font-family: 'giulia-plain' !important;
     -webkit-text-stroke: 1px #663000;
-    color:#FAF9DA;
+    color: #FAF9DA;
     border-bottom: none;
-    
+
 }
 
 #user-greeting2 {
     font-size: clamp(18px, 5vw, 32px) !important;
-    font-weight: 900;    
+    font-weight: 900;
     font-family: 'giulia-plain' !important;
     -webkit-text-stroke: 2px #663000;
-    color:#FAF9DA;
+    color: #FAF9DA;
     border-bottom: none;
     min-width: 200px;
-    
+
 }
 
 #main-content #bear-buddy {
@@ -224,7 +233,8 @@ h6 {
     color: #005188 !important;
 }
 
-#login-box .firebaseui-textfield, #login-box .firebaseui-label {
+#login-box .firebaseui-textfield,
+#login-box .firebaseui-label {
     color: #00518880 !important;
 }
 
@@ -334,7 +344,7 @@ h6 {
 
 /*group-single-task*/
 
-#task-frame{
+#task-frame {
     background-image: url("/assets/bg/classroom-01.png");
     background-position: center center;
     background-size: cover;
@@ -343,7 +353,7 @@ h6 {
     justify-content: center;
 }
 
-.task-info{
+.task-info {
     aspect-ratio: 1.24;
     background-image: url("/assets/SVG/input\ board\ lrg.svg");
     background-repeat: none;
@@ -386,4 +396,3 @@ h6 {
 #to-do-buddy {
     top: 15%;
 }
-
