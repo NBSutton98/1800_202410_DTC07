@@ -106,17 +106,24 @@
     }
 
     #task-container {
-        gap: 30px !important;
+        gap: 15px !important;
     }
 
-    .task-card #add-to-list {
-        margin-bottom: 0 !important;
+    .task-card {
+        padding-top: 16px !important;
     }
 
+    .task-card .add-btn-box {
+        top: 24px;
+    }
 
     .task-info {
         background-repeat: no-repeat;
         width: 100%;
+    }
+
+    .task-title {
+        top: 8px;
     }
 
 }
