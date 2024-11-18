@@ -105,13 +105,18 @@
         -webkit-text-stroke: 4px #663000;
     }
 
+    #task-container {
+        gap: 30px !important;
+    }
+
+    .task-card #add-to-list {
+        margin-bottom: 0 !important;
+    }
+
+
     .task-info {
         background-repeat: no-repeat;
         width: 100%;
-    }
-
-    .task-card {
-        width: 95%;
     }
 
 }

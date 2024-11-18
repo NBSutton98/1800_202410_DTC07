@@ -23,7 +23,7 @@ function createTaskCard(taskTitle, courseName) {
         <h4 class="course-name">${courseName}</h4> <!-- Display course name -->
         <h5 class="task-title">${taskTitle}</h5>
         <div class="add-btn-box">    
-            <button class="add-btn" onclick="addToTodoList('${taskTitle}')"></button>
+            <button class="green-btn" id="add-to-list" onclick="addToTodoList('${taskTitle}')">Add to List</button>
         </div>
     `;
     return taskCard;
