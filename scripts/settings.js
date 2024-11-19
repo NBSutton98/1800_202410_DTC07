@@ -14,6 +14,8 @@ function populateUserInfo() {
                     let userName = userDoc.data().name;
                     let userEmail = userDoc.data().email;
                     let userBuddy = userDoc.data().buddy;
+                    let buddyName = userDoc.data().buddyname;
+                    let buddyPersonality = userDoc.data().buddypersonality;
 
                     //if the data fields are not empty, then write them in to the form.
                     if (userName != null) {
@@ -23,7 +25,13 @@ function populateUserInfo() {
                         document.getElementById("email").value = userEmail;
                     }
                     if (userBuddy != null) {
-                        document.getElementById("BCITbuddy").value = userBuddy;
+                        document.getElementById("dropdown").value = userBuddy;
+                    }
+                    if (buddyName != null) {
+                        document.getElementById('Buddy-name').value = buddyName
+                    }
+                    if (buddyPersonality != null) {
+                        document.getElementById('Buddy-personality').value = buddyPersonality
                     }
                 })
 
@@ -41,12 +49,16 @@ function saveUserInfo() {
 
     userName = document.getElementById('username').value;
     userEmail = document.getElementById('email').value;
-    userBuddy = document.getElementById('BCITbuddy').value;
+    userBuddy = document.getElementById('dropdown').value;
+    userBuddyName = document.getElementById('Buddy-name').value;
+    userBuddyPersonality = document.getElementById('Buddy-personality').value;
 
     currentUser.update({
         name: userName,
         email: userEmail,
-        buddy: userBuddy
+        buddy: userBuddy,
+        buddyname: userBuddyName,
+        buddypersonality: userBuddyPersonality
     })
         .then(() => {
             console.log("Document successfully updated!");
@@ -54,6 +66,7 @@ function saveUserInfo() {
     document.getElementById('userInfoFields').disabled = true;
     document.getElementById('edit-btn').style.display = 'block';
     document.getElementById('cancel-btn').style.display = 'none';
+    populateUserInfo();
 }
 
 function updateSFXValue(value) {
