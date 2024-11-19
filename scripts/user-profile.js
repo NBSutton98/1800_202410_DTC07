@@ -56,7 +56,7 @@ function populateUserInfo() {
                         document.getElementById("Buddy-name").value = userName;
                     }
                     if (userBuddy != null) {
-                        document.getElementById("BCITbuddy").value = userBuddy;
+                        document.getElementById("dropdown").value = userBuddy;
                     }
                 })
             document.getElementById('buddy').src = `"./assets/animals/"${userBuddy}'.svg'`

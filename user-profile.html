@@ -62,63 +62,107 @@
   <!-- Main Content -->
   <main id=""> <!-- PAGE BACKGROUND GOES IN THIS CONTAINER -->
 
-    <!-- Top Buttons -->
-    <a href="about-us.html">
-      <div id="about-us-btn" class="nav-btn" alt=""></div>
-    </a>
-    <button id="logout-btn" class="nav-btn" onclick="logout()"></button>
+    <!-- Main Content -->
+    <main id="" class="b"> <!-- PAGE BACKGROUND GOES IN THIS CONTAINER -->
+      <!-- Top Buttons -->
+      <a href="about-us.html">
+        <div id="about-us-btn" class="nav-btn" alt=""></div>
+      </a>
+      <button id="logout-btn" class="nav-btn" onclick="logout()"></button>
 
-    </div>
-    <img id="buddy" src="./assets/animals/bear-stand.svg" height="500" width="500">
-    </div>
+      </div>
+      <img id="buddy" src="./assets/animals/bear-stand.svg" height="500" width="500">
+      </div>
+      <!---------------------------->
+      <!-- ADD PAGE CONTENT BELOW -->
+      <!---------------------------->
+      <div class="profile-container">
+        <h1>User Profile</h1>
 
-
-
-
-
-    <div class="container mt-5">
-      <fieldset class="mb-3" id="userInfoFields" disabled>
-        <div class="form-group">
-          <label id="task-heading">Buddy Name</label>
-          <input type="text" id="Buddy-name" class="form-control" placeholder="Enter name">
+        <div class="user-card">
+          <img src="placeholder.jpg" alt="User Photo" class="user-photo">
+          <div class="user-info">
+            <p><strong>Username:</strong> User123</p>
+            <p><strong>Buddyname:</strong> Buddy</p>
+            <p><strong>Buddy Age:</strong> 12 weeks old</p>
+            <p><strong>Buddy Personality:</strong> Friendly</p>
+            <p><strong>Favourite Class:</strong> COMP1800</p>
+          </div>
         </div>
 
-        <label for="dropdown">Choose an option:</label>
-        <select id="dropdown" name="options">
-          <option value="bear-sit">bear-sit</option>
-          <option value="bear-stand">bear-stand</option>
-          <option value="deer-stand">deer-stand</option>
-          <option value="fox-stand">fox-stand</option>
-        </select>
+        <div class="user-summary">
+          <h2>Day Streak</h2>
+          <p><span class="streak-number">5</span> days</p>
+        </div>
 
-      </fieldset>
-      <div class="d-flex justify-content-end mt-5">
-        <button type="button" class="btn btn-secondary" id="edit-btn" onclick="editInfo()">Edit</button>
-        <button type="button" class="btn btn-info" id="cancel-btn" onclick="cancelEdit()">Cancel</button>
-        <button type="button" class="btn btn-info" onclick="saveInfo()">Save</button>
+        <div class="friends-list">
+          <h2>Friends</h2>
+          <ul>
+            <li>Friend 1</li>
+            <li>Friend 2</li>
+            <li>Friend 3</li>
+          </ul>
+        </div>
+
+        <div class="progress-stats">
+          <h2>Progress Stats</h2>
+          <ul>
+            <li>Tasks Completed: 10</li>
+            <li>Goals Achieved: 2</li>
+            <li>Self-Care Activities: 5</li>
+          </ul>
+        </div>
       </div>
 
-    </div>
+      <nav id="footerPlaceholder"></nav>
 
 
 
 
-    <!---------------------------->
-    <!-- ADD PAGE CONTENT BELOW -->
-    <!---------------------------->
-    <nav id="footerPlaceholder"></nav>
 
-  </main>
+      <div class="container mt-5">
+        <fieldset class="mb-3" id="userInfoFields" disabled>
+          <div class="form-group">
+            <label id="task-heading">Buddy Name</label>
+            <input type="text" id="Buddy-name" class="form-control" placeholder="Enter name">
+          </div>
 
-  <!---------------------------------------------->
-  <!-- Your own JavaScript functions go here    -->
-  <!---------------------------------------------->
+          <label for="dropdown">Choose an option:</label>
+          <select id="dropdown" name="options">
+            <option value="bear-sit">bear-sit</option>
+            <option value="bear-stand">bear-stand</option>
+            <option value="deer-stand">deer-stand</option>
+            <option value="fox-stand">fox-stand</option>
+          </select>
 
-  <!-- Link to scripts of your own -->
-  <script src="./scripts/script.js"></script>
-  <script src="./scripts/firebase_API.js"></script>
-  <script src="./scripts/skeleton.js"></script>
-  <script src="./scripts/user-profile.js"></script>
+        </fieldset>
+        <div class="d-flex justify-content-end mt-5">
+          <button type="button" class="btn btn-secondary" id="edit-btn" onclick="editInfo()">Edit</button>
+          <button type="button" class="btn btn-info" id="cancel-btn" onclick="cancelEdit()">Cancel</button>
+          <button type="button" class="btn btn-info" onclick="saveInfo()">Save</button>
+        </div>
+
+      </div>
+
+
+
+
+      <!---------------------------->
+      <!-- ADD PAGE CONTENT BELOW -->
+      <!---------------------------->
+      <nav id="footerPlaceholder"></nav>
+
+    </main>
+
+    <!---------------------------------------------->
+    <!-- Your own JavaScript functions go here    -->
+    <!---------------------------------------------->
+
+    <!-- Link to scripts of your own -->
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/firebase_API.js"></script>
+    <script src="./scripts/skeleton.js"></script>
+    <script src="./scripts/user-profile.js"></script>
 </body>
 
 </html>
