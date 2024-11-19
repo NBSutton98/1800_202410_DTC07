@@ -26,6 +26,8 @@ function populateUserInfo() {
                         document.getElementById("BCITbuddy").value = userBuddy;
                     }
                 })
+
+
         } else {
             // No user is signed in.
             console.log("No user is signed in");
@@ -50,6 +52,8 @@ function saveUserInfo() {
             console.log("Document successfully updated!");
         })
     document.getElementById('userInfoFields').disabled = true;
+    document.getElementById('edit-btn').style.display = 'block';
+    document.getElementById('cancel-btn').style.display = 'none';
 }
 
 function updateSFXValue(value) {
