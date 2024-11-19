@@ -11,16 +11,22 @@ function populateUserInfo() {
                 .then(userDoc => {
                     //get the data fields of the user
                     let userName = userDoc.data().name;
+                    let buddyPersonality = userDoc.data().buddypersonality;
+                    let buddyName = userDoc.data().buddyname;
                     let userBuddy = userDoc.data().buddy;
+
+                    document.getElementById('buddy').src = `./assets/animals/${userBuddy}.svg`
 
                     //if the data fields are not empty, then write them in to the form.
                     if (userName != null) {
-                        document.getElementById("Buddy-name").value = userName;
+                        document.getElementById("username").innerText = userName;
                     }
-                    if (userBuddy != null) {
-                        document.getElementById("dropdown").value = userBuddy;
+                    if (buddyName != null) {
+                        document.getElementById("buddy-name").innerText = buddyName;
                     }
-                    document.getElementById('buddy').src = `./assets/animals/${userBuddy}.svg`
+                    if (buddyPersonality != null) {
+                        document.getElementById('buddy-personality').innerText = buddyPersonality
+                    }
                 })
         } else {
             // No user is signed in.
