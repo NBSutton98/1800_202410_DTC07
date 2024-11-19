@@ -52,7 +52,7 @@ function writePrepopulatedTasks() {
             { title: 'Update Trello', completed: false, course: 'COMP1800' },
             { title: 'Submit Labs', completed: false, course: 'COMP1800' },
             { title: 'Submit Demo', completed: false, course: 'COMP1800' },
-        ]
+        ],
     };
 
     // Iterate over the tasks and write them to Firestore
