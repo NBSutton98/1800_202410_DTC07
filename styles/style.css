@@ -419,3 +419,20 @@ h6 {
 
 /* Footer * /
 footer 
+
+/* User Profile */
+#user-card {
+    width: 60%;
+}
+
+#user-profile-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#user-stats {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}

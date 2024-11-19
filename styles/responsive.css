@@ -21,6 +21,14 @@
         -webkit-text-stroke: 0.5px inherit !important;
     }
 
+    .friend-box {
+        width: 100%;
+    }
+
+    .friends-list {
+        padding: 32px;
+    }
+
     .team-card {
         flex-direction: column;
     }
@@ -125,6 +133,14 @@
 
     .task-title {
         top: 8px;
+    }
+
+    #user-profile-info {
+        flex-direction: column;
+    }
+
+    #user-card, #user-stats {
+        width: 100% !important;
     }
 
 }

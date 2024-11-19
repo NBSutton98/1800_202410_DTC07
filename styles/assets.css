@@ -286,6 +286,33 @@
     background-size: cover;
 }
 
+.friend-box {
+    aspect-ratio: .967;
+    width: 30%;
+    background-image: url(/assets/SVG/profile-friends-box.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+}
+
+.friend-box img {
+    max-width: 150px;
+}
+
+.friends-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 32px;
+}
+
+.friends-list h2 {
+    width: 100%;
+}
+
 .group-task-card {
     background-color: #f5e3a9;
     border-radius: 12px;
@@ -508,3 +535,19 @@
     transform: scale(1.15);
 }
 
+.user-card {
+    aspect-ratio: 1.24;
+    background-image: url(/assets/SVG/user-profile-box.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: clamp(330px, 90vw, 650px);
+}
+
+.user-summary {
+    aspect-ratio: 3.90;
+    background-image: url(/assets/SVG/profile-day-streak.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
