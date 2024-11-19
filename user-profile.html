@@ -70,9 +70,6 @@
       </a>
       <button id="logout-btn" class="nav-btn" onclick="logout()"></button>
 
-      </div>
-      <img id="buddy" src="./assets/animals/bear-stand.svg" height="500" width="500">
-      </div>
       <!---------------------------->
       <!-- ADD PAGE CONTENT BELOW -->
       <!---------------------------->
@@ -80,7 +77,7 @@
         <h1>User Profile</h1>
 
         <div class="user-card">
-          <img src="placeholder.jpg" alt="User Photo" class="user-photo">
+          <img src="placeholder.jpg" alt="User Photo" class="user-photo" id="buddy">
           <div class="user-info">
             <p><strong>Username:</strong> User123</p>
             <p><strong>Buddyname:</strong> Buddy</p>
@@ -120,29 +117,7 @@
 
 
 
-      <div class="container mt-5">
-        <fieldset class="mb-3" id="userInfoFields" disabled>
-          <div class="form-group">
-            <label id="task-heading">Buddy Name</label>
-            <input type="text" id="Buddy-name" class="form-control" placeholder="Enter name">
-          </div>
 
-          <label for="dropdown">Choose an option:</label>
-          <select id="dropdown" name="options">
-            <option value="bear-sit">bear-sit</option>
-            <option value="bear-stand">bear-stand</option>
-            <option value="deer-stand">deer-stand</option>
-            <option value="fox-stand">fox-stand</option>
-          </select>
-
-        </fieldset>
-        <div class="d-flex justify-content-end mt-5">
-          <button type="button" class="btn btn-secondary" id="edit-btn" onclick="editInfo()">Edit</button>
-          <button type="button" class="btn btn-info" id="cancel-btn" onclick="cancelEdit()">Cancel</button>
-          <button type="button" class="btn btn-info" onclick="saveInfo()">Save</button>
-        </div>
-
-      </div>
 
 
 
