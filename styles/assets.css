@@ -544,6 +544,10 @@
     width: clamp(330px, 90vw, 650px);
 }
 
+.user-card #buddy {
+    width: clamp(80px, 20vw, 140px);
+}
+
 .user-summary {
     aspect-ratio: 3.90;
     background-image: url(/assets/SVG/profile-day-streak.svg);
