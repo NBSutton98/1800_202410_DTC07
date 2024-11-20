@@ -18,6 +18,8 @@ function populateUserInfo() {
                     let buddyName = userDoc.data().buddyname;
                     let userBuddy = userDoc.data().buddy;
                     let buddyDate = userDoc.data().createAt;
+                    let favClass = userDoc.data().favclass;
+                    let userPronoun = userDoc.data().userpronoun;
 
                     document.getElementById('buddy').src = `./assets/animals/${userBuddy}.svg`
 
@@ -37,6 +39,12 @@ function populateUserInfo() {
                     if(buddyDate != null){
                         diff =   currentDay - (buddyDate.toDate())
                         document.getElementById('buddy-age').innerText = Math.floor(diff/day) + " days old";
+                    }
+                    if (favClass != null) {
+                        document.getElementById('favourite-class').innerText = favClass
+                    }
+                    if (userPronoun != null) {
+                        document.getElementById('pronouns').innerText = userPronoun
                     }
                 })
         } else {
