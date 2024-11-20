@@ -63,6 +63,9 @@
     <!-- Top Buttons -->
     <div class="container mt-5">
       <h2>Settings Form</h2>
+      <div id="avatar-preview">
+        <img src="/assets/animals/bear-stand.svg" alt="User Photo" class="user-photo" id="buddy">
+      </div>
 
       <fieldset class="mb-3" id="userInfoFields" disabled>
         <div class="form-group">
@@ -76,7 +79,7 @@
 
         <div class="form-group">
           <label for="email" class="col-sm-2 col-form-label">Prefered Pronouns</label>
-          <input type="email" class="form-control" id="userPronoun" placeholder="Enter email">
+          <input type="email" class="form-control" id="userPronoun" placeholder="They/Them/Theirs">
         </div>
 
         <div class="form-group">
@@ -90,28 +93,29 @@
         </div>
 
         <div class="form-group">
-        <label for="dropdown">Choose an option:</label>
+        <label for="dropdown">Choose your avatar:</label>
         <select id="dropdown" name="options">
-          <option value="bear-sit">bear-sit</option>
-          <option value="bear-stand">bear-stand</option>
-          <option value="deer-stand">deer-stand</option>
-          <option value="fox-stand">fox-stand</option>
-          <option value="fox-sit">fox-sit</option>
-          <option value="raccoon-1">raccoon</option>
-          <option value="squirrel">squirrel</option>
-          <option value="wolf">wolf</option>
+          <option value="bear-sit">Bear (Sitting)</option>
+          <option value="bear-stand">Bear (Standing)</option>
+          <option value="deer-stand">Deer (Standing)</option>
+          <option value="fox-stand">Fox (Standing)</option>
+          <option value="fox-sit">Fox (Sitting)</option>
+          <option value="raccoon-1">Raccoon</option>
+          <option value="squirrel">Squirrel</option>
+          <option value="wolf">Wolf</option>
         </select>
       </div>
 
         <div class="form-group">
-        <label for="dropdown-class">Choose a class:</label>
+        <label for="dropdown-class">Choose Your Favourite Class:</label>
         <select id="dropdownclass" name="options">
-          <option value="COMP 1537">COMP 1537</option>
-          <option value="COMP 1510">COMP 1510</option>
-          <option value="COMP 1113">COMP 1113</option>
-          <option value="COMP 1800">COMP 1800</option>
-          <option value="COMP 1712">COMP 1712</option>
-          <option value="COMM 1116">COMM 1116</option>
+          <option value="COMP 1100">COMP 1100 - CST Fundamentals</option>
+          <option value="COMP 1113">COMP 1113 - Applied Mathematics</option>
+          <option value="COMM 1116">COMM 1116 - Business Communications</option>
+          <option value="COMP 1510">COMP 1510 - Programming Methods</option>
+          <option value="COMP 1537">COMP 1537 - Web Development</option>
+          <option value="COMP 1712">COMP 1712 - Systems Design & Biz Analysis</option>
+          <option value="COMP 1800">COMP 1800 - Projects</option>
         </select>
         </div>
 
