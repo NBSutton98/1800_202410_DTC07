@@ -12,7 +12,8 @@ var uiConfig = {
           name: user.displayName,                    //"users" collection
           email: user.email,                         //with authenticated user's ID (user.uid)
           country: "Canada",                      //optional default profile info      
-          buddy: "bear-stand"                          //optional default profile info
+          buddy: "bear-stand",
+          createAt: firebase.firestore.FieldValue.serverTimestamp()                          //optional default profile info
         }).then(function () {
           console.log("New user added to firestore");
           window.location.assign("user-profile.html");       //re-direct to main.html after signup
