@@ -439,6 +439,11 @@ footer
 
 #user-card h1 {
     width: 100%;
+    text-align: center;
+}
+
+#user-friend-code {
+    width: 100%;
 }
 
 #user-info {

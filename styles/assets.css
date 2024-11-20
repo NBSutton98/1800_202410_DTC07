@@ -538,3 +538,7 @@
 .user-card #buddy {
     width: clamp(80px, 20vw, 140px);
 }
+
+.user-photo {
+    background-image: url('/assets/SVG/');
+}
