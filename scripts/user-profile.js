@@ -1,5 +1,8 @@
 var currentUser;               //points to the document of the user who is logged in
 
+const day = 1000 * 3600 * 24
+const currentDay = new Date();
+
 function populateUserInfo() {
     firebase.auth().onAuthStateChanged(user => {
         // Check if user is signed in:
@@ -14,6 +17,7 @@ function populateUserInfo() {
                     let buddyPersonality = userDoc.data().buddypersonality;
                     let buddyName = userDoc.data().buddyname;
                     let userBuddy = userDoc.data().buddy;
+                    let buddyDate = userDoc.data().createAt;
 
                     document.getElementById('buddy').src = `./assets/animals/${userBuddy}.svg`
 
@@ -27,6 +31,13 @@ function populateUserInfo() {
                     if (buddyPersonality != null) {
                         document.getElementById('buddy-personality').innerText = buddyPersonality
                     }
+                    if(userDoc.data().createAt == null){
+                        updateMissingInfomation()
+                    }
+                    if(buddyDate != null){
+                        diff =   currentDay - (buddyDate.toDate())
+                        document.getElementById('buddy-age').innerText = Math.floor(diff/day) + " days old";
+                    }
                 })
         } else {
             // No user is signed in.
@@ -36,3 +47,9 @@ function populateUserInfo() {
 }
 
 populateUserInfo();
+
+function updateMissingInfomation(){
+    currentUser.update({
+        createAt: firebase.firestore.Timestamp.fromDate(new Date("November 6, 2024"))
+    })
+}
