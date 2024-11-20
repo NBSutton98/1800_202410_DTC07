@@ -430,8 +430,23 @@ footer
     gap: 32px;
 }
 
+#user-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#user-card h1 {
+    width: 100%;
+}
+
 #user-info {
-    width: 66%;
+    width: 60%;
+}
+
+#user-photo-streak {
+    width: 50%;
 }
 
 #user-profile-info {
@@ -439,6 +454,10 @@ footer
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+}
+
+#user-settings-info {
+    width: 50%;
 }
 
 #user-stats {
