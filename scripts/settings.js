@@ -16,6 +16,8 @@ function populateUserInfo() {
                     let userBuddy = userDoc.data().buddy;
                     let buddyName = userDoc.data().buddyname;
                     let buddyPersonality = userDoc.data().buddypersonality;
+                    let userPronoun = userDoc.data().userpronoun;
+                    let userFavClass = userDoc.data().favclass;
 
                     //if the data fields are not empty, then write them in to the form.
                     if (userName != null) {
@@ -32,6 +34,12 @@ function populateUserInfo() {
                     }
                     if (buddyPersonality != null) {
                         document.getElementById('Buddy-personality').value = buddyPersonality
+                    }
+                    if (userFavClass != null) {
+                        document.getElementById('dropdownclass').value = userFavClass
+                    }
+                    if (userPronoun != null) {
+                        document.getElementById('userPronoun').value = userPronoun
                     }
                 })
 
@@ -52,13 +60,18 @@ function saveUserInfo() {
     userBuddy = document.getElementById('dropdown').value;
     userBuddyName = document.getElementById('Buddy-name').value;
     userBuddyPersonality = document.getElementById('Buddy-personality').value;
+    userPronoun = document.getElementById('userPronoun').value;
+    userFavClass = document.getElementById('dropdownclass').value;
 
     currentUser.update({
         name: userName,
         email: userEmail,
         buddy: userBuddy,
         buddyname: userBuddyName,
-        buddypersonality: userBuddyPersonality
+        buddypersonality: userBuddyPersonality,
+        userpronoun: userPronoun,
+        favclass: userFavClass
+
     })
         .then(() => {
             console.log("Document successfully updated!");
