@@ -430,18 +430,19 @@ footer
     gap: 32px;
 }
 
-#user-card {
-    width: 60%;
+#user-info {
+    width: 66%;
 }
 
 #user-profile-info {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 100%;
 }
 
 #user-stats {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 30%;
 }
