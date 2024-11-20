@@ -2,10 +2,15 @@ let taskList = document.getElementById("task-list");
 function getNameFromAuth() {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
+      currentUser = db.collection("users").doc(user.uid)
       console.log(user.uid);
       console.log(user.displayName);
-      userName = user.displayName;
-      document.getElementById("name-goes-here").innerText = userName;
+
+      currentUser.get().then(user =>{
+        userName = user.data().name;
+        console.log(userName)
+        document.getElementById("name-goes-here").innerText = userName;
+      })
     } else {
       console.log("No user is logged in");
     }
