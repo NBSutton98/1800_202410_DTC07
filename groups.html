@@ -108,6 +108,7 @@
           <div id="group-task-creation" class="option-menu">
             <h2 class="option-menu-head">Add a Task</h2>
             <form>
+
               <div id="task-name">
                 <label for="task" id="user-greeting2">Task</label>
                 <input
@@ -118,6 +119,8 @@
                   required
                 />
               </div>
+
+
               <div id="task-date">
                 <label for="due-date" id="user-greeting2">Due Date</label>
                 <input
@@ -127,6 +130,15 @@
                   required
                 />
               </div>
+
+              <label for="dropdown">Priority</label>
+              <select id="dropdown" name="options">
+                <option value="none">None</option>
+                <option value="low">Low</option>
+                <option value="normal">Normal</option>
+                <option value="high">High</option>
+              </select>
+
               <div id="task-desc">
                 <label for="description" id="user-greeting2">Description</label>
                 <textarea

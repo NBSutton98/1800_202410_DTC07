@@ -259,6 +259,7 @@ h6 {
 
 #chat-container {
     width: 100%;
+    padding: 2.5%;
 }
 
 #chat-display {
@@ -268,7 +269,7 @@ h6 {
     background-color: #f5E3a9;
     box-shadow: 2px 5px 1px #000;
     overflow-y: auto;
-    max-height: 400px;
+    min-height: 360px;
 }
 
 #chat-input-area {
@@ -277,7 +278,6 @@ h6 {
     background-color: #f5E3a9;
     border-radius: 0 0 20px 20px !important;
     box-shadow: 2px 5px 1px #000;
-    
 }
 
 #group-inputs {
@@ -329,9 +329,10 @@ h6 {
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     gap: 12px;
     justify-content: center;
+    overflow-x: scroll;
 }
 
 
