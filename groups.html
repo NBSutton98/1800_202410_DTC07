@@ -131,16 +131,18 @@
                 />
               </div>
 
-              <label for="dropdown">Priority</label>
-              <select id="dropdown" name="options">
-                <option value="none">None</option>
-                <option value="low">Low</option>
-                <option value="normal">Normal</option>
-                <option value="high">High</option>
-              </select>
+              <label for="taskPriorityDropdown">Priority</label>
+              <div class="custom-select">
+                  <select id="priorityDropdown" name="options">
+                      <option value="none" data-icon="assets/SVG/flag-none.svg">None</option>
+                      <option value="low" data-icon="assets/SVG/flag-low.svg">Low</option>
+                      <option value="normal" data-icon="assets/SVG/flag-normal.svg">Normal</option>
+                      <option value="high" data-icon="assets/SVG/flag-high.svg">High</option>
+                  </select>
+              </div>
 
               <div id="task-desc">
-                <label for="description" id="user-greeting2">Description</label>
+                <label for="description">Description</label>
                 <textarea
                   id="description"
                   rows="3"
@@ -160,7 +162,6 @@
 
           <!-- Chat Container -->
             <div id="chat-container" class="">
-              <h3>Group Chat</h3>
               <!-- Chat Display Area -->
               <div id="chat-display" class="">
                 <!-- Messages will be appended here -->
@@ -173,7 +174,7 @@
                     type="text"
                     id="chat-input"
                     placeholder="Type your message..."
-                    class="w-full border border-white rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+                    class=""
                     required
                   />
                   <button type="send" id="send-btn" class="option-btn-active">

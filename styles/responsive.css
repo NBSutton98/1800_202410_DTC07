@@ -107,16 +107,7 @@
         width: 100%;
         text-align: center;
     }
-
-    #user-greeting {
-        margin-top: 60px !important;
-    }
-
-    #user-greeting,
-    #name-goes-here {
-        -webkit-text-stroke: 4px #663000;
-    }
-
+    
     #task-container {
         padding-top: 60px;
         gap: 15px !important;
