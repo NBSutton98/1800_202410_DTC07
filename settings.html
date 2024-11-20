@@ -58,10 +58,15 @@
   </header>
 
   <!-- Main Content -->
-  <main id=""> <!-- PAGE BACKGROUND GOES IN THIS CONTAINER -->
+  <main id="settings-page" class="bg-container"> <!-- PAGE BACKGROUND GOES IN THIS CONTAINER -->
 
     <!-- Top Buttons -->
-    <div class="container mt-5">
+    <a href="about-us.html">
+      <div id="about-us-btn" class="nav-btn" alt=""></div>
+    </a>
+    <button id="logout-btn" class="nav-btn" onclick="logout()"></button>
+
+    <div id="settings-form">
       <h2>Settings Form</h2>
       <div id="avatar-preview">
         <img src="/assets/animals/bear-stand.svg" alt="User Photo" class="user-photo" id="buddy" height="250" width="250">

@@ -297,6 +297,11 @@
     flex-direction: column;
 }
 
+.friend-box h3 {
+    width: 100%;
+    text-align: center;
+}
+
 .friend-box img {
     max-width: 150px;
 }

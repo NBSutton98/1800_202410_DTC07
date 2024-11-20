@@ -417,9 +417,6 @@ h6 {
     top: 15%;
 }
 
-/* Footer * /
-footer 
-
 /* User Profile */
 
 #friends-list {
@@ -470,4 +467,10 @@ footer
     display: flex;
     flex-direction: column;
     width: 30%;
+}
+
+/* Settings Page */
+
+#settings-form {
+    margin-bottom: 100px;
 }
