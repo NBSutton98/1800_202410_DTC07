@@ -45,12 +45,13 @@
     <!-------------------------------------------->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"/>
-    <link rel="stylesheet" href="https://use.typekit.net/rkb7vro.css">
-  <!-- Link to styles of your own -->
-  <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./styles/assets.css">
-  <link rel="stylesheet" href="./styles/responsive.css">
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/rkb7vro.css" />
+    <!-- Link to styles of your own -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/assets.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       /* Custom background styling */
@@ -94,14 +95,21 @@
 
       <!-- Main-Content -->
       <div class="main-content">
-        <h1 id="user-greeting"> Group Tasks: Welcome, <span id="name-goes-here"></span></h1>
-        
-        <div id="task-list">
-          <!-- Tasks will be dynamically inserted here -->
+        <div id="groups-intro">
+          <h1>Hello, <span id="name-goes-here"></span>!</h1>
+        </div>
+
+        <!-- Tasks will be dynamically inserted here -->
+        <div id="task-list-container">
+          <h2>Group Tasks</h2>
+          <a href="#group-task-creation">
+            <button id="CTA-create-task">Add Group Task</button>
+          </a>
+          <div id="task-list"></div>
         </div>
 
         <!-- Input Section for Tasks and Chat Container -->
-        <div id="group-task-content" class="flex">
+        <div id="group-inputs">
           <div id="group-task-creation" class="option-menu">
             <h2 class="option-menu-head">Add a Task</h2>
             <form>
@@ -116,7 +124,7 @@
                 />
               </div>
               <div id="task-date">
-                <label for="due-date"  id="user-greeting2">Due Date</label>
+                <label for="due-date" id="user-greeting2">Due Date</label>
                 <input
                   type="date"
                   id="due-date"
@@ -133,37 +141,42 @@
                   placeholder="Enter a description"
                 ></textarea>
               </div>
-              <button type="submit" id="group-task-submit-btn" class="option-btn-active">Submit</button>
-            </form>
-          </div>
-
-          <!-- Chat Container -->
-          <div id="chat-container" class="w-full max-w-md flex flex-col">
-          <!-- Chat Display Area -->
-          <div id="chat-display" class="flex-grow p-4 overflow-y-auto border">
-            <!-- Messages will be appended here -->
-          </div>
-
-          <!-- Chat Input Area -->
-          <div id="chat-input-area" class="p-4 border-t flex">
-            <form id="chat-form" class="flex space-x-2">
-              <input
-                type="text"
-                id="chat-input"
-                placeholder="Type your message..."
-                class="w-full border border-white rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-blue-300"
-                required
-              />
               <button
-                type="send" id="send-btn" class="option-btn-active">Send
+                type="submit"
+                id="group-task-submit-btn"
+                class="option-btn-active"
+              >
+                Submit
               </button>
             </form>
           </div>
 
-  </div>
+          <!-- Chat Container -->
+          <div id="chat-container" class="">
+            <!-- Chat Display Area -->
+            <div id="chat-display" class="">
+              <!-- Messages will be appended here -->
+            </div>
+
+            <!-- Chat Input Area -->
+            <div id="chat-input-area" class="">
+              <form id="chat-form" class="">
+                <input
+                  type="text"
+                  id="chat-input"
+                  placeholder="Type your message..."
+                  class="w-full border border-white rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+                  required
+                />
+                <button type="send" id="send-btn" class="option-btn-active">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+
         </div>
-        
-      </div> 
+      </div>
     </main>
 
     <!-- Footer with navigation icons -->

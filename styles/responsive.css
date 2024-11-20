@@ -58,12 +58,12 @@
         min-width: 330px !important;
     }
 
-    #groups-task-content {
-        flex-wrap: wrap;
+    #group-inputs {
+        flex-direction: column-reverse;
     }
 
     #group-task-creation {
-        width: 80vw !important;
+        width: 80%;
     }
 
     #chat-container {
@@ -96,7 +96,11 @@
     }
 
     #task-list {
-        padding: 0;
+        max-height: 60vh;
+        overflow-x: auto;
+        overflow-y: scroll;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     .task-list-title {
