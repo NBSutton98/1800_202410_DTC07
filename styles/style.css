@@ -447,7 +447,7 @@ footer
 }
 
 #user-info {
-    width: 60%;
+    width: 66%;
 }
 
 #user-photo-streak {
@@ -459,6 +459,7 @@ footer
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 5%;
 }
 
 #user-settings-info {
