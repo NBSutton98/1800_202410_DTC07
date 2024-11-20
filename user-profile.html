@@ -84,6 +84,14 @@
                   <h2>Day Streak</h2>
                   <p><span class="streak-number">5</span> days</p>
                 </div>
+
+                <div class="friend-code-container">
+                  <h1>Your Friend Code</h1>
+                  <input type="text" id="friendCode" value="ABCD1234" readonly>
+                  <button onclick="copyToClipboard()">Copy Code</button>
+                  <p id="copyMessage" class="hidden">Copied to clipboard!</p>
+                </div>
+
               </div>
               <div class="user-settings-info">
                 <p><strong>Your Name:</strong> <span id="username">User123</span></p>
@@ -92,13 +100,10 @@
                 <p><strong>Buddy Age:</strong> <span id="buddy-age">0 days old</span></p>
                 <p><strong>Buddy Personality:</strong> <span id="buddy-personality">User123</span></p>
                 <p><strong>Favourite Class:</strong> <span id="favourite-class">COMP1800</span></p>
+                <a href="settings.html">
+                  <button class="option-btn">Edit Profile</button>
+                </a>
               </div>
-              <div id="user-friend-code">
-                Your Friend Code:
-              </div>
-              <a href="settings.html">
-                <button class="option-btn">Edit Profile</button>
-              </a>
             </div>
           </div>
 

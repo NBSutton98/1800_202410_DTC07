@@ -61,3 +61,19 @@ function updateMissingInfomation(){
         createAt: firebase.firestore.Timestamp.fromDate(new Date("November 6, 2024"))
     })
 }
+
+// Function to copy friend code to clipboard
+function copyToClipboard() {
+    const copyText = document.getElementById("friendCode");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+
+    document.execCommand("copy");
+
+    const copyMessage = document.getElementById("copyMessage");
+    copyMessage.classList.remove("hidden");
+
+    setTimeout(() => {
+        copyMessage.classList.add("hidden");
+    }, 2000);
+}

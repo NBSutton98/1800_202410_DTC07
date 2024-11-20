@@ -313,6 +313,10 @@
     margin-bottom: 16px;
     min-width: 250px !important;
 }
+
+.hidden {
+    display: none;
+}
   
 .text-sm {
     font-size: 0.875rem;
@@ -535,10 +539,12 @@
     background-size: contain;
 }
 
-.user-card #buddy {
-    width: clamp(80px, 20vw, 140px);
-}
-
-.user-photo {
-    background-image: url('/assets/SVG/');
+.user-card .user-photo {
+    background-image: url('/assets/SVG/profile-img-frame.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 1;
+    padding: 6%;
+    width: clamp(200px, 20vw, 280px);
 }
