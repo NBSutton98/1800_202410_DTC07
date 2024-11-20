@@ -53,14 +53,6 @@
     <link rel="stylesheet" href="./styles/assets.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      /* Custom background styling */
-      #groups-page {
-        background-image: url("assets/bg/main-forest.png");
-        background-size: cover;
-        background-position: center;
-      }
-    </style>
   </head>
 
   <body>
@@ -104,6 +96,9 @@
           <h2>Group Tasks</h2>
           <a href="#group-task-creation">
             <button id="CTA-create-task">Add Group Task</button>
+          </a>
+          <a href="#chat-container">
+            <button id="CTA-chat">View Chat</button>
           </a>
           <div id="task-list"></div>
         </div>
@@ -152,28 +147,30 @@
           </div>
 
           <!-- Chat Container -->
-          <div id="chat-container" class="">
-            <!-- Chat Display Area -->
-            <div id="chat-display" class="">
-              <!-- Messages will be appended here -->
+            <div id="chat-container" class="">
+              <h3>Group Chat</h3>
+              <!-- Chat Display Area -->
+              <div id="chat-display" class="">
+                <!-- Messages will be appended here -->
+              </div>
+
+              <!-- Chat Input Area -->
+              <div id="chat-input-area" class="">
+                <form id="chat-form" class="">
+                  <input
+                    type="text"
+                    id="chat-input"
+                    placeholder="Type your message..."
+                    class="w-full border border-white rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+                    required
+                  />
+                  <button type="send" id="send-btn" class="option-btn-active">
+                    Send
+                  </button>
+                </form>
+              </div>
             </div>
 
-            <!-- Chat Input Area -->
-            <div id="chat-input-area" class="">
-              <form id="chat-form" class="">
-                <input
-                  type="text"
-                  id="chat-input"
-                  placeholder="Type your message..."
-                  class="w-full border border-white rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-blue-300"
-                  required
-                />
-                <button type="send" id="send-btn" class="option-btn-active">
-                  Send
-                </button>
-              </form>
-            </div>
-          </div>
 
         </div>
       </div>
