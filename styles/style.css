@@ -421,6 +421,15 @@ h6 {
 footer 
 
 /* User Profile */
+
+#friends-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 32px;
+}
+
 #user-card {
     width: 60%;
 }

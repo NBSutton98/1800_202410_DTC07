@@ -301,14 +301,6 @@
     max-width: 150px;
 }
 
-.friends-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 32px;
-}
-
 .friends-list h2 {
     width: 100%;
 }
