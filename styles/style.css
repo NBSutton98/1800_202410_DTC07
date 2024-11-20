@@ -431,17 +431,42 @@ footer
 }
 
 #user-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#user-card h1 {
+    width: 100%;
+    text-align: center;
+}
+
+#user-friend-code {
+    width: 100%;
+}
+
+#user-info {
     width: 60%;
+}
+
+#user-photo-streak {
+    width: 50%;
 }
 
 #user-profile-info {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 100%;
+}
+
+#user-settings-info {
+    width: 50%;
 }
 
 #user-stats {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 30%;
 }

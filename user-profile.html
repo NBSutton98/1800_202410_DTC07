@@ -74,30 +74,60 @@
       <!-- ADD PAGE CONTENT BELOW -->
       <!---------------------------->
       <div class="profile-container main-content">
-        <h1>User Profile</h1>
-        <div class="user-card">
-          <img src="placeholder.jpg" alt="User Photo" class="user-photo" id="buddy">
-          <div class="user-info">
-            <p><strong>Username:</strong> <span id="username">User123</span></p>
-            <p><strong>Buddyname:</strong> <span id="buddy-name">User123</span></p>
-            <p><strong>Buddy Age:</strong> <span id="buddy-age">0 days old</span></p>
-            <p><strong>Buddy Personality:</strong> <span id="buddy-personality">User123</span></p>
-            <p><strong>Favourite Class:</strong> COMP1800</p>
+        <div id="user-profile-info">
+          <div id="user-info">
+            <div id="user-card" class="user-card">
+              <h1>User Profile</h1>
+              <div id="user-photo-streak">
+                <img src="/assets/animals/bear-stand.svg" alt="User Photo" class="user-photo" id="buddy">
+                <div class="user-summary">
+                  <h2>Day Streak</h2>
+                  <p><span class="streak-number">5</span> days</p>
+                </div>
+              </div>
+              <div class="user-settings-info">
+                <p><strong>Your Name:</strong> <span id="username">User123</span></p>
+                <p><strong>Your Pronouns:</strong> <span id="pronouns">They/Them</span></p>
+                <p><strong>Buddy Name:</strong> <span id="buddy-name">User123</span></p>
+                <p><strong>Buddy Age:</strong> <span id="buddy-age">0 days old</span></p>
+                <p><strong>Buddy Personality:</strong> <span id="buddy-personality">User123</span></p>
+                <p><strong>Favourite Class:</strong> COMP1800</p>
+              </div>
+              <div id="user-friend-code">
+                Your Friend Code:
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="user-summary">
-          <h2>Day Streak</h2>
-          <p><span class="streak-number">5</span> days</p>
-        </div>
+          <div id="user-stats" class="progress-stats">
+            <h2>Progress Stats</h2>
 
-        <div class="progress-stats">
-          <h2>Progress Stats</h2>
-          <ul>
-            <li>Tasks Completed: 10</li>
-            <li>Goals Achieved: 2</li>
-            <li>Self-Care Activities: 5</li>
-          </ul>
+            <div id="selfcare-progress" class="progress-bar">
+              <img src="/assets/SVG/selfcare-demo.svg">
+              <h4>Self Care</h4>
+            </div>
+
+            <div id="knowledge-progress" class="progress-bar">
+              <img src="/assets/SVG/knowledge-demo.svg">
+              <h4>Knowledge</h4>
+            </div>
+
+            <div id="programming-progress" class="progress-bar">
+              <img src="/assets/SVG/coding-demo.svg">
+              <h4>Programming</h4>
+            </div>
+
+            <div id="socializing-progress" class="progress-bar">
+              <img src="/assets/SVG/socialize-demo.svg">
+              <h4>Socializing</h4>
+            </div>
+
+            <div id="contribution-progress" class="progress-bar">
+              <img src="/assets/SVG/contribute-demo.svg">
+              <h4>Contributions</h4>
+            </div>
+
+          </div>
         </div>
 
         <div id="friends-list">
