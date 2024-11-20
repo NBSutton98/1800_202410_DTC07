@@ -19,6 +19,8 @@ function populateUserInfo() {
                     let userPronoun = userDoc.data().userpronoun;
                     let userFavClass = userDoc.data().favclass;
 
+                    document.getElementById('buddy').src = `./assets/animals/${userBuddy}.svg`
+
                     //if the data fields are not empty, then write them in to the form.
                     if (userName != null) {
                         document.getElementById("username").value = userName;
@@ -28,6 +30,7 @@ function populateUserInfo() {
                     }
                     if (userBuddy != null) {
                         document.getElementById("dropdown").value = userBuddy;
+                        
                     }
                     if (buddyName != null) {
                         document.getElementById('Buddy-name').value = buddyName
