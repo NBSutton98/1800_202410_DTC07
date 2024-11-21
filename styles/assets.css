@@ -507,11 +507,12 @@
     border: none;
     background-color: transparent;
     background-image: url("/assets/SVG/option-btn.svg");
+    background-repeat: no-repeat;
     width: clamp(140px, 52vw, 300px);
     text-transform: uppercase;
     font-family: 'giulia-plain';
     font-weight: 600;
-    font-size: clamp(28px, 4.5vw, 40px);
+    font-size: clamp(20px, 3vw, 24px);
     color: #fff;
     letter-spacing: -2px;
     -webkit-text-stroke: 1px #82C822;
@@ -604,6 +605,5 @@
     background-repeat: no-repeat;
     background-size: contain;
     aspect-ratio: 1;
-    padding: 6%;
-    width: clamp(200px, 20vw, 280px);
+    padding: 8%;
 }
