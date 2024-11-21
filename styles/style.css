@@ -365,7 +365,7 @@ h6 {
 /* User Profile */
 
 #copy-to-clipboard {
-    width: 30%;
+    width: 35%;
 }
 
 #edit-profile-CTA {
@@ -373,11 +373,12 @@ h6 {
     float: right;
 }
 
+
 #friendCode {
     height: 44px;
     border: none;
     background-color: transparent;
-    width: 70%;
+    width: 65%;
     color: #fff;
     text-shadow: 1px 1px #00000080;
 }
@@ -395,7 +396,7 @@ h6 {
     padding: 0 6% 3% 8%;
     justify-content: space-between;
     align-items: center;
-    width: clamp(200px, 25vw, 380px)
+    width: 100%;
 }
 
 #friends-list {
@@ -406,12 +407,32 @@ h6 {
     gap: 32px;
 }
 
+#send-encouragement {
+    background-color: transparent;
+    border: none;
+    aspect-ratio: 1;
+    background-image: url('/assets/SVG/friend-encourage-btn.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+#send-direct-message {
+    background-color: transparent;
+    border: none;
+    aspect-ratio: 1;
+    background-image: url('/assets/SVG/friend-dm-btn.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
 
 #user-card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 #user-card h1 {
@@ -419,15 +440,11 @@ h6 {
     text-align: center;
 }
 
-#user-friend-code {
-    width: 100%;
-}
-
 #user-info {
     width: 66%;
 }
 
-#user-photo-streak {
+#user-photo-code {
     width: 45%;
 }
 
@@ -439,8 +456,12 @@ h6 {
     margin-bottom: 5%;
 }
 
-#user-settings-info {
-    width: 60%;
+.user-settings-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    gap: 8px;
 }
 
 #user-stats {

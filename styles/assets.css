@@ -333,10 +333,15 @@
 }
 
 .friend-box-buttons {
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: -10px;
+}
+
+.friend-box-buttons button {
+    width: clamp(40px, 8vw, 50px);
 }
 
 .friend-box h3 {
@@ -346,14 +351,13 @@
 }
 
 .friend-img {
-    width: 40%;
-    height: 200px;
-    padding: 10%;
+    width: 70%;
+    padding: 6%;
     background-image: url(/assets/SVG/profile-img-frame.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    aspect-ratio: 1;
+    aspect-ratio: 1.24;
 }
 
 .friends-list h2 {
@@ -371,6 +375,10 @@
     padding: 16px;
     margin-bottom: 16px;
     min-width: 250px !important;
+}
+
+.half-width {
+    width: 45%;
 }
 
 .hidden {
@@ -393,7 +401,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     min-height: 100vh;
     align-items: center;
 }
@@ -597,6 +605,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    padding: 0 5%;
 }
 
 .user-card .user-photo {

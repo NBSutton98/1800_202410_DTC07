@@ -21,37 +21,17 @@
         -webkit-text-stroke: 0.5px inherit !important;
     }
 
-    .friend-box {
+    #chat-container {
         width: 100%;
     }
 
-    .friends-list {
-        padding: 32px;
+    .friend-box {
+        width: 80%;
     }
 
-    .team-card {
-        flex-direction: column;
-    }
-
-    .team-info {
-        background-image: url("/assets/SVG/input\ board\ no\ ribbon.svg");
-        aspect-ratio: 1.31;
-        width: 91%;
-        padding: 12px;
+    #friends-list {
+        gap: 40px !important;
         justify-content: center;
-        align-content: center;
-    }
-
-    .team-img {
-        width: 80vw;
-    }
-
-    #timmy {
-        flex-direction: column;
-    }
-
-    #to-do {
-        background-image: url("/assets/bg/to-do-bg.webp");
     }
 
     .group-task-card {
@@ -66,7 +46,7 @@
         width: 80%;
     }
 
-    #chat-container {
+    .half-width {
         width: 100%;
     }
 
@@ -93,6 +73,10 @@
     .option-menu-btns {
         gap: 12px;
         margin-top: -8px;
+    }
+
+    .progress-stats {
+        padding: 24px;
     }
 
     #task-list {
@@ -130,12 +114,50 @@
         top: 8px;
     }
 
-    #user-profile-info {
+    .team-card {
         flex-direction: column;
     }
 
-    #user-card, #user-stats {
+    .team-info {
+        background-image: url("/assets/SVG/input\ board\ no\ ribbon.svg");
+        aspect-ratio: 1.31;
+        width: 91%;
+        padding: 12px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .team-img {
+        width: 80vw;
+    }
+
+    #timmy {
+        flex-direction: column;
+    }
+
+    #to-do {
+        background-image: url("/assets/bg/to-do-bg.webp");
+    }
+
+    .user-card {
+        background-image: none;
+        flex-direction: column !important;
+        flex-wrap: nowrap;
+        aspect-ratio: auto;
+        width: 100%;
+        align-items: center !important;
+    }
+
+    #user-info, #user-card, #user-stats {
         width: 100% !important;
     }
 
+    #user-photo-code {
+        width: 80%;
+        margin-bottom: 24px;
+    }
+
+    #user-profile-info {
+        flex-direction: column;
+    }
 }
