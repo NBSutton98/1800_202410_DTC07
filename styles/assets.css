@@ -101,6 +101,37 @@
     background-image: url('/assets/SVG/logout-hover.svg');
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border: 1px solid red; /* Debugging: Show the tooltip container */
+    visibility: visible !important;
+}
+  
+.tooltip img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    visibility: visible !important;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    z-index: 9999;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 
 /* Buttons */
 
@@ -294,20 +325,43 @@
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+}
+
+.friend-box-buttons {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .friend-box h3 {
     width: 100%;
     text-align: center;
+    margin: 0;
 }
 
-.friend-box img {
-    max-width: 150px;
+.friend-img {
+    width: 40%;
+    height: 200px;
+    padding: 10%;
+    background-image: url(/assets/SVG/profile-img-frame.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    aspect-ratio: 1;
 }
 
 .friends-list h2 {
     width: 100%;
+}
+
+.friend-box-info {
+    width: 55%;
 }
 
 .group-task-card {
