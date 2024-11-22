@@ -2,15 +2,15 @@ let taskList = document.getElementById("task-list");
 function getNameFromAuth() {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
-      currentUser = db.collection("users").doc(user.uid)
+      currentUser = db.collection("users").doc(user.uid);
       console.log(user.uid);
       console.log(user.displayName);
 
-      currentUser.get().then(user =>{
+      currentUser.get().then((user) => {
         userName = user.data().name;
-        console.log(userName)
+        console.log(userName);
         document.getElementById("name-goes-here").innerText = userName;
-      })
+      });
     } else {
       console.log("No user is logged in");
     }
@@ -30,9 +30,10 @@ function setupChat() {
         await db.collection("messages").add({
           text: chatInput,
           createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+          name: firebase.auth().currentUser.displayName,
         });
         chatInputElement.value = "";
-      } catch (error) { }
+      } catch (error) {}
     });
 
   const chatDisplay = document.getElementById("chat-display");
@@ -43,7 +44,9 @@ function setupChat() {
       snapshot.forEach((doc) => {
         const messageData = doc.data();
         const messageElement = document.createElement("div");
+        username = messageData.name;
         messageElement.textContent = messageData.text;
+        messageElement.textContent += ` - ${username}`;
         chatDisplay.appendChild(messageElement);
       });
     });
@@ -61,10 +64,9 @@ function setupTasks() {
         dueDate: dueDate,
         description: description,
         createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-
+        name: firebase.auth().currentUser.displayName,
       });
-
-    } catch (error) { }
+    } catch (error) {}
     displayTask();
   });
 }
@@ -97,14 +99,10 @@ taskList.addEventListener("click", async (event) => {
     try {
       await db.collection("tasks").doc(taskId).delete();
       displayTask();
-    } catch (error) { }
+    } catch (error) {}
   }
 });
 
 setupChat();
 setupTasks();
 displayTask();
-
-
-
-
