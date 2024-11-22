@@ -72,6 +72,12 @@
         <img src="/assets/animals/bear-stand.svg" alt="User Photo" class="user-photo" id="buddy" height="250" width="250">
       </div>
 
+      <div id="edit-settings-buttons" class="d-flex justify-content-end mt-5">
+        <button type="button" class="btn btn-secondary" id="edit-btn" onclick="edituserInfo()">Edit</button>
+        <button type="button" class="btn btn-info" id="cancel-btn" onclick="cancelEdit()">Cancel</button>
+        <button type="submit" class="btn btn-primary" onclick="saveUserInfo()">Save Settings</button>
+      </div>
+
       <fieldset class="mb-3" id="userInfoFields" disabled>
         <div class="form-group">
           <label id="task-heading">Name</label>
@@ -144,11 +150,6 @@
         <input id="MusicValue" class="ms-3" placeholder="50">
       </div>
 
-      <div class="d-flex justify-content-end mt-5">
-        <button type="button" class="btn btn-secondary" id="edit-btn" onclick="edituserInfo()">Edit</button>
-        <button type="button" class="btn btn-info" id="cancel-btn" onclick="cancelEdit()">Cancel</button>
-        <button type="submit" class="btn btn-primary" onclick="saveUserInfo()">Save Settings</button>
-      </div>
       </form>
     </div>
 

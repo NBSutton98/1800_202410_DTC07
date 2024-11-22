@@ -101,6 +101,37 @@
     background-image: url('/assets/SVG/logout-hover.svg');
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border: 1px solid red; /* Debugging: Show the tooltip container */
+    visibility: visible !important;
+}
+  
+.tooltip img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    visibility: visible !important;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    z-index: 9999;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 
 /* Buttons */
 
@@ -294,20 +325,47 @@
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+}
+
+.friend-box-buttons {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: -10px;
+}
+
+.friend-box-buttons button {
+    width: clamp(40px, 8vw, 50px);
 }
 
 .friend-box h3 {
     width: 100%;
     text-align: center;
+    margin: 0;
 }
 
-.friend-box img {
-    max-width: 150px;
+.friend-img {
+    width: 70%;
+    padding: 6%;
+    background-image: url(/assets/SVG/profile-img-frame.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    aspect-ratio: 1.24;
 }
 
 .friends-list h2 {
     width: 100%;
+}
+
+.friend-box-info {
+    width: 55%;
 }
 
 .group-task-card {
@@ -317,6 +375,10 @@
     padding: 16px;
     margin-bottom: 16px;
     min-width: 250px !important;
+}
+
+.half-width {
+    width: 45%;
 }
 
 .hidden {
@@ -339,7 +401,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     min-height: 100vh;
     align-items: center;
 }
@@ -453,11 +515,12 @@
     border: none;
     background-color: transparent;
     background-image: url("/assets/SVG/option-btn.svg");
+    background-repeat: no-repeat;
     width: clamp(140px, 52vw, 300px);
     text-transform: uppercase;
     font-family: 'giulia-plain';
     font-weight: 600;
-    font-size: clamp(28px, 4.5vw, 40px);
+    font-size: clamp(20px, 3vw, 24px);
     color: #fff;
     letter-spacing: -2px;
     -webkit-text-stroke: 1px #82C822;
@@ -542,6 +605,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    padding: 0 5%;
 }
 
 .user-card .user-photo {
@@ -550,6 +614,5 @@
     background-repeat: no-repeat;
     background-size: contain;
     aspect-ratio: 1;
-    padding: 6%;
-    width: clamp(200px, 20vw, 280px);
+    padding: 8%;
 }

@@ -45,7 +45,7 @@
     <header id="navbar">
       <nav id="nav-links">
         <a href="user-profile.html">
-          <div id="user-profile-btn" class="nav-btn" alt=""></div>
+          <div id="user-profile-btn" data-tooltip="User Profile" class="nav-btn" alt=""></div>
         </a>
         <a href="to-do-list.html">
           <div id="to-do-list-btn" class="nav-btn" alt=""></div>
@@ -78,30 +78,26 @@
           <div id="user-info">
             <div id="user-card" class="user-card">
               <h1 class="option-menu-head">User Profile</h1>
-              <div id="user-photo-streak">
+              <div id="user-photo-code">
                 <img src="/assets/animals/bear-stand.svg" alt="User Photo" class="user-photo" id="buddy">
-                <div class="user-summary">
-                  <h2>Day Streak</h2>
-                  <p><span class="streak-number">5</span> days</p>
-                </div>
-
                 <div class="friend-code-container">
-                  <h1>Your Friend Code</h1>
-                  <input type="text" id="friendCode" value="ABCD1234" readonly>
-                  <button onclick="copyToClipboard()">Copy Code</button>
+                  <h4>Your Friend Code</h4>
+                  <div id="friend-code-input">
+                    <input type="text" id="friendCode" value="ABCD1234" readonly>
+                    <button id="copy-to-clipboard" class="option-btn" onclick="copyToClipboard()">Copy</button>
+                  </div>
                   <p id="copyMessage" class="hidden">Copied to clipboard!</p>
                 </div>
-
               </div>
               <div class="user-settings-info">
-                <p><strong>Your Name:</strong> <span id="username">User123</span></p>
-                <p><strong>Your Pronouns:</strong> <span id="pronouns">They/Them</span></p>
-                <p><strong>Buddy Name:</strong> <span id="buddy-name">User123</span></p>
-                <p><strong>Buddy Age:</strong> <span id="buddy-age">0 days old</span></p>
-                <p><strong>Buddy Personality:</strong> <span id="buddy-personality">User123</span></p>
-                <p><strong>Favourite Class:</strong> <span id="favourite-class">COMP1800</span></p>
+                <p class="half-width"><strong>Your Name:</strong><br><span id="username">Elmo</span></p>
+                <p class="half-width"><strong>Your Pronouns:</strong><br><span id="pronouns">They/Them</span></p>
+                <p class="half-width"><strong>Buddy Name:</strong><br><span id="buddy-name">BuddyBear</span></p>
+                <p class="half-width"><strong>Buddy Age:</strong><br><span id="buddy-age">0 days old</span></p>
+                <p class="half-width"><strong>Buddy Personality:</strong><br><span id="buddy-personality">Friendly</span></p>
+                <p class="half-width"><strong>Favourite Class:</strong><br><span id="favourite-class">COMP1800</span></p>
                 <a href="settings.html">
-                  <button class="option-btn">Edit Profile</button>
+                  <button id="edit-profile-CTA" class="option-btn">Edit Profile</button>
                 </a>
               </div>
             </div>
@@ -141,19 +137,43 @@
         <div id="friends-list">
           <div class="friend-box">
             <h3 class="option-menu-head">Nick S.</h3>
-            <img class="friend-img" src="/assets/imgs/nick-placeholder.jpg" />
-            <p>Pee pee poo poo</p>
+            <img class="friend-img" src="/assets/animals/wolf.svg" />
+            <div class="friend-box-buttons">
+              <a href="">
+                <button class="" id="send-encouragement"></button>
+              </a>
+              <a href="">
+                <button class="" id="send-direct-message"></button>
+              </a>
+            </div>
           </div>
+
           <div class="friend-box">
             <h3 class="option-menu-head">Timmy K.</h3>
-            <img class="friend-img" src="/assets/imgs/timmy-placeholder.jpg" />
-            <p>Pee pee poo poo</p>
-          </div>
+            <img class="friend-img" src="/assets/animals/bear-sit.svg" />
+              <div class="friend-box-buttons">
+                <a href="">
+                  <button class="" id="send-encouragement"></button>
+                </a>
+                <a href="">
+                  <button class="" id="send-direct-message"></button>
+                </a>
+              </div>
+            </div>
+          
           <div class="friend-box">
             <h3 class="option-menu-head">Caley R.</h3>
-            <img class="friend-img" src="/assets/imgs/caley-placeholder.PNG" />
-            <p>Pee pee poo poo</p>
-          </div>
+            <img class="friend-img" src="/assets/animals/squirrel.svg" />
+              <div class="friend-box-buttons">
+                <a href="">
+                  <button class="" id="send-encouragement"></button>
+                </a>
+                <a href="">
+                  <button class="" id="send-direct-message"></button>
+                </a>
+              </div>
+            </div>
+
         </div>
       </div>
     </main>
@@ -172,4 +192,3 @@
 </body>
 
 </html>
-
