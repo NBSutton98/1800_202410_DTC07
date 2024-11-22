@@ -296,6 +296,10 @@ h6 {
     padding-bottom: 100px;
 }
 
+#groups-page {
+    background-color: #005188;
+}
+
 #group-task-content {
     flex-direction: row;
     gap: 20px;
@@ -365,14 +369,20 @@ h6 {
 /* User Profile */
 
 #copy-to-clipboard {
-    width: 35%;
+    width: 32%;
+    font-size: 20px !important;
+    margin-top: 2px;
+}
+
+#edit-button-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #edit-profile-CTA {
-    width: 180px;
-    float: right;
+    width: 150px;
 }
-
 
 #friendCode {
     height: 44px;
@@ -381,10 +391,7 @@ h6 {
     width: 65%;
     color: #fff;
     text-shadow: 1px 1px #00000080;
-}
-
-#friend-code-container {
-    width: 50%;
+    font-size: 24px;
 }
 
 #friend-code-input {
@@ -448,6 +455,12 @@ h6 {
     width: 45%;
 }
 
+#user-profile {
+    background: #005188;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
 #user-profile-info {
     display: flex;
     flex-direction: row;
@@ -456,18 +469,12 @@ h6 {
     margin-bottom: 5%;
 }
 
-.user-settings-info {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 50%;
-    gap: 8px;
-}
-
 #user-stats {
     display: flex;
     flex-direction: column;
     width: 30%;
+    color: #fff;
+    text-shadow: 1px 1px #00000080;
 }
 
 /* Settings Page */
