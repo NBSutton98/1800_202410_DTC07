@@ -25,6 +25,10 @@
         width: 100%;
     }
 
+    #edit-button-box {
+        margin-top: -10px;
+    }
+
     .friend-box {
         width: 80%;
     }
@@ -40,14 +44,11 @@
 
     #group-inputs {
         flex-direction: column;
+        align-items: center;
     }
 
     #group-task-creation {
         width: 80%;
-    }
-
-    .half-width {
-        width: 100%;
     }
 
     .msg-close {
@@ -140,12 +141,15 @@
     }
 
     .user-card {
-        background-image: none;
+        background-image: url('/assets/SVG/user-profile-box-mobile.svg');
+        background-position: top center;
+        background-size: 95% !important;
         flex-direction: column !important;
         flex-wrap: nowrap;
         aspect-ratio: auto;
         width: 100%;
         align-items: center !important;
+        padding-bottom: 40px;
     }
 
     #user-info, #user-card, #user-stats {
@@ -153,11 +157,16 @@
     }
 
     #user-photo-code {
-        width: 80%;
+        width: 88%;
         margin-bottom: 24px;
+        flex-direction: column-reverse;
     }
 
     #user-profile-info {
         flex-direction: column;
+    }
+
+    .user-settings-info {
+        width: 88%;
     }
 }
