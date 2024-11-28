@@ -29,6 +29,19 @@
         margin-top: -10px;
     }
 
+    .award-card {
+        width: 48%;
+    }
+
+    .award-icon {
+        margin-top: 5%;
+        margin-bottom: 15%;
+    }
+
+    .awards-collection {
+        row-gap: 24px !important;
+    }
+
     .friend-box {
         width: 80%;
     }

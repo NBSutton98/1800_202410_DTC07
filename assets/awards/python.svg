@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 758.11 754.17">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Dégradé_sans_nom_3);
+      }
+
+      .cls-2 {
+        fill: url(#Dégradé_sans_nom_5);
+      }
+    </style>
+    <linearGradient id="Dégradé_sans_nom_5" data-name="Dégradé sans nom 5" x1="116.01" y1="-466.18" x2="490.88" y2="-842.3" gradientTransform="translate(-44.94 -398.48) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#387eb8"/>
+      <stop offset="1" stop-color="#366994"/>
+    </linearGradient>
+    <linearGradient id="Dégradé_sans_nom_3" data-name="Dégradé sans nom 3" x1="346.54" y1="-705.62" x2="749.14" y2="-1091.33" gradientTransform="translate(-44.94 -398.48) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe052"/>
+      <stop offset="1" stop-color="#ffc331"/>
+    </linearGradient>
+  </defs>
+  <g id="logo_set">
+    <g id="python">
+      <g id="g1894">
+        <path id="path8615" class="cls-2" d="M376.32,0c-192.46,0-180.44,83.46-180.44,83.46l.21,86.46h183.66v25.96H123.15S0,181.92,0,376.11c0,194.19,107.49,187.3,107.49,187.3h64.15v-90.11s-3.46-107.49,105.77-107.49h182.15s102.34,1.65,102.34-98.91V100.62S577.45,0,376.32,0ZM275.06,58.14c18.27,0,33.04,14.77,33.04,33.04s-14.77,33.04-33.04,33.04-33.04-14.77-33.04-33.04,14.77-33.04,33.04-33.04Z"/>
+        <path id="path8620" class="cls-1" d="M381.79,754.17c192.46,0,180.44-83.46,180.44-83.46l-.21-86.46h-183.66v-25.96h256.6s123.15,13.97,123.15-180.22c0-194.19-107.49-187.3-107.49-187.3h-64.15v90.11s3.46,107.49-105.77,107.49h-182.15s-102.34-1.65-102.34,98.91v166.28s-15.54,100.62,185.59,100.62ZM483.06,696.02c-18.27,0-33.04-14.77-33.04-33.04s14.77-33.04,33.04-33.04,33.04,14.77,33.04,33.04c0,18.27-14.77,33.04-33.04,33.04Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

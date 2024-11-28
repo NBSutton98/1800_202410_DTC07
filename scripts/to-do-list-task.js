@@ -59,14 +59,18 @@ function displayTask() {
                 tasks.forEach((doc) => {
                     const taskData = doc.data();
                     const taskElement = document.createElement("div");
-                    taskElement.classList.add("hi");
+                    taskElement.classList.add("to-do-list-task");
                     taskElement.innerHTML = `
-            <h3 id="user-greeting1">${taskData.task}</h3>
-            <p class="text-sm text-gray-700">Due: ${taskData.dueDate}</p>
-            <p class="text-sm">${taskData.priority}</p>
-            <p class="text-sm">${taskData.description}</p>
-            <button class="delete-btn text-red-500 mt-2" data-id="${doc.id}">Delete</button>
-            <a class="view-btn mt-2 ml-6" href="view-personal-task.html?docID=${doc.id}">view</a>
+            <p class="my-task-priority">${taskData.priority}</p>
+            <h3 class="my-task-name">${taskData.task}</h3>
+            <p class="my-task-due-date">Due: ${taskData.dueDate}</p>
+            <p class="my-task-desc">${taskData.description}</p>
+            <div class="my-task-controls">
+                <button class="red-btn" data-id="${doc.id}">Delete</button>
+                <button class="green-btn">
+                    <a class="" href="view-personal-task.html?docID=${doc.id}">view</a> 
+                </button>              
+            </div>
               `;
                     taskList.appendChild(taskElement);
                 });

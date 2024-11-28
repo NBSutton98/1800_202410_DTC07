@@ -302,6 +302,41 @@
 
 /* Asset Stylings */
 
+.award-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    width: 30%;
+    background-image: url("/assets/awards/award-frame.svg");
+    background-repeat: no-repeat;
+    aspect-ratio: .852;
+    padding: 5% 2%;
+}
+
+.award-card h3 {
+    color: #fff;
+    -webkit-text-stroke: .35px #82C822;
+    text-shadow: 1.5px 1.5px #00000080;
+    font-size: clamp(24px, 3vw, 32px);
+    letter-spacing: -1px;
+}
+
+.award-icon{
+    width: clamp(100px, 20vw, 150px);
+    margin-bottom: 20%;
+}
+
+.awards-collection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: top;
+    row-gap: 40px;
+    padding-bottom: 20px;
+}
+
 .buddy-avatar {
     width: 45%;
     min-width: 150px;
@@ -313,8 +348,19 @@
 .bg-container {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
     background-size: cover;
+}
+
+.collection-head {
+    width: 100%;
+    text-align: center;
+}
+
+.collection-head img {
+    width: 100px;
 }
 
 .course-name {
@@ -622,6 +668,10 @@
 
 .task-card #add-to-list:hover {
     transform: scale(1.15);
+}
+
+.to-do-list-task {
+    width: 330px;
 }
 
 .user-card {
