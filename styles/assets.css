@@ -440,6 +440,17 @@
     width: 45%;
 }
 
+.heading-banner {
+    background-image: url("/assets/SVG/heading-banner.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 4.72;
+    text-align: center;
+    width: 75%;
+    position: relative;
+    top: -30px;
+}
+
 .hidden {
     display: none;
 }
@@ -562,6 +573,7 @@
     font-size: 22px;
 }
 
+
 .my-tasks-container {
     padding-right: 8px;
 }
@@ -627,6 +639,11 @@
     letter-spacing: -1px;
     -webkit-text-stroke: 1px #D49800;
     text-shadow: 3px 3px rgba(0, 0, 0, .20);
+}
+
+.priority-flag {
+    width: 20px;
+    margin-left: 6px;
 }
 
 .settings-page-btn {
@@ -699,6 +716,18 @@
     color: #222;
     text-shadow: 1px 1px #ffffffC9;
     box-shadow: 1px 4px 1px #00000080;
+    text-align: center;
+}
+
+.to-do-list-task h3 {
+    font-size: 36px;
+    word-wrap: normal ;
+}
+
+.to-do-list-task h4 {
+    text-transform: uppercase;
+    font-size: 22px;
+    padding-bottom: 12px;
 }
 
 .user-card {

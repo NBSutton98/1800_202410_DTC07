@@ -263,6 +263,29 @@ h6 {
 
 /* Personal Task List*/
 
+#my-task-submit {
+    width: 160px;
+}
+
+#personal-task {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#personal-task-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5E3a9;
+    margin-top: 18%;
+    border-radius: 32px;
+    border: 8px solid white;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+}
+
 #personal-task-page {
     background-image: url("/assets/bg/tech\ classroom.svg");
     background-position: center center;
@@ -276,6 +299,8 @@ h6 {
     flex-direction: column;
     background-color: #6496C8;
     border: none;
+    gap: 32px;
+    padding-bottom: 20px;
 }
 
 #to-do-list-avatars {

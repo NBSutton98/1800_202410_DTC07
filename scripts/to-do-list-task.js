@@ -60,10 +60,10 @@ function displayTask() {
                     const taskElement = document.createElement("div");
                     taskElement.classList.add("to-do-list-task");
                     taskElement.innerHTML = `
-            <p class="my-task-priority"><img src="./assets/SVG/flag-${taskData.priority}.svg">${taskData.priority}</p>
             <h3 class="my-task-name">${taskData.task}</h3>
+            <h4 class="my-task-priority">${taskData.priority}<img src="./assets/SVG/flag-${taskData.priority}.svg" class="priority-flag"></h4>
             <p class="my-task-due-date">Due: ${taskData.dueDate}</p>
-            <p class="my-task-desc">${taskData.description}</p>
+            <p class="my-task-desc"><strong>DETAILS</strong>:<br>${taskData.description}</p>
             <div class="my-task-controls">
                 <button class="red-btn delete-btn" data-id="${doc.id}">Delete</button>
             <button class="green-btn" onclick="location.href='view-personal-task.html?docID=${doc.id}'">
