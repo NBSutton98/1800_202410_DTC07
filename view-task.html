@@ -64,8 +64,8 @@
       <a href="about-us.html" id="about-us-btn">
         <button id="info"></button>
       </a>
-      <a id="back-btn" href="groups.html">
-        <button class="back-btn"> </button>
+      <a id="back-btn" >
+        <button class="back-btn" onclick="goBack()"> </button>
       </a>
 
       <div class="task-info ">
@@ -79,6 +79,17 @@
             <div class="form-group">
               <label>Due date</label>
               <input type="date" id="duedate-display">
+            </div>
+            <div class="form-group">
+              <label for="taskPriorityDropdown">Priority</label>
+              <div class="custom-select">
+                <select id="priorityDropdown" name="options">
+                  <option value="none" data-icon="assets/SVG/flag-none.svg">None</option>
+                  <option value="low" data-icon="assets/SVG/flag-low.svg">Low</option>
+                  <option value="normal" data-icon="assets/SVG/flag-normal.svg">Normal</option>
+                  <option value="high" data-icon="assets/SVG/flag-high.svg">High</option>
+                </select>
+              </div>
             </div>
             <div class="form-group">
               <label>Description</label>
