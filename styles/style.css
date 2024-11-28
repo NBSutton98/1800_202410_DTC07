@@ -357,6 +357,7 @@ h6 {
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    width: 300px;
 }
 
 
