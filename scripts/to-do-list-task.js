@@ -1,7 +1,6 @@
 // function displayTaskInfo() {
 //     let params = new URL(window.location.href); //get URL of search bar
 //     let ID = params.searchParams.get("docID"); //get value for key "id"
-
 //     db.collection("tasks")
 //         .doc(ID)
 //         .get()
@@ -43,7 +42,7 @@ function setupTasks() {
         });
         console.log('yes')
     } catch (error) { }
-    // displayTask();
+    displayTask();
 
 }
 // user = firebase.auth().currentUser
@@ -61,12 +60,12 @@ function displayTask() {
                     const taskElement = document.createElement("div");
                     taskElement.classList.add("to-do-list-task");
                     taskElement.innerHTML = `
-            <p class="my-task-priority">${taskData.priority}</p>
+            <p class="my-task-priority"><img src="./assets/SVG/flag-${taskData.priority}.svg">${taskData.priority}</p>
             <h3 class="my-task-name">${taskData.task}</h3>
             <p class="my-task-due-date">Due: ${taskData.dueDate}</p>
             <p class="my-task-desc">${taskData.description}</p>
             <div class="my-task-controls">
-                <button class="red-btn" data-id="${doc.id}">Delete</button>
+                <button class="red-btn delete-btn" data-id="${doc.id}">Delete</button>
             <button class="green-btn" onclick="location.href='view-personal-task.html?docID=${doc.id}'">
                 View
             </button>           
@@ -80,13 +79,35 @@ function displayTask() {
 
 taskList.addEventListener("click", async (event) => {
     if (event.target.classList.contains("delete-btn")) {
-      const taskId = event.target.getAttribute("data-id");
-      try {
-        await db.collection("personaltasks").doc(taskId).delete();
-        displayTask();
-      } catch (error) {}
+        const taskId = event.target.getAttribute("data-id");
+        try {
+            await db.collection("personaltasks").doc(taskId).delete();
+            displayTask();
+        } catch (error) { }
     }
-  });
+});
 
 
+function displaybuddy() {
+    firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+
+            currentUser = db.collection("users").doc(user.uid)
+            //get the document for current user.
+            currentUser.get()
+                .then(userDoc => {
+
+                    let userBuddy = userDoc.data().buddy;
+
+                    document.getElementById('buddy').src = `./assets/animals/${userBuddy}.svg`
+
+                })
+        } else {
+            // No user is signed in.
+            console.log("No user is signed in");
+        }
+    })
+}
+
+displaybuddy()
 displayTask()
