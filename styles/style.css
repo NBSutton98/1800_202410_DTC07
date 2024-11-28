@@ -287,14 +287,9 @@ h6 {
     justify-content: center;
 }
 
-#personal-CTA-buttons {
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+#add-my-task {
     position: absolute;
-    top: 0px;
+    top: 0;
 }
 
 /* Groups Page */
