@@ -266,7 +266,6 @@ h6 {
 #personal-task-page {
     background-image: url("/assets/bg/tech\ classroom.svg");
     background-position: center center;
-    min-height: 200vh;
 }
 
 #my-to-do-list #task-container {
