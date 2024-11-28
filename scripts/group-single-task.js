@@ -11,11 +11,13 @@ function displayTaskInfo() {
             taskTitle = doc.data().task;
             dueDate = doc.data().dueDate;
             description = doc.data().description;
+            priority = doc.data().priority
 
             // only populate title, and image
             document.getElementById("task-display").value = taskTitle;
             document.getElementById("duedate-display").value = dueDate;
             document.getElementById("description-display").value = description;
+            document.getElementById("priorityDropdown").value = priority
 
         });
 }
@@ -46,7 +48,8 @@ function saveTaskInfo() {
     //a) get user entered values
     taskName = document.getElementById('task-display').value;       //get the value of the field with id="nameInput"
     duedate = document.getElementById('duedate-display').value;     //get the value of the field with id="schoolInput"
-    descriptionInfo = document.getElementById('description-display').value;       //get the value of the field with id="cityInput"
+    descriptionInfo = document.getElementById('description-display').value;  
+    priority = document.getElementById("priorityDropdown").value      //get the value of the field with id="cityInput"
 
     //b) update user's document in Firestore
     db.collection("tasks")
@@ -54,9 +57,16 @@ function saveTaskInfo() {
     .update({
         dueDate: duedate,
         task: taskName,
-        description: descriptionInfo
+        description: descriptionInfo,
+        priority: priority
     })    
 
 
-    document.getElementById('personalInfoFields').disabled = true;
+    document.getElementById('taskInfoFields').disabled = true;
+    document.getElementById('edit-btn').style.display = 'block';
+    document.getElementById('cancel-btn').style.display = 'none';
+}
+
+function goBack() {
+    window.history.back();
 }
