@@ -66,9 +66,9 @@ function displayTask() {
             <p class="my-task-desc">${taskData.description}</p>
             <div class="my-task-controls">
                 <button class="red-btn delete-btn" data-id="${doc.id}">Delete</button>
-                <button class="green-btn">
-                    <a class="" href="view-personal-task.html?docID=${doc.id}">view</a> 
-                </button>              
+            <button class="green-btn" onclick="location.href='view-personal-task.html?docID=${doc.id}'">
+                View
+            </button>           
             </div>
               `;
                     taskList.appendChild(taskElement);
