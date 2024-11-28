@@ -377,6 +377,10 @@
     width: 55%;
 }
 
+.form-range {
+    width: calc(100% - 60px)
+}
+
 .group-task-card {
     background-color: #f5e3a9;
     border-radius: 12px;
@@ -400,6 +404,10 @@
 
 .text-red-500 {
     color: #f56565;
+}
+
+.ms-3 {
+    max-width: 60px;
 }
 
 .mt-2 {
@@ -556,6 +564,20 @@
     letter-spacing: -1px;
     -webkit-text-stroke: 1px #D49800;
     text-shadow: 3px 3px rgba(0, 0, 0, .20);
+}
+
+.settings-page-btn {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    aspect-ratio: 2.27;
+    width: 100px !important;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    text-shadow: 1.5px 1.5px #00000080;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 .task-card {

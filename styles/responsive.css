@@ -136,9 +136,11 @@
         flex-direction: column;
     }
 
-    #to-do {
-        background-image: url("/assets/bg/to-do-bg.webp");
+    #to-do-list-avatars {
+        height: 75vh;
     }
+
+
 
     .user-card {
         background-image: url('/assets/SVG/user-profile-box-mobile.svg');

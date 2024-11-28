@@ -255,6 +255,33 @@ h6 {
     color: #003654;
 }
 
+/* Personal Task List*/
+
+#personal-task-page {
+    background-image: url("/assets/bg/tech\ classroom.svg");
+    background-position: center center;
+    min-height: 200vh;
+}
+
+#to-do-list-avatars {
+    min-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#personal-CTA-buttons {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 0px;
+}
+
 /* Groups Page */
 
 #chat-container {
