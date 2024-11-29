@@ -6,6 +6,11 @@ function getNameFromAuth() {
       console.log(user.uid);
       console.log(user.displayName);
 
+
+
+
+
+//READ reads the user name from which the user is logged in---------------------
       currentUser.get().then((user) => {
         userName = user.data().name;
         console.log(userName);
@@ -16,6 +21,14 @@ function getNameFromAuth() {
     }
   });
 }
+//--------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 getNameFromAuth();
 
 function setupChat() {
@@ -26,6 +39,14 @@ function setupChat() {
       const chatInputElement = document.getElementById("chat-input");
       const chatInput = chatInputElement.value;
       const chatDisplay = document.getElementById("chat-display");
+
+
+
+
+
+
+
+      // CREATE  - creates a server stamp to order information------------------------
       try {
         await db.collection("messages").add({
           text: chatInput,
@@ -35,6 +56,12 @@ function setupChat() {
         chatInputElement.value = "";
       } catch (error) {}
     });
+    //--------------------------------------------------------------------------------
+
+
+
+
+
 
   const chatDisplay = document.getElementById("chat-display");
   db.collection("messages")
@@ -43,6 +70,8 @@ function setupChat() {
       chatDisplay.innerHTML = "";
       snapshot.forEach((doc) => {
         const messageData = doc.data();
+
+    //CREATE this creates a new div for the message to fall into representing a chat room
         const messageElement = document.createElement("div");
         username = messageData.name;
         messageElement.textContent = messageData.text;
@@ -79,6 +108,7 @@ function displayTask() {
       taskList.innerHTML = "";
       snapshot.docs.forEach((doc) => {
         const taskData = doc.data();
+        //CREATE ths creates a new dvi for the task card to fall into 
         const taskElement = document.createElement("div");
         taskElement.classList.add("group-task-card");
         taskElement.innerHTML = `
@@ -96,12 +126,18 @@ function displayTask() {
 taskList.addEventListener("click", async (event) => {
   if (event.target.classList.contains("delete-btn")) {
     const taskId = event.target.getAttribute("data-id");
+
+
+
+    //DELETE upon a click of the delete button it access the document id 'tasks' and removes it form the html and database----------------
     try {
       await db.collection("tasks").doc(taskId).delete();
       displayTask();
     } catch (error) {}
   }
 });
+  //----------------------------------------------------------------------------------------------------------------------------------
+
 
 setupChat();
 setupTasks();
