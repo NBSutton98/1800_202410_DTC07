@@ -10,7 +10,7 @@ function getNameFromAuth() {
 
 
 
-//READ reads the user name from which the user is logged in---------------------
+//READ reads the user name from which the user is logged in---------------------N2
       currentUser.get().then((user) => {
         userName = user.data().name;
         console.log(userName);
@@ -46,7 +46,7 @@ function setupChat() {
 
 
 
-      // CREATE  - creates a server stamp to order information------------------------
+      // CREATE  - creates a server stamp to order information------------------------N1
       try {
         await db.collection("messages").add({
           text: chatInput,
@@ -129,7 +129,7 @@ taskList.addEventListener("click", async (event) => {
 
 
 
-    //DELETE upon a click of the delete button it access the document id 'tasks' and removes it form the html and database----------------
+    //DELETE upon a click of the delete button it access the document id 'tasks' and removes it form the html and database ----------------N3
     try {
       await db.collection("tasks").doc(taskId).delete();
       displayTask();
