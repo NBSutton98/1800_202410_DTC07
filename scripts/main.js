@@ -40,12 +40,6 @@ function setupChat() {
       const chatInput = chatInputElement.value;
       const chatDisplay = document.getElementById("chat-display");
 
-
-
-
-
-
-
       // CREATE  - creates a server stamp to order information------------------------N1
       try {
         await db.collection("messages").add({
