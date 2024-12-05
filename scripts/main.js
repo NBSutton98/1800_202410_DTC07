@@ -6,11 +6,7 @@ function getNameFromAuth() {
       console.log(user.uid);
       console.log(user.displayName);
 
-
-
-
-
-//READ reads the user name from which the user is logged in---------------------N2
+      //READ reads the user name from which the user is logged in---------------------N2
       currentUser.get().then((user) => {
         userName = user.data().name;
         console.log(userName);
@@ -22,12 +18,6 @@ function getNameFromAuth() {
   });
 }
 //--------------------------------------------------------------------------------------
-
-
-
-
-
-
 
 getNameFromAuth();
 
@@ -49,12 +39,7 @@ function setupChat() {
         chatInputElement.value = "";
       } catch (error) {}
     });
-    //--------------------------------------------------------------------------------
-
-
-
-
-
+  //--------------------------------------------------------------------------------
 
   const chatDisplay = document.getElementById("chat-display");
   db.collection("messages")
@@ -106,7 +91,7 @@ function displayTask() {
           <p>Due: ${taskData.dueDate}</p>
           <p class="text-sm">${taskData.description}</p>
           <div id="group-task-card-btns">
-            <button class="red-btn" data-id="${doc.id}">Delete</button>
+            <button class="red-btn delete-btn" data-id="${doc.id}">Delete</button>
             <a href="view-task.html?docID=${doc.id}">
               <button class="green-btn">View</button>
             </a>
@@ -121,8 +106,6 @@ taskList.addEventListener("click", async (event) => {
   if (event.target.classList.contains("delete-btn")) {
     const taskId = event.target.getAttribute("data-id");
 
-
-
     //DELETE upon a click of the delete button it access the document id 'tasks' and removes it form the html and database ----------------N3
     try {
       await db.collection("tasks").doc(taskId).delete();
@@ -130,8 +113,7 @@ taskList.addEventListener("click", async (event) => {
     } catch (error) {}
   }
 });
-  //----------------------------------------------------------------------------------------------------------------------------------
-
+//----------------------------------------------------------------------------------------------------------------------------------
 
 setupChat();
 setupTasks();
