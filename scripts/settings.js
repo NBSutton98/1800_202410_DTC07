@@ -15,13 +15,16 @@ function populateUserInfo() {
                     let userEmail = userDoc.data().email;
                     let userBuddy = userDoc.data().buddy;
                     let buddyName = userDoc.data().buddyname;
+                    // READ avatar data from firestore data base-------------
                     let buddyPersonality = userDoc.data().buddypersonality;
+                    //-------------------------------------------------------
                     let userPronoun = userDoc.data().userpronoun;
                     let userFavClass = userDoc.data().favclass;
 
+                    // Displaying the buddy from data ing formation
                     document.getElementById('buddy').src = `./assets/animals/${userBuddy}.svg`
 
-                    //if the data fields are not empty, then write them in to the form.
+
                     if (userName != null) {
                         document.getElementById("username").value = userName;
                     }
@@ -57,7 +60,7 @@ function populateUserInfo() {
 populateUserInfo();
 
 function saveUserInfo() {
-
+    //GETs data from form in setting html page -------------
     userName = document.getElementById('username').value;
     userEmail = document.getElementById('email').value;
     userBuddy = document.getElementById('dropdown').value;
@@ -65,7 +68,7 @@ function saveUserInfo() {
     userBuddyPersonality = document.getElementById('Buddy-personality').value;
     userPronoun = document.getElementById('userPronoun').value;
     userFavClass = document.getElementById('dropdownclass').value;
-
+    // UPDATE - updates database link to user from form data in settings
     currentUser.update({
         name: userName,
         email: userEmail,

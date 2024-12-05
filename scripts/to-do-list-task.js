@@ -49,13 +49,18 @@ function setupTasks() {
 function displayTask() {
     firebase.auth().onAuthStateChanged((user) => {
         db.collection("personaltasks")
+        // database query for user uid within personal task
             .where("UID", "==", user.uid)
+        //------------------------------------------------
+        //reading the data from the database
             .get()
             .then((personaltasks) => {
                 tasks = personaltasks.docs
+        //--------------------------------------------------------        
                 console.log(tasks);
                 taskList.innerHTML = "";
                 tasks.forEach((doc) => {
+            // Creating a new div for each task linking to the user.
                     const taskData = doc.data();
                     const taskElement = document.createElement("div");
                     taskElement.classList.add("to-do-list-task");
@@ -76,7 +81,7 @@ function displayTask() {
             })
     })
 }
-
+//Delete user can delete task
 taskList.addEventListener("click", async (event) => {
     if (event.target.classList.contains("delete-btn")) {
         const taskId = event.target.getAttribute("data-id");
@@ -87,6 +92,7 @@ taskList.addEventListener("click", async (event) => {
     }
 });
 
+// display user own buddy from database
 
 function displaybuddy() {
     firebase.auth().onAuthStateChanged((user) => {
