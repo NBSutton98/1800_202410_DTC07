@@ -292,7 +292,7 @@ h6 {
 }
 
 #my-to-do-list #task-container {
-    max-height: 50vh;
+    max-height: 80vh;
     overflow-y: auto;
     width: 100%;
     display: flex;
