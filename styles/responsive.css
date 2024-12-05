@@ -78,6 +78,10 @@
         width: 80%;
     }
 
+    #groups-page {
+        padding-top: 60px;
+    }
+
     .msg-close {
         margin-top: 36px;
     }

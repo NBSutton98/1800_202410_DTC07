@@ -88,20 +88,22 @@
       <!-- Main-Content -->
       <div class="main-content">
         <div id="groups-intro">
-          <h1>Hello, <span id="name-goes-here"></span>!</h1>
+          <h1 class="option-menu-head">
+            Hello, <span id="name-goes-here"></span>!
+          </h1>
+          <div id="group-cta-btns">
+            <a href="#group-task-creation">
+              <button id="CTA-create-task" class="reg-btn">Add Task</button>
+            </a>
+            <a href="#chat-container">
+              <button id="CTA-chat" class="reg-btn">View Chat</button>
+            </a>
+          </div>
         </div>
 
         <!-- Tasks will be dynamically inserted here -->
         <div id="task-list-container">
-          <h2>Group Tasks</h2>
-          <div id="group-cta-btns">
-            <a href="#group-task-creation">
-              <button id="CTA-create-task">Add Group Task</button>
-            </a>
-            <a href="#chat-container">
-              <button id="CTA-chat">View Chat</button>
-            </a>
-         </div>
+          <h2 class="option-menu-head">Group Tasks</h2>
           <div id="task-list"></div>
         </div>
 
@@ -110,7 +112,6 @@
           <div id="group-task-creation" class="option-menu">
             <h2 class="option-menu-head">Add a Task</h2>
             <form>
-
               <div id="task-name">
                 <label for="task">Task</label>
                 <input
@@ -121,7 +122,6 @@
                   required
                 />
               </div>
-
 
               <div id="task-date">
                 <label for="due-date">Due Date</label>
@@ -135,12 +135,20 @@
 
               <label for="taskPriorityDropdown">Priority</label>
               <div class="custom-select">
-                  <select id="priorityDropdown" name="options">
-                      <option value="none" data-icon="assets/SVG/flag-none.svg">None</option>
-                      <option value="low" data-icon="assets/SVG/flag-low.svg">Low</option>
-                      <option value="normal" data-icon="assets/SVG/flag-normal.svg">Normal</option>
-                      <option value="high" data-icon="assets/SVG/flag-high.svg">High</option>
-                  </select>
+                <select id="priorityDropdown" name="options">
+                  <option value="none" data-icon="assets/SVG/flag-none.svg">
+                    None
+                  </option>
+                  <option value="low" data-icon="assets/SVG/flag-low.svg">
+                    Low
+                  </option>
+                  <option value="normal" data-icon="assets/SVG/flag-normal.svg">
+                    Normal
+                  </option>
+                  <option value="high" data-icon="assets/SVG/flag-high.svg">
+                    High
+                  </option>
+                </select>
               </div>
 
               <div id="task-desc">
@@ -163,31 +171,31 @@
           </div>
 
           <!-- Chat Container -->
-            <div id="chat-container" class="">
-              <h2 class="heading-banner option-menu-head" width="100%">Message Board</h2>
-              <!-- Chat Display Area -->
-              <div id="chat-display" class="">
-                <!-- Messages will be appended here -->
-              </div>
-
-              <!-- Chat Input Area -->
-              <div id="chat-input-area" class="">
-                <form id="chat-form" class="">
-                  <input
-                    type="text"
-                    id="chat-input"
-                    placeholder="Type your message..."
-                    class=""
-                    required
-                  />
-                  <button type="send" id="send-btn" class="option-btn-active">
-                    Send
-                  </button>
-                </form>
-              </div>
+          <div id="chat-container" class="">
+            <h2 class="heading-banner option-menu-head" width="100%">
+              Message Board
+            </h2>
+            <!-- Chat Display Area -->
+            <div id="chat-display" class="">
+              <!-- Messages will be appended here -->
             </div>
 
-
+            <!-- Chat Input Area -->
+            <div id="chat-input-area" class="">
+              <form id="chat-form" class="">
+                <input
+                  type="text"
+                  id="chat-input"
+                  placeholder="Type your message..."
+                  class=""
+                  required
+                />
+                <button type="send" id="send-btn" class="option-btn-active">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </main>
