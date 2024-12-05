@@ -457,9 +457,10 @@
     background-image: url("/assets/SVG/heading-banner.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center center;
     aspect-ratio: 4.72;
     text-align: center;
-    width: 75%;
+    width: 80%;
     position: relative;
     top: -30px;
 }
