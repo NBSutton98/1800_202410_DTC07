@@ -102,11 +102,15 @@ function displayTask() {
         const taskElement = document.createElement("div");
         taskElement.classList.add("group-task-card");
         taskElement.innerHTML = `
-          <h3 id="user-greeting1">${taskData.task}</h3>
-          <p class="text-sm text-gray-700">Due: ${taskData.dueDate}</p>
+          <h3>${taskData.task}</h3>
+          <p>Due: ${taskData.dueDate}</p>
           <p class="text-sm">${taskData.description}</p>
-          <button class="delete-btn text-red-500 mt-2" data-id="${doc.id}">Delete</button>
-          <a class="view-btn mt-2 ml-6" href="view-task.html?docID=${doc.id}">view</a>
+          <div id="group-task-card-btns">
+            <button class="red-btn" data-id="${doc.id}">Delete</button>
+            <a href="view-task.html?docID=${doc.id}">
+              <button class="green-btn">View</button>
+            </a>
+          </div>
             `;
         taskList.appendChild(taskElement);
       });

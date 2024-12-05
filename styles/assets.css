@@ -430,10 +430,23 @@
 .group-task-card {
     background-color: #f5e3a9;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 5px solid white;
+    box-shadow: 1px 4px #00000080;
     padding: 16px;
     margin-bottom: 16px;
-    min-width: 250px !important;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.group-task-card h3 {
+    font-size: 32px;
+    text-shadow: 1px 1px #ffffff;
+    word-break: break-all;
 }
 
 .half-width {
@@ -444,9 +457,10 @@
     background-image: url("/assets/SVG/heading-banner.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center center;
     aspect-ratio: 4.72;
     text-align: center;
-    width: 75%;
+    width: 80%;
     position: relative;
     top: -30px;
 }

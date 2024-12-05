@@ -321,8 +321,19 @@ h6 {
 
 #chat-container {
     width: 100%;
-    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: -50px;
 }
+
+#chat-container .heading-banner {
+    top: 50px;
+    padding-top: 5px;
+    width: 60%;
+}
+
 
 #chat-display {
     border: 6px solid white !important;
@@ -331,12 +342,14 @@ h6 {
     background-color: #f5E3a9;
     box-shadow: 2px 5px 1px #000;
     overflow-y: auto;
-    min-height: 360px;
+    min-height: 380px;
     padding: 12px;
+    width: 100%;
+    padding-top: 50px;
 }
 
 #chat-input {
-    width: calc(100% - 180px);
+    min-width: calc(100% - 150px);
     padding: 8px;
     border-radius: 6px;
 }
@@ -354,12 +367,28 @@ h6 {
 #group-inputs {
     display: flex;
     flex-direction: row;
+    gap: 20px;
     width: 100%;
     padding-bottom: 100px;
 }
 
 #groups-page {
     background-color: #005188;
+}
+
+#group-task-card-btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#group-task-card-btns button {
+    width: 110px;
+    font-size: 20px;
+}
+
+#group-cta-btns {
+    visibility: hidden;
 }
 
 #group-task-content {
@@ -392,7 +421,8 @@ h6 {
 
 #send-btn {
     font-size: clamp(20px, 3.5vw, 24px) !important;
-    width: 160px;
+    width: 120px;
+    margin-left: 20px;
 }
 
 #taskInfoFields {
@@ -409,6 +439,7 @@ h6 {
     gap: 12px;
     justify-content: center;
     overflow-x: scroll;
+    margin-bottom: 30px;
 }
 
 

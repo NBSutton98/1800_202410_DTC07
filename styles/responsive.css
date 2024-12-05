@@ -42,6 +42,16 @@
         row-gap: 24px !important;
     }
 
+    #chat-container .heading-banner {
+        top: 40px;
+        padding-top: 5px;
+        width: 80%;
+    }
+
+    #chat-display {
+        padding-top: 40px;
+    }
+
     .friend-box {
         width: 80%;
     }
@@ -51,8 +61,12 @@
         justify-content: center;
     }
 
+    #group-cta-btns {
+        visibility: visible;
+    }
+
     .group-task-card {
-        min-width: 330px !important;
+        height: auto;
     }
 
     #group-inputs {
@@ -99,6 +113,7 @@
         overflow-y: scroll;
         flex-direction: column;
         justify-content: flex-start;
+        margin-bottom: 50px;
     }
 
     .task-list-title {
