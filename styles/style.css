@@ -362,6 +362,21 @@ h6 {
     background-color: #005188;
 }
 
+#group-task-card-btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#group-task-card-btns button {
+    width: 110px;
+    font-size: 20px;
+}
+
+#group-cta-btns {
+    visibility: hidden;
+}
+
 #group-task-content {
     flex-direction: row;
     gap: 20px;
@@ -409,6 +424,7 @@ h6 {
     gap: 12px;
     justify-content: center;
     overflow-x: scroll;
+    margin-bottom: 30px;
 }
 
 

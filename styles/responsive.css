@@ -51,8 +51,12 @@
         justify-content: center;
     }
 
+    #group-cta-btns {
+        visibility: visible;
+    }
+
     .group-task-card {
-        min-width: 330px !important;
+        height: auto;
     }
 
     #group-inputs {
@@ -99,6 +103,7 @@
         overflow-y: scroll;
         flex-direction: column;
         justify-content: flex-start;
+        margin-bottom: 50px;
     }
 
     .task-list-title {
