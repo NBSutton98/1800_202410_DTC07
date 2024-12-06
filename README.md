@@ -56,16 +56,69 @@ Content of the project folder:
  Top level of project folder: 
 ├── .gitignore               # Git ignore file
 ├── index.html               # landing HTML file, this is what users see when you come to url
+├── .firebaserc
+├── about-us.html
+├── assets.html
+├── base-page-template
+├── firebase.json
+├── firestore.indexes.json
+├── firestore.rules
+├── group.html
+├── login.html
+├── my-awards.html
+├── settings.html
+├── tasks.html
+├── to-do-list.html
+├── user-profile.html
+├── view-personal-task.html
+├── view-task.html
 └── README.md
 
 It has the following subfolders and files:
 ├── .git                     # Folder for git repo
 ├── images                   # Folder for images
     /blah.jpg                # Acknowledge source
+├── assets
+    ├── AI files
+        /AdobeStock_499013584.ai
+        /buttons hover.ai
+        /buttons.ai
+        /buttons01.ai
+        /buttons02.ai
+        /gui01.ai
+        /languages.ai
+        /tech classroom.ai
+    ├── animals
+        /bear-sit.svg
+        /bear-stand.svg
+        
+        
+        
+    ├── awards
+    ├── bg
+    ├── elements
+    ├── imgs
+    ├── SVG
+    
 ├── scripts                  # Folder for scripts
-    /blah.js                 # 
+    /authentication.js
+    /group-single-task.js
+    /loaded-task.js
+    /main.js
+    /personal-task.js
+    /script.js
+    /settings.js
+    /skeleton.js
+    /task.js
+    /to-do-list.js
+    /user-profile.js
+    /view-personal-task.js 
 ├── styles                   # Folder for styles
-    /blah.css                # 
+    /assets.css 
+    /responsive.css
+    /style.css              
+├── text
+    /footer.html
 
 
 
