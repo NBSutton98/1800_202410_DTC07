@@ -63,11 +63,13 @@ function setupTasks() {
     const task = document.getElementById("task").value;
     const dueDate = document.getElementById("due-date").value;
     const description = document.getElementById("description").value;
+    const priority = document.getElementById("priorityDropdown").value
     try {
       await db.collection("tasks").add({
         task: task,
         dueDate: dueDate,
         description: description,
+        priority: priority,
         createdAt: firebase.firestore.FieldValue.serverTimestamp(),
         name: firebase.auth().currentUser.displayName,
       });
@@ -88,6 +90,7 @@ function displayTask() {
         taskElement.classList.add("group-task-card");
         taskElement.innerHTML = `
           <h3>${taskData.task}</h3>
+          <h4 class="my-task-priority">${taskData.priority}<img src="./assets/SVG/flag-${taskData.priority}.svg" class="priority-flag"></h4>
           <p>Due: ${taskData.dueDate}</p>
           <p class="text-sm">${taskData.description}</p>
           <div id="group-task-card-btns">
