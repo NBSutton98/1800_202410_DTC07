@@ -9,7 +9,6 @@ function populateUserInfo() {
                 .then(userDoc => {
                     //get the data fields of the user
                     let userName = userDoc.data().name;
-
                     let userBuddy = userDoc.data().buddy;
                     let buddyName = userDoc.data().buddyname;
                     let buddyPersonality = userDoc.data().buddypersonality;
@@ -51,7 +50,6 @@ populateUserInfo();
 function saveUserInfo() {
     //GETs data from the form in setting html page -------------
     userName = document.getElementById('username').value;
-    userEmail = document.getElementById('email').value;
     userBuddy = document.getElementById('dropdown').value;
     userBuddyName = document.getElementById('Buddy-name').value;
     userBuddyPersonality = document.getElementById('Buddy-personality').value;
@@ -60,7 +58,6 @@ function saveUserInfo() {
     // UPDATE - updates database link to user from form data in settings
     currentUser.update({
         name: userName,
-        email: userEmail,
         buddy: userBuddy,
         buddyname: userBuddyName,
         buddypersonality: userBuddyPersonality,
