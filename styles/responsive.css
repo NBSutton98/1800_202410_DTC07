@@ -203,4 +203,8 @@
     .user-settings-info {
         width: 88%;
     }
+
+    #setting-header{
+        text-align: center;
+    }
 }
