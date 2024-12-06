@@ -95,13 +95,14 @@ It has the following subfolders and files:
         /bunny-stand.svg
         /deer-4-leg.svg
         /deer-stand.svg
-        
     ├── awards
     ├── bg
     ├── elements
     ├── imgs
     ├── SVG
-    
+├── public
+    /404.html
+    /index.html
 ├── scripts                  # Folder for scripts
     /authentication.js
     /group-single-task.js
