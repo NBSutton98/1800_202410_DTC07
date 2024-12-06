@@ -1,30 +1,7 @@
-// function displayTaskInfo() {
-//     let params = new URL(window.location.href); //get URL of search bar
-//     let ID = params.searchParams.get("docID"); //get value for key "id"
-//     db.collection("tasks")
-//         .doc(ID)
-//         .get()
-//         .then(doc => {
-//             taskTitle = doc.data().task;
-//             dueDate = doc.data().dueDate;
-//             description = doc.data().description;
-
-//             // only populate title, and image
-//             document.getElementById("task-display").innerHTML = taskTitle;
-//             document.getElementById("duedate-display").innerHTML = dueDate;
-//             document.getElementById("description-display").innerHTML = description;
-
-//         });
-// }
-
-// displayTaskInfo();
-
 const taskList = document.getElementById("task-container");
 
 
 function setupTasks() {
-
-    //   event.preventDefault();
     user = firebase.auth().currentUser
 
     const task = document.getElementById("task").value;
@@ -45,7 +22,6 @@ function setupTasks() {
     displayTask();
 
 }
-// user = firebase.auth().currentUser
 function displayTask() {
     firebase.auth().onAuthStateChanged((user) => {
         db.collection("personaltasks")
