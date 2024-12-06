@@ -1,39 +1,28 @@
-var currentUser;               //points to the document of the user who is logged in
+var currentUser;
 document.getElementById('cancel-btn').style.display = 'none';
 
 function populateUserInfo() {
     firebase.auth().onAuthStateChanged(user => {
-        // Check if user is signed in:
         if (user) {
-            //go to the correct user document by referencing to the user uid
             currentUser = db.collection("users").doc(user.uid)
-            //get the document for current user.
             currentUser.get()
                 .then(userDoc => {
                     //get the data fields of the user
                     let userName = userDoc.data().name;
-                    let userEmail = userDoc.data().email;
+
                     let userBuddy = userDoc.data().buddy;
                     let buddyName = userDoc.data().buddyname;
-                    // READ avatar data from firestore data base-------------
                     let buddyPersonality = userDoc.data().buddypersonality;
-                    //-------------------------------------------------------
                     let userPronoun = userDoc.data().userpronoun;
                     let userFavClass = userDoc.data().favclass;
 
                     // Displaying the buddy from data ing formation
                     document.getElementById('buddy').src = `./assets/animals/${userBuddy}.svg`
-
-
                     if (userName != null) {
                         document.getElementById("username").value = userName;
                     }
-                    if (userEmail != null) {
-                        document.getElementById("email").value = userEmail;
-                    }
                     if (userBuddy != null) {
                         document.getElementById("dropdown").value = userBuddy;
-                        
                     }
                     if (buddyName != null) {
                         document.getElementById('Buddy-name').value = buddyName
@@ -60,7 +49,7 @@ function populateUserInfo() {
 populateUserInfo();
 
 function saveUserInfo() {
-    //GETs data from form in setting html page -------------
+    //GETs data from the form in setting html page -------------
     userName = document.getElementById('username').value;
     userEmail = document.getElementById('email').value;
     userBuddy = document.getElementById('dropdown').value;
