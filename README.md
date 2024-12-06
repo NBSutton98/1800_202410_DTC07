@@ -91,8 +91,10 @@ It has the following subfolders and files:
     ├── animals
         /bear-sit.svg
         /bear-stand.svg
-        
-        
+        /bunny-4-leg.svg
+        /bunny-stand.svg
+        /deer-4-leg.svg
+        /deer-stand.svg
         
     ├── awards
     ├── bg
